@@ -5,7 +5,7 @@ import Frame1207 from "../../public/img/Frame 1207.svg";
 const Hero: React.FC = () => {
   return (
     <section className="mb-8 w-[80%] font-nunito">
-      <h1 className="mb-3 text-3xl font-bold font-ubuntu">Welcome to Vigoplace</h1>
+      <h1 className="mb-3 text-4xl font-bold font-ubuntu">Welcome to Vigoplace</h1>
       <h2 className="mb-3 text-xl">
         Business, Social Media, and Financial Services.
       </h2>
