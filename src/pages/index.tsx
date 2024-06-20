@@ -1,6 +1,5 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { Inter } from "next/font/google";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
 import NavBar from "@/components/NavBar";
@@ -14,6 +13,8 @@ import Benefit from "@/components/Benefit";
 import Sell from "@/components/Sell";
 import Contest from "@/components/Contest";
 import FundRaising from "@/components/FundRaising";
+import Carousel from "@/components/Carousel";
+import How from "@/components/How";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -52,6 +53,8 @@ export default function Home() {
       <Sell />
       <Contest />
       <FundRaising />
+      <Carousel />
+      <How />
     </div>
   );
 }
