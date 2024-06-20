@@ -4,8 +4,10 @@ import { Button } from "./ui/button";
 
 const Sell: React.FC = () => {
   return (
-    <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white">
-      <h2 className="mb-4 text-2xl font-bold">Sell digital content</h2>
+    <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white font-nunito">
+      <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+        Sell digital content
+      </h2>
 
       <p className="mb-4">
         Monetize your digital content effortlessly with Vigoplace’s Channel
@@ -23,7 +25,7 @@ const Sell: React.FC = () => {
         <div className="">
           <h3 className="font-bold">Channel place</h3>
           <p className="">
-          Create exclusive content and monetize it through various means.
+            Create exclusive content and monetize it through various means.
           </p>
         </div>
       </div>
@@ -37,9 +39,7 @@ const Sell: React.FC = () => {
         />
         <div className="">
           <h3 className="font-bold">Pay-to-view post</h3>
-          <p className="">
-          Charge users a fee to access premium content.
-          </p>
+          <p className="">Charge users a fee to access premium content.</p>
         </div>
       </div>
       <div className="flex mb-4 bg-white">
@@ -53,7 +53,7 @@ const Sell: React.FC = () => {
         <div className="">
           <h3 className="font-bold">Buy</h3>
           <p className="">
-          Put your contents up for sell so other users can buy them..
+            Put your contents up for sell so other users can buy them..
           </p>
         </div>
       </div>
@@ -68,9 +68,7 @@ const Sell: React.FC = () => {
         />
         <div className="">
           <h3 className="font-bold">Rent</h3>
-          <p className="">
-          Contents can also be rented for a period of time.
-          </p>
+          <p className="">Contents can also be rented for a period of time.</p>
         </div>
       </div>
 
@@ -85,11 +83,11 @@ const Sell: React.FC = () => {
         <div className="">
           <h3 className="font-bold">Subsccription</h3>
           <p className="">
-          Offer subscription-based access to your content, ensuring a steady revenue stream.
+            Offer subscription-based access to your content, ensuring a steady
+            revenue stream.
           </p>
         </div>
       </div>
-
 
       <div className="mb-4">
         <Button className="bg-theme">See more</Button>

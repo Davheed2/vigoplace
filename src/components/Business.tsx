@@ -4,8 +4,8 @@ import BusinessIcon from "../../public/img/Business.svg";
 
 const Business: React.FC = () => {
   return (
-    <section className="mb-8 bg-theme rounded-md px-3 py-4">
-      <h2 className="mb-6 text-2xl w-[60%] text-white">
+    <section className="mb-8 bg-theme rounded-md px-3 py-4 font-nunito">
+      <h2 className="mb-6 text-2xl w-[60%] text-white font-ubuntu font-bold">
         Business social media networking.
       </h2>
 

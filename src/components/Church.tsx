@@ -4,8 +4,8 @@ import ChurchImage from "../../public/img/Frame 238243.svg";
 
 const Church: React.FC = () => {
   return (
-    <section className="mb-8 bg-theme rounded-md px-3 py-4">
-      <h2 className="mb-6 text-2xl w-[60%] text-white font-bold">
+    <section className="mb-8 bg-theme rounded-md px-3 py-4 font-nunito">
+      <h2 className="mb-6 text-2xl w-[60%] text-white font-bold font-ubuntu">
         Church activity management
       </h2>
 

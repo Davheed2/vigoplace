@@ -5,8 +5,8 @@ import { Button } from "./ui/button";
 
 const GroupPlace: React.FC = () => {
   return (
-    <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white">
-      <h2 className="mb-4 text-2xl w-[60%] font-bold">
+    <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white font-nunito">
+      <h2 className="mb-4 text-2xl w-[60%] font-bold font-ubuntu">
         <span className="text-theme">Group</span>/Community Activity{" "}
         <span className="text-theme">Management</span>
       </h2>

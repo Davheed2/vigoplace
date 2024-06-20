@@ -4,8 +4,10 @@ import FundRaisingImage from "../../public/img/Frame 238312.svg";
 
 const FundRaising: React.FC = () => {
   return (
-    <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white">
-      <h2 className="mb-4 text-2xl w-[60%] font-bold">Fundraising</h2>
+    <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white font-nunito">
+      <h2 className="mb-4 text-2xl w-[60%] font-bold font-ubuntu">
+        Fundraising
+      </h2>
 
       <div className="flex mb-4">
         <Image

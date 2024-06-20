@@ -5,8 +5,8 @@ import { Button } from "./ui/button";
 
 const FinanceServices: React.FC = () => {
   return (
-    <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white">
-      <h2 className="mb-4 text-2xl w-[60%] font-bold">Inbuilt financial services</h2>
+    <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white font-nunito">
+      <h2 className="mb-4 text-2xl w-[60%] font-bold font-ubuntu">Inbuilt financial services</h2>
 
       <p className="w-[70%] mb-5">
         Vigoplace provides a secure and user-friendly financial management

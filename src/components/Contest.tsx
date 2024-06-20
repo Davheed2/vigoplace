@@ -3,8 +3,8 @@ import Check from "../../public/img/icon-park-solid_check-one.svg";
 
 const Contest: React.FC = () => {
   return (
-    <section className="mb-8 bg-foreground rounded-md px-3 py-4">
-      <h2 className="mb-6 text-2xl w-[60%] text-white font-bold">
+    <section className="mb-8 bg-foreground rounded-md px-3 py-4 font-nunito">
+      <h2 className="mb-6 text-2xl w-[60%] text-white font-bold font-ubuntu">
         Organize online contest
       </h2>
 
