@@ -15,6 +15,7 @@ import Contest from "@/components/Contest";
 import FundRaising from "@/components/FundRaising";
 import Carousel from "@/components/Carousel";
 import How from "@/components/How";
+import Join from "@/components/Join";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -55,6 +56,7 @@ export default function Home() {
       <FundRaising />
       <Carousel />
       <How />
+      <Join />
     </div>
   );
 }

@@ -1,9 +1,5 @@
 import Image from "next/image";
-import Check from "../../public/img/icon-park-solid_check-one purple.svg";
-import Finance from "../../public/img/Finance.svg";
-import { Button } from "./ui/button";
 
-//#E8FCEF
 const How: React.FC = () => {
   return (
     <section className="mb-8 bg-text px-3 py-4 font-nunito">
@@ -27,7 +23,7 @@ const How: React.FC = () => {
       </div>
       <div className="flex mb-4 bg-howcard2 py-5 rounded">
         <p
-          className="mr-3 mb-auto ml-2 bg-theme text-white w-8 h-8 flex items-center justify-center"
+          className="mr-3 mb-auto ml-2 bg-theme text-white w-12 h-8 flex items-center justify-center"
           style={{ borderRadius: "100%" }}
         >
           2
@@ -43,7 +39,7 @@ const How: React.FC = () => {
       </div>
       <div className="flex mb-8 bg-howcard3 py-5 rounded">
         <p
-          className="mr-3 mb-auto ml-2 bg-theme text-white w-8 h-8 flex items-center justify-center"
+          className="mr-3 mb-auto ml-2 bg-theme text-white w-12 h-8 flex items-center justify-center"
           style={{ borderRadius: "100%" }}
         >
           3

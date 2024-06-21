@@ -15,7 +15,7 @@ const Carousel: React.FC = () => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section className="mb-8 font-nunito text-center mx-auto">
+    <section className="mb-8 font-nunito text-center mx-auto py-4">
       <h2 className="mb-3 font-ubuntu text-2xl font-bold text-center">
         Gallery.
       </h2>
