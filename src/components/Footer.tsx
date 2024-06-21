@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         />
 
         <div className="my-auto ml-3">
-          <p className="text-xxs">TM</p>
+          <p style={{fontSize: "0.35rem"}}>TM</p>
         </div>
       </div>
 
