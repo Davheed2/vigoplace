@@ -106,7 +106,9 @@ nav {
   @apply mb-8;
 }
 
-
+.swiper-pagination-bullet-active {
+  background-color: #ff5722; /* Active dot color */
+}
 
 /* p {
   @apply mt-2;

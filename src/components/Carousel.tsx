@@ -37,6 +37,7 @@ const Carousel: React.FC = () => {
           autoplay={{ delay: 4000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
+          
         >
           <SwiperSlide className="flex justify-center items-center">
             <div className="w-full">
