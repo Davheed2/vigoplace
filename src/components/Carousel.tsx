@@ -34,7 +34,7 @@ const Carousel: React.FC = () => {
           spaceBetween={50}
           slidesPerView={1}
           loop={true}
-          autoplay={{ delay: 1000000, disableOnInteraction: false }}
+          autoplay={{ delay: 7000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
