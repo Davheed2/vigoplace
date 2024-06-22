@@ -22,29 +22,31 @@ const Join: React.FC = () => {
           <a
             target="__blank"
             href="https://play.google.com/store/apps/details?id=com.vigoplace.vigoplace"
-          ></a>
+          >
+            <Image
+              src={Google}
+              alt="Download on playstore"
+              width={25}
+              height={25}
+              className="mr-3 mb-auto mt-1 w-auto"
+            />
+          </a>
         </div>
-        <Image
-          src={Google}
-          alt="Download on playstore"
-          width={25}
-          height={25}
-          className="mr-3 mb-auto mt-1 w-auto"
-        />
 
         <div>
           <a
             target="__blank"
             href="https://apps.apple.com/ng/app/vigoplace/id1622191142"
-          ></a>
+          >
+            <Image
+              src={Apple}
+              alt="Download on playstore"
+              width={25}
+              height={25}
+              className="mr-3 mb-auto mt-1 w-auto"
+            />
+          </a>
         </div>
-        <Image
-          src={Apple}
-          alt="Download on playstore"
-          width={25}
-          height={25}
-          className="mr-3 mb-auto mt-1 w-auto"
-        />
       </div>
 
       <div className="bg-businessimage pt-8 rounded-lg">

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -34,168 +34,43 @@ const Carousel: React.FC = () => {
           spaceBetween={50}
           slidesPerView={1}
           loop={true}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          autoplay={{ delay: 1000000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
-          
         >
-          <SwiperSlide className="flex justify-center items-center">
-            <div className="w-full">
-              <Image
-                src={Slider1}
-                alt="Carousel Image 1"
-                layout="responsive"
-                width={279}
-                height={248}
-                loading="lazy"
-                className="w-full h-auto cursor-pointer"
-                onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-                onMouseLeave={() => swiperRef.current?.autoplay.start()}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="flex justify-center items-center">
-            <div className="w-full">
-              <Image
-                src={Slider2}
-                alt="Carousel Image 2"
-                layout="responsive"
-                width={279}
-                height={248}
-                loading="lazy"
-                className="w-full h-auto cursor-pointer"
-                onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-                onMouseLeave={() => swiperRef.current?.autoplay.start()}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="flex justify-center items-center">
-            <div className="w-full">
-              <Image
-                src={Slider3}
-                alt="Carousel Image 3"
-                layout="responsive"
-                width={279}
-                height={248}
-                loading="lazy"
-                className="w-full h-auto cursor-pointer"
-                onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-                onMouseLeave={() => swiperRef.current?.autoplay.start()}
-              />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="flex justify-center items-center">
-            <div className="w-full">
-              <Image
-                src={Slider4}
-                alt="Carousel Image 3"
-                layout="responsive"
-                width={279}
-                height={248}
-                loading="lazy"
-                className="w-full h-auto cursor-pointer"
-                onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-                onMouseLeave={() => swiperRef.current?.autoplay.start()}
-              />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="flex justify-center items-center">
-            <div className="w-full">
-              <Image
-                src={Slider5}
-                alt="Carousel Image 3"
-                layout="responsive"
-                width={279}
-                height={248}
-                loading="lazy"
-                className="w-full h-auto cursor-pointer"
-                onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-                onMouseLeave={() => swiperRef.current?.autoplay.start()}
-              />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="flex justify-center items-center">
-            <div className="w-full">
-              <Image
-                src={Slider6}
-                alt="Carousel Image 3"
-                layout="responsive"
-                width={279}
-                height={248}
-                loading="lazy"
-                className="w-full h-auto cursor-pointer"
-                onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-                onMouseLeave={() => swiperRef.current?.autoplay.start()}
-              />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="flex justify-center items-center">
-            <div className="w-full">
-              <Image
-                src={Slider7}
-                alt="Carousel Image 3"
-                layout="responsive"
-                width={279}
-                height={248}
-                loading="lazy"
-                className="w-full h-auto cursor-pointer"
-                onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-                onMouseLeave={() => swiperRef.current?.autoplay.start()}
-              />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="flex justify-center items-center">
-            <div className="w-full">
-              <Image
-                src={Slider8}
-                alt="Carousel Image 3"
-                layout="responsive"
-                width={279}
-                height={248}
-                loading="lazy"
-                className="w-full h-auto cursor-pointer"
-                onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-                onMouseLeave={() => swiperRef.current?.autoplay.start()}
-              />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="flex justify-center items-center">
-            <div className="w-full">
-              <Image
-                src={Slider9}
-                alt="Carousel Image 3"
-                layout="responsive"
-                width={279}
-                height={248}
-                loading="lazy"
-                className="w-full h-auto cursor-pointer"
-                onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-                onMouseLeave={() => swiperRef.current?.autoplay.start()}
-              />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="flex justify-center items-center">
-            <div className="w-full">
-              <Image
-                src={Slider10}
-                alt="Carousel Image 3"
-                layout="responsive"
-                width={279}
-                height={248}
-                loading="lazy"
-                className="w-full h-auto cursor-pointer"
-                onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-                onMouseLeave={() => swiperRef.current?.autoplay.start()}
-              />
-            </div>
-          </SwiperSlide>
+          {[
+            Slider1,
+            Slider2,
+            Slider3,
+            Slider4,
+            Slider5,
+            Slider6,
+            Slider7,
+            Slider8,
+            Slider9,
+            Slider10,
+          ].map((slider: StaticImageData, index) => (
+            <SwiperSlide
+              key={index}
+              className="flex justify-center items-center"
+              style={{maxHeight: "80vh"}}
+            >
+              <div className="w-full sm:max-h-[500px]">
+                <Image
+                  src={slider}
+                  alt={`Carousel Image ${index + 1}`}
+                  layout="responsive"
+                  width={279}
+                  height={600}
+                  loading="lazy"
+                  className="w-full h-600 object-cover cursor-pointer"
+                  style={{ height: "600px" }}
+                  onMouseEnter={() => swiperRef.current?.autoplay.stop()}
+                  onMouseLeave={() => swiperRef.current?.autoplay.start()}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>

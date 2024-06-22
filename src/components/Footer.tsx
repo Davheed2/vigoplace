@@ -87,27 +87,56 @@ const Footer: React.FC = () => {
       <div className="mb-8 flex space-x-4">
         <div className="bg-socialbackground rounded-full p-2">
           <div>
-            <a href="https://facebook.com/vigoplace"></a>
-          </div>
-          <FontAwesomeIcon icon={faFacebookF} className="text-social w-4 h-4" />
-        </div>
-        <div className="bg-socialbackground rounded-full p-2">
-          <div>
-            <a href="https://twitter.com/vigoplace/status/1476576302048190474?s=21&t=cG3oEeFdXVvDJax_LbwKSA">
-              {" "}
+            <a target="__blank" href="https://facebook.com/vigoplace">
+              <FontAwesomeIcon
+                icon={faFacebookF}
+                className="text-social w-4 h-4"
+              />
             </a>
           </div>
-          <FontAwesomeIcon icon={faTwitter} className="text-social w-4 h-4" />
+        </div>
+
+        <div className="bg-socialbackground rounded-full p-2">
+          <div>
+            <a
+              target="__blank"
+              href="https://www.linkedin.com/company/vigoplace/"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="text-social w-4 h-4"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div className="bg-socialbackground rounded-full p-2">
+          <div>
+            <a
+              target="__blank"
+              href="https://x.com/vvigoplace?s=11"
+            >
+              <FontAwesomeIcon
+                icon={faTwitter}
+                className="text-social w-4 h-4"
+              />
+            </a>
+          </div>
         </div>
         <div className="bg-socialbackground rounded-full p-2">
           <div>
-            <a href="https://www.instagram.com/p/CdqGe--sSVu/?igshid=YmMyMTA2M2Y="></a>
+            <a
+              target="__blank"
+              href="https://www.instagram.com/thevigoplace?igsh=NW1pOGFsNml4NTVk"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="text-social w-4 h-4"
+              />
+            </a>
           </div>
-          <FontAwesomeIcon icon={faInstagram} className="text-social w-4 h-4" />
         </div>
-        <div className="bg-socialbackground rounded-full p-2">
-          <FontAwesomeIcon icon={faLinkedin} className="text-social w-4 h-4" />
-        </div>
+      
       </div>
 
       <div className="mb-8 w-[80%]">
@@ -117,13 +146,13 @@ const Footer: React.FC = () => {
         </p>
       </div>
 
-      <div className="mb-8">
+      <div className="mb-8 font-bold">
         <p> © Vigobrand Inc. {currentYear}</p>
       </div>
 
-      <div className="mb-2">
+      {/* <div className="mb-2">
         <div id="google_translate_element"></div>
-      </div>
+      </div> */}
     </section>
   );
 };

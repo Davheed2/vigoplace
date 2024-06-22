@@ -105,19 +105,3 @@
 nav {
   @apply mb-8;
 }
-
-.swiper-pagination-bullet-active {
-  background-color: #ff5722; /* Active dot color */
-}
-
-/* p {
-  @apply mt-2;
-}
-
-h1 {
-  @apply scroll-m-20 text-4xl font-extrabold tracking-tight sm:text-5xl;
-}
-
-h2 {
-  @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
-} */
