@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const How: React.FC = () => {
   return (
-    <section className="mb-8 bg-text px-3 py-4 font-nunito">
+    <section className="mb-8 bg-text px-3 pt-4 font-nunito">
       <h2 className="mb-8 text-2xl font-bold font-ubuntu text-center">
         How vigoplace works
       </h2>

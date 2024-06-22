@@ -31,6 +31,8 @@ module.exports = {
         howcard1: "hsl(var(--howcard1))",
         howcard2: "hsl(var(--howcard2))",
         howcard3: "hsl(var(--howcard3))",
+        social: "hsl(var(--social))",
+        socialbackground: "hsl(var(--socialbackground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

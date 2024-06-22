@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 const Benefit: React.FC = () => {
   return (
-    <section className="mb-8 bg-text rounded-md px-3 py-4 font-nunito">
+    <section className="mb-8 bg-text rounded-md px-3 pt-4 font-nunito">
       <h2 className="mb-4 text-2xl font-bold text-center font-ubuntu">Users benefit</h2>
 
       <div className="flex mb-4 bg-white py-5 rounded">

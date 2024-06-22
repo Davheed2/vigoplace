@@ -18,6 +18,12 @@ const Join: React.FC = () => {
       </p>
 
       <div className="flex mb-4 w-[70%]">
+        <div>
+          <a
+            target="__blank"
+            href="https://play.google.com/store/apps/details?id=com.vigoplace.vigoplace"
+          ></a>
+        </div>
         <Image
           src={Google}
           alt="Download on playstore"
@@ -26,6 +32,12 @@ const Join: React.FC = () => {
           className="mr-3 mb-auto mt-1 w-auto"
         />
 
+        <div>
+          <a
+            target="__blank"
+            href="https://apps.apple.com/ng/app/vigoplace/id1622191142"
+          ></a>
+        </div>
         <Image
           src={Apple}
           alt="Download on playstore"
