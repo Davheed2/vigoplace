@@ -53,7 +53,7 @@ const Carousel: React.FC = () => {
             <SwiperSlide
               key={index}
               className="flex justify-center items-center"
-              style={{maxHeight: "80vh"}}
+              style={{maxHeight: "70vh"}}
             >
               <div className="w-full sm:max-h-[500px]">
                 <Image
