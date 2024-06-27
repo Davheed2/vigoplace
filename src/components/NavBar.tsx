@@ -143,7 +143,6 @@ const NavBar: React.FC = () => {
         />
       </div>
       <div>
-        <FontAwesomeIcon icon="fa-solid fa-bars" />
         {/* <button className="text-black" onClick={toggleMenu}>
 
           </button> */}
