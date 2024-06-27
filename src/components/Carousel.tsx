@@ -55,7 +55,7 @@ const Carousel: React.FC = () => {
               className="flex justify-center items-center"
               style={{maxHeight: "70vh"}}
             >
-              <div className="w-full sm:max-h-[500px]">
+              <div className="w-full">
                 <Image
                   src={slider}
                   alt={`Carousel Image ${index + 1}`}
@@ -63,7 +63,7 @@ const Carousel: React.FC = () => {
                   width={279}
                   height={600}
                   loading="lazy"
-                  className="w-full h-600 object-cover cursor-pointer"
+                  className="w-full object-cover cursor-pointer"
                   style={{ height: "600px" }}
                   onMouseEnter={() => swiperRef.current?.autoplay.stop()}
                   onMouseLeave={() => swiperRef.current?.autoplay.start()}

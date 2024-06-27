@@ -2,18 +2,11 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
-import Hero from "@/components/Hero";
-import Business from "@/components/Business";
-import FinanceServices from "@/components/FinanceServices";
-import GroupPlace from "@/components/GroupPlace";
-import Church from "@/components/Church";
-import Ecommerce from "@/components/Ecommerce";
-import Benefit from "@/components/Benefit";
-import Sell from "@/components/Sell";
-import Contest from "@/components/Contest";
-import FundRaising from "@/components/FundRaising";
-import Carousel from "@/components/Carousel";
-import How from "@/components/How";
+import Activity from "@/components/Activity";
+import Giving from "@/components/Giving";
+import BiblePost from "@/components/BiblePost";
+import OfferingPost from "@/components/OfferingPost";
+import PrayerRequest from "@/components/PrayerRequest";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -27,7 +20,7 @@ const nunito = Nunito({
   weight: "400",
 });
 
-export default function Home() {
+export default function ChurchActivity() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
@@ -41,18 +34,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Hero />
-      <Business />
-      <FinanceServices />
-      <GroupPlace />
-      <Church />
-      <Ecommerce />
-      <Benefit />
-      <Sell />
-      <Contest />
-      <FundRaising />
-      <Carousel />
-      <How />
+      <Activity />
+      <Giving />
+      <BiblePost />
+      <OfferingPost />
+      <PrayerRequest />
     </div>
   );
 }
