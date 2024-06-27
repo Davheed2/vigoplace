@@ -15,7 +15,6 @@ import useToggle from "@/hooks/useToggle";
 // import menu from "../../public/img/ci--hamburger-md.png";
 // import close from "../../public/img/ic--round-close.png";
 
-
 const navLinks = [
   {
     name: "Why Vigoplace", ///This should have the dropdown
@@ -150,12 +149,7 @@ const NavBar: React.FC = () => {
 
       <div className="p-2">
         <div>
-          <a
-            target="__blank"
-            href="https://www.instagram.com/thevigoplace?igsh=NW1pOGFsNml4NTVk"
-          >
-            <FontAwesomeIcon icon={faBars} className="text-social w-4 h-4" />
-          </a>
+          <FontAwesomeIcon icon={faBars} className="text-social w-4 h-4" />
         </div>
       </div>
     </nav>
