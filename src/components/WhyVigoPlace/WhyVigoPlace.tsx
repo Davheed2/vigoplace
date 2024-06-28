@@ -13,15 +13,76 @@ export const WhyVigoPlace = () => {
             name: "Vigo Place",
             nameSubLinks: [
                 {
-                    name: "Ecommerce",
+                    name: "Church Activity Management",
                     nameSubLinks: [
                         {
-                        name: "Senior Man",
-                        link: "senior"
+                        name: "Daily Reading Post",
+                        link: "Daily-Reading-Post"
                         },
                         {
-                            name: "Senior Man",
-                            link: "senior"
+                            name: "Bible Post",
+                            link: "Bible-post"
+                        },
+                        {
+                            name: "Giving",
+                            link: "Giving"
+                            },
+                            {
+                                name: "Offering Post",
+                                link: "Offering-post"
+                        },
+                        {
+                            name: "Prayer Request",
+                            link: "Prayer-request"
+                        },
+                    ]
+                },
+                {
+                    name: "Groups/Community Activity Management",
+                    nameSubLinks: [
+                        {
+                        name: "Collection Post",
+                        link: "Collection-posts"
+                        },
+                        {
+                            name: "Family groups",
+                            link: "Family-groups"
+                        },
+                           {
+                        name: "Hobby groups",
+                        link: "Hobby-groups"
+                        },
+                        {
+                            name: "Study groups",
+                            link: "Study-groups"
+                        },
+                        {
+                            name: "Suport Groups",
+                            link: "Suppor-groups"
+                            },
+                            {
+                                name: "networking groups",
+                                link: "networking-groups"
+                            },
+                               {
+                            name: "Proffesional Association",
+                            link: "Proffesional-association"
+                            },
+                            {
+                                name: "Alumni groups",
+                                link: "Alumni-groups"
+                        },
+                        {
+                            name: "Voluneer groups",
+                            link: "Voluneer-groups"
+                        },
+                           {
+                        name: "Sports team",
+                        link: "Sports-team"
+                        },
+                        {
+                            name: "Interest-Based communities",
+                            link: "Interest-Based-communities"
                         },
                     ]
                 },
@@ -29,28 +90,127 @@ export const WhyVigoPlace = () => {
                     name: "Ecommerce",
                     nameSubLinks: [
                         {
-                        name: "Senior Man",
-                        link: "senior"
+                        name: "Marketplace",
+                        link: "Marketplace"
                         },
                         {
-                            name: "Senior Man",
-                            link: "senior"
+                            name: "Product Posts",
+                            link: "Product-posts"
+                        },
+                        {
+                            name: "Service Posts",
+                            link: "Service-posts"
+                            },
+                            {
+                                name: "Digital Goods",
+                                link: "Digital-goods"
+                            },
+                    ]
+                },
+                {
+                    name: "Financial Services",
+                    nameSubLinks: [
+                        {
+                        name: "Multi-Wallet System",
+                        link: "/multi-wallet-system"
+                        },
+                        {
+                            name: "KYC(Know Your Customer)",
+                            link: "/kyc"
+                        },
+                        {
+                            name: "Secure Online Banking",
+                            link: "/secure-online-banking"
+                            },
+                            {
+                                name: "Cardless Transaction",
+                                link: "/cardless-transaction"
+                        },
+                        {
+                            name: "Inter-Bank Transfers",
+                            link: "/inter-bank-Transfers"
+                            },
+                            {
+                                name: "Wallet To Wallet",
+                                link: "/wallet-to-wallet"
+                            },
+                            {
+                                name: "OTP For Transfers",
+                                link: "/OTP-for-transfers"
+                                },
+                                {
+                                    name: "Transaction Receipts",
+                                    link: "/transaction-receipts"
+                        },
+                        {
+                            name: "Transaction statements",
+                            link: "/transaction-statements"
+                            },
+                            {
+                                name: "Expense Tracking",
+                                link: "/Expense-tracking"
+                            },
+                    ]
+                },
+                {
+                    name: "sell Digital Content",
+                    nameSubLinks: [
+                        {
+                        name: "Channel Place",
+                        link: "/channel-place"
+                        },
+                        {
+                            name: "Pay to view post",
+                            link: "/Pay-to-view-post"
+                        },
+                        {
+                            name: "Buy",
+                            link: "/buy"
+                            },
+                            {
+                                name: "Rent",
+                                link: "/rent"
+                        },
+                        {
+                            name: "Subscription",
+                            link: "/subscription"
+                            },
+                    ]
+                },
+                {
+                    name: "Organize Online Contest",
+                    nameSubLinks: [
+                        {
+                        name: "Contest Place",
+                        link: "/contest-place"
+                        },
+                        {
+                            name: "Contestant",
+                            link: "/contestant"
+                        },
+                        {
+                            name: "Paid Contests",
+                            link: "/paid-contests"
+                            },
+                            {
+                                name: "Free Contest",
+                                link: "/free-contest"
                         },
                     ]
                 },
                 {
-                    name: "Ecommerce",
+                    name: "Fundraising",
                     nameSubLinks: [
                         {
-                        name: "Senior Man",
-                        link: "senior"
+                        name: "Fundraising Posts",
+                        link: "/fundraising-posts"
                         },
                         {
-                            name: "Senior Man",
-                            link: "senior"
-                        },
+                            name: "Support/Donate Posts",
+                            link: "/support/donate-posts"
+                        }
                     ]
-}
+                },
             ]
         },
         {
@@ -147,14 +307,18 @@ export const WhyVigoPlace = () => {
   
     const [hoveredNav, setHoveredNav] = useState<string | null>(null);
     const [hoveredSubNav, setHoveredSubNav] = useState<string | null>(null);
+    console.log("sub navigation", hoveredSubNav)
 
     return (
         <div className="px-[20px] py-[50px] text-slate-900 rounded-[5px] bg-white">
-            {navs.map((nav: any) => (
+            {navs.map(nav => (
                 <ul
                     key={nav.name}
                     onMouseOver={() => setHoveredNav(nav.name)}
-                    onMouseOut={() => setHoveredNav(null)}
+                    onMouseOut={() => {
+                        setHoveredNav(null);
+                        setHoveredSubNav(null);
+                    }}
                     className="bg-white relative flex flex-col"
                 >
                     <li className="flex items-center cursor-pointer gap-0">
@@ -167,7 +331,7 @@ export const WhyVigoPlace = () => {
                     </li>
                     {hoveredNav === nav.name && (
                         <ul className="bg-slate-200 block mb-[30px] p-[10px]">
-                            {nav.nameSubLinks.map((subLink: any) => (
+                            {nav.nameSubLinks.map(subLink => (
                                 <ul
                                     key={subLink.name}
                                     onMouseOver={() => setHoveredSubNav(subLink.name)}
@@ -184,7 +348,7 @@ export const WhyVigoPlace = () => {
                                     </li>
                                     {hoveredSubNav === subLink.name && (
                                         <ul className="flex block mb-[15px] flex-col bg-white p-[10px] rounded-[5px]">
-                                            {subLink.nameSubLinks.map((link : any) => (
+                                            {subLink.nameSubLinks.map(link => (
                                                 <Link href={link.link} key={link.name}>
                                                     {link.name}
                                                 </Link>
