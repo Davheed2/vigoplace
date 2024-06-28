@@ -5,9 +5,6 @@ import { RiArrowDropUpLine } from "react-icons/ri";
 
 export const WhyVigoPlace = () => {
 
-    const NavLink = ['Why Vigoplace', "Pricing", "Learn", "Join Our Community"]
-
-
     const navs = [
         {
             name: "Vigo Place",
@@ -314,19 +311,19 @@ export const WhyVigoPlace = () => {
             {navs.map(nav => (
                 <ul
                     key={nav.name}
-                    onMouseOver={() => setHoveredNav(nav.name)}
-                    onMouseOut={() => {
-                        setHoveredNav(null);
-                        setHoveredSubNav(null);
-                    }}
                     className="bg-white relative flex flex-col"
                 >
                     <li className="flex items-center cursor-pointer gap-0">
-                        {nav.name}
+                       <Link href={`/${nav.name}`}> {nav.name}</Link>
                         {hoveredNav === nav.name ? (
-                            <RiArrowDropUpLine className="text-[20px]" />
+                            <RiArrowDropUpLine onClick={() => {
+                                setHoveredNav(null);
+                                setHoveredSubNav(null);
+                            }} className="text-[20px]" />
                         ) : (
-                            <RiArrowDropDownLine className="text-[20px]" />
+                                <RiArrowDropDownLine onClick={() => {
+                                    setHoveredNav(nav.name)
+                            }} className="text-[20px]" />
                         )}
                     </li>
                     {hoveredNav === nav.name && (
@@ -334,16 +331,14 @@ export const WhyVigoPlace = () => {
                             {nav.nameSubLinks.map(subLink => (
                                 <ul
                                     key={subLink.name}
-                                    onMouseOver={() => setHoveredSubNav(subLink.name)}
-                                    onMouseOut={() => setHoveredSubNav(null)}
                                     className="flex flex-col"
                                 >
                                     <li className="flex cursor-pointer items-center gap-0">
-                                        {subLink.name}
+                                      <Link href={`/${subLink.name}`}> {subLink.name}</Link>
                                         {hoveredSubNav === subLink.name ? (
-                                            <RiArrowDropUpLine className="text-[20px]" />
+                                            <RiArrowDropUpLine onClick={() => setHoveredSubNav(null)} className="text-[20px]" />
                                         ) : (
-                                            <RiArrowDropDownLine className="text-[20px]" />
+                                            <RiArrowDropDownLine onClick={() => setHoveredSubNav(subLink.name)} className="text-[20px]" />
                                         )}
                                     </li>
                                     {hoveredSubNav === subLink.name && (
