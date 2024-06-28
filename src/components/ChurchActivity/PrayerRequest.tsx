@@ -1,12 +1,14 @@
 import Image from "next/image";
-import BiblePostImage from "../../public/img/vigo-removebg-preview 1.svg";
+import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
 
-const SportTeam: React.FC = () => {
+const PrayerRequest: React.FC = () => {
   return (
     <section className="mb-8 rounded-md py-4 font-nunito bg-white">
       <div className="flex items-center px-4">
-        <div className="mr-2">
-          <h2 className="mb-4 text-2xl font-bold font-ubuntu">Sport Teams</h2>
+        <div className="mr-2 ">
+          <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+            Prayer Request
+          </h2>
 
           <p className="mb-2">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -16,8 +18,8 @@ const SportTeam: React.FC = () => {
 
         <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
           {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
+            src={ActivityImage}
+            alt="Check Icon"
             //   width={25}
             //   height={25}
             //className="mr-3 mt-1 ml-2"
@@ -28,4 +30,4 @@ const SportTeam: React.FC = () => {
   );
 };
 
-export default SportTeam;
+export default PrayerRequest;

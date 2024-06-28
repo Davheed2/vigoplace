@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Check from "../../public/img/icon-park-solid_check-one purple.svg";
-import { Button } from "./ui/button";
+import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
+import { Button } from "../ui/button";
 
 const Benefit: React.FC = () => {
   return (

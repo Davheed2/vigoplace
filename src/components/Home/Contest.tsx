@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Check from "../../public/img/icon-park-solid_check-one.svg";
+import Check from "../../../public/img/icon-park-solid_check-one.svg";
 
 const Contest: React.FC = () => {
   return (

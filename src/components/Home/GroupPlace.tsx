@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Check from "../../public/img/icon-park-solid_check-one purple.svg";
-import Group from "../../public/img/Frame 238312.svg";
-import { Button } from "./ui/button";
+import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
+import Group from "../../../public/img/Frame 238312.svg";
+import { Button } from "../ui/button";
 
 const GroupPlace: React.FC = () => {
   return (

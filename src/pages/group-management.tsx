@@ -3,17 +3,17 @@ import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
 import Activity from "@/components/Activity";
-import CollectionPost from "@/components/CollectionPosts";
-import FamilyGroup from "@/components/FamilyGroups";
-import HobbyGroup from "@/components/HobbyGroup";
-import StudyGroup from "@/components/StudyGroup";
-import SupportGroup from "@/components/SupportGroup";
-import NetworkingGroup from "@/components/NetworkingGroup";
-import Association from "@/components/Association";
-import AlumniGroup from "@/components/AlumniGroup";
-import VolunteerGroup from "@/components/VolunteerGroup";
-import SportTeam from "@/components/SportTeam";
-import BasedCommunities from "@/components/BasedCommunities";
+import CollectionPost from "@/components/GroupManagement/CollectionPosts";
+import FamilyGroup from "@/components/GroupManagement/FamilyGroups";
+import HobbyGroup from "@/components/GroupManagement/HobbyGroup";
+import StudyGroup from "@/components/GroupManagement/StudyGroup";
+import SupportGroup from "@/components/GroupManagement/SupportGroup";
+import NetworkingGroup from "@/components/GroupManagement/NetworkingGroup";
+import Association from "@/components/GroupManagement/Association";
+import AlumniGroup from "@/components/GroupManagement/AlumniGroup";
+import VolunteerGroup from "@/components/GroupManagement/VolunteerGroup";
+import SportTeam from "@/components/GroupManagement/SportTeam";
+import BasedCommunities from "@/components/GroupManagement/BasedCommunities";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],

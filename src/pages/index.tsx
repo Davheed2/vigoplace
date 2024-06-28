@@ -2,18 +2,18 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
-import Hero from "@/components/Hero";
-import Business from "@/components/Business";
-import FinanceServices from "@/components/FinanceServices";
-import GroupPlace from "@/components/GroupPlace";
-import Church from "@/components/Church";
-import Ecommerce from "@/components/Ecommerce";
-import Benefit from "@/components/Benefit";
-import Sell from "@/components/Sell";
-import Contest from "@/components/Contest";
-import FundRaising from "@/components/FundRaising";
-import Carousel from "@/components/Carousel";
-import How from "@/components/How";
+import Hero from "@/components/Home/Hero";
+import Business from "@/components/Home/Business";
+import FinanceServices from "@/components/Home/FinanceServices";
+import GroupPlace from "@/components/Home/GroupPlace";
+import Church from "@/components/Home/Church";
+import Ecommerce from "@/components/Home/Ecommerce";
+import Benefit from "@/components/Home/Benefit";
+import Sell from "@/components/Home/Sell";
+import Contest from "@/components/Home/Contest";
+import FundRaising from "@/components/Home/FundRaising";
+import Carousel from "@/components/Home/Carousel";
+import How from "@/components/Home/How";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],

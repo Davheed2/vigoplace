@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Check from "../../public/img/icon-park-solid_check-one.svg";
-import EcommerceImage from "../../public/img/Frame 238313.svg";
+import Check from "../../../public/img/icon-park-solid_check-one.svg";
+import EcommerceImage from "../../../public/img/Frame 238313.svg";
 
 const Ecommerce: React.FC = () => {
   return (

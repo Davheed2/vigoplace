@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Check from "../../public/img/icon-park-solid_check-one purple.svg";
-import Finance from "../../public/img/Finance.svg";
-import { Button } from "./ui/button";
+import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
+import Finance from "../../../public/img/Finance.svg";
+import { Button } from "../ui/button";
 
 const FinanceServices: React.FC = () => {
   return (

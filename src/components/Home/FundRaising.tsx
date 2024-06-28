@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Check from "../../public/img/icon-park-solid_check-one purple.svg";
-import FundRaisingImage from "../../public/img/Frame 238312.svg";
+import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
+import FundRaisingImage from "../../../public/img/Frame 238312.svg";
 
 const FundRaising: React.FC = () => {
   return (

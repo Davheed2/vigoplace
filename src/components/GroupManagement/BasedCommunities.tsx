@@ -1,7 +1,7 @@
 import Image from "next/image";
-import ActivityImage from "../../public/img/vigo-removebg-preview 1.svg";
+import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
 
-const OfferingPost: React.FC = () => {
+const BasedCommunities: React.FC = () => {
   return (
     <section className="mb-8 rounded-md py-4 font-nunito bg-white">
       <div className="flex items-center">
@@ -16,12 +16,12 @@ const OfferingPost: React.FC = () => {
         </div>
         <div className="mr-2">
           <h2 className="mb-4 text-2xl font-bold font-ubuntu">
-            Offering Posts
+            Interest based communities
           </h2>
 
           <p className="mb-2">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium,
+            For a successful transaction, every transaction on the app incurs a
+            minor percentage-based fee.{" "}
           </p>
         </div>
       </div>
@@ -29,4 +29,4 @@ const OfferingPost: React.FC = () => {
   );
 };
 
-export default OfferingPost;
+export default BasedCommunities;

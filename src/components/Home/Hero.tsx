@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
-import Frame1207 from "../../public/img/Frame 1207.svg";
+import { Button } from "../ui/button";
+import Frame1207 from "../../../public/img/Frame 1207.svg";
 
 const Hero: React.FC = () => {
   return (

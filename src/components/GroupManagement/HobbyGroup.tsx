@@ -1,7 +1,7 @@
 import Image from "next/image";
-import ActivityImage from "../../public/img/vigo-removebg-preview 1.svg";
+import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
 
-const VolunteerGroup: React.FC = () => {
+const HobbyGroup: React.FC = () => {
   return (
     <section className="mb-8 rounded-md py-4 font-nunito bg-white">
       <div className="flex items-center">
@@ -15,9 +15,7 @@ const VolunteerGroup: React.FC = () => {
           /> */}
         </div>
         <div className="mr-2">
-          <h2 className="mb-4 text-2xl font-bold font-ubuntu">
-            Volunteer Groups
-          </h2>
+          <h2 className="mb-4 text-2xl font-bold font-ubuntu">Hobby Groups</h2>
 
           <p className="mb-2">
             For a successful transaction, every transaction on the app incurs a
@@ -29,4 +27,4 @@ const VolunteerGroup: React.FC = () => {
   );
 };
 
-export default VolunteerGroup;
+export default HobbyGroup;

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Check from "../../public/img/icon-park-solid_check-one.svg";
-import BusinessIcon from "../../public/img/Business.svg";
+import Check from "../../../public/img/icon-park-solid_check-one.svg";
+import BusinessIcon from "../../../public/img/Business.svg";
 
 const Business: React.FC = () => {
   return (

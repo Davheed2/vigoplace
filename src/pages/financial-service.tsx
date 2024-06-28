@@ -3,10 +3,7 @@ import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
 import Activity from "@/components/Activity";
-import Giving from "@/components/ChurchActivity/Giving";
-import BiblePost from "@/components/ChurchActivity/BiblePost";
-import OfferingPost from "@/components/ChurchActivity/OfferingPost";
-import PrayerRequest from "@/components/ChurchActivity/PrayerRequest";
+
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -20,7 +17,7 @@ const nunito = Nunito({
   weight: "400",
 });
 
-export default function ChurchActivity() {
+export default function FinancialServices() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
@@ -35,10 +32,7 @@ export default function ChurchActivity() {
       </Head>
 
       <Activity />
-      <Giving />
-      <BiblePost />
-      <OfferingPost />
-      <PrayerRequest />
+     
     </div>
   );
 }

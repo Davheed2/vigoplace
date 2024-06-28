@@ -1,12 +1,12 @@
 import Image from "next/image";
-import BiblePostImage from "../../public/img/vigo-removebg-preview 1.svg";
+import BiblePostImage from "../../../public/img/vigo-removebg-preview 1.svg";
 
-const StudyGroup: React.FC = () => {
+const AlumniGroup: React.FC = () => {
   return (
     <section className="mb-8 rounded-md py-4 font-nunito bg-white">
       <div className="flex items-center px-4">
         <div className="mr-2">
-          <h2 className="mb-4 text-2xl font-bold font-ubuntu">Study Groups</h2>
+          <h2 className="mb-4 text-2xl font-bold font-ubuntu">Alumni Groups</h2>
 
           <p className="mb-2">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -28,4 +28,4 @@ const StudyGroup: React.FC = () => {
   );
 };
 
-export default StudyGroup;
+export default AlumniGroup;

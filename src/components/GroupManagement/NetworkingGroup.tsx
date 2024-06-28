@@ -1,13 +1,13 @@
 import Image from "next/image";
-import ActivityImage from "../../public/img/vigo-removebg-preview 1.svg";
+import BiblePostImage from "../../../public/img/vigo-removebg-preview 1.svg";
 
-const PrayerRequest: React.FC = () => {
+const NetworkingGroup: React.FC = () => {
   return (
     <section className="mb-8 rounded-md py-4 font-nunito bg-white">
       <div className="flex items-center px-4">
-        <div className="mr-2 ">
+        <div className="mr-2">
           <h2 className="mb-4 text-2xl font-bold font-ubuntu">
-            Prayer Request
+            Networking Groups
           </h2>
 
           <p className="mb-2">
@@ -18,8 +18,8 @@ const PrayerRequest: React.FC = () => {
 
         <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
           {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
+            src={BiblePostImage}
+            alt="Bible Post Image"
             //   width={25}
             //   height={25}
             //className="mr-3 mt-1 ml-2"
@@ -30,4 +30,4 @@ const PrayerRequest: React.FC = () => {
   );
 };
 
-export default PrayerRequest;
+export default NetworkingGroup;

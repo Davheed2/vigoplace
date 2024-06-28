@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ActivityImage from "../../public/img/vigo-removebg-preview 1.svg";
+import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
 
 const Association: React.FC = () => {
   return (
