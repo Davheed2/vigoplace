@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
 import Activity from "@/components/Activity";
-import NairaFund from "@/components/Funding/Fund";
+import Charge from "@/components/Charges/charge";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -17,7 +17,7 @@ const nunito = Nunito({
   weight: "400",
 });
 
-export default function Funding() {
+export default function Charges() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
@@ -32,7 +32,7 @@ export default function Funding() {
       </Head>
 
       <Activity />
-      <NairaFund />
+      <Charge />
     </div>
   );
 }
