@@ -5,19 +5,27 @@ import Join from "@/components/Join";
 import Join2 from "@/components/Join2";
 import Footer from "@/components/Footer";
 import Margin from "@/components/Margin";
-import { WhyVigoPlace } from "@/components/WhyVigoPlace/WhyVigoPlace";
-
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <NavBar />
-      <WhyVigoPlace/>
-      <Component {...pageProps} />
-      <Join />
-      <Join2 />
-      <Footer />
-      <Margin />
+      {/* Render NavBar only if Component is not null */}
+      {Component && <NavBar />}
+
+      {/* Render the current page component */}
+      {Component && <Component {...pageProps} />}
+
+      {/* Render Join component only if Component is not null */}
+      {Component && <Join />}
+
+      {/* Render Join2 component only if Component is not null */}
+      {Component && <Join2 />}
+
+      {/* Render Footer component only if Component is not null */}
+      {Component && <Footer />}
+
+      {/* Render Margin component only if Component is not null */}
+      {Component && <Margin />}
     </>
   );
 }
