@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 
-// Define TypeScript types
 type NavLink = {
   name: string;
   link: string;
@@ -68,7 +67,7 @@ export const NavItems = () => {
         },
         {
           name: "Financial Services",
-          link: "/financial-services",
+          link: "/financial-service",
           nameSubLinks: [
             { name: "Multi-Wallet System", link: "/multi-wallet-system" },
             { name: "KYC (Know Your Customer)", link: "/kyc" },
@@ -84,7 +83,7 @@ export const NavItems = () => {
         },
         {
           name: "Sell Digital Content",
-          link: "/sell",
+          link: "/sell-contents",
           nameSubLinks: [
             { name: "Channel Place", link: "/channel-place" },
             { name: "Pay to View Post", link: "/pay-to-view-post" },
@@ -117,15 +116,36 @@ export const NavItems = () => {
       name: "Pricing",
       nameSubLinks: [
         {
-          name: "Ecommerce",
-          link: "/ecommerce-pricing",
+          name: "Funding",
+          link: "/funding",
           nameSubLinks: [
-            { name: "Plan A", link: "/plan-a" },
-            { name: "Plan B", link: "/plan-b" },
-            { name: "Plan C", link: "/plan-c" },
+            { name: "Funding Naira Wallet Using a Naira Card", link: "/plan-a" },
+            { name: "Funding US Dollar Wallet Using a USD Card", link: "/plan-b" },
+            { name: "Funding US Dollar Wallet Using a Non-US Card", link: "/plan-c" },
+            { name: "Funding Via Virtual Account", link: "/plan-d" },
           ],
         },
-        // Add other pricing categories as needed
+        {
+          name: "Bank transfer",
+          link: "/bank-transfer",
+          nameSubLinks: [
+            { name: "Funding Naira Wallet Using a Naira Card", link: "/plan-e" },
+            { name: "Funding US Dollar Wallet Using a USD Card", link: "/plan-f" },
+            { name: "Funding US Dollar Wallet Using a Non-US Card", link: "/plan-g" },
+            { name: "Funding Via Virtual Account", link: "/plan-h" },
+          ],
+        },
+        {
+          name: "Charges from earnings",
+          link: "/charges",
+          nameSubLinks: [
+            { name: "Earnings From Products or Services", link: "/plan-i" },
+            { name: "Earnings From Gift Post", link: "/plan-j" },
+            { name: "Earnings From Voting Post", link: "/plan-k" },
+            { name: "Earnings From Subscribing, Renting and Buying", link: "/plan-l" },
+            { name: "Earnings From Fundraising Post", link: "/plan-m" },
+          ],
+        },
       ],
     },
     {
@@ -140,27 +160,27 @@ export const NavItems = () => {
             { name: "FAQs", link: "/faqs" },
           ],
         },
-        // Add other learning categories as needed
+        // Add 
       ],
     },
     {
       name: "Join Community",
       nameSubLinks: [
         {
-          name: "Community Groups",
-          link: "/community-groups",
+          name: "Login",
+          link: "https://web.vigoplace.com/signin",
         },
         {
-          name: "Discussion Forums",
-          link: "/discussion-forums",
+          name: "Create Free Account",
+          link: "https://web.vigoplace.com/signup",
         },
         {
-          name: "Meetups",
-          link: "/meetups",
+          name: "Download IOS App",
+          link: "https://apps.apple.com/ng/app/vigoplace/id1622191142",
         },
         {
-          name: "Events",
-          link: "/events",
+          name: "Download Android App",
+          link: "https://play.google.com/store/apps/details?id=com.vigoplace.vigoplace",
         },
       ],
     },
@@ -228,7 +248,7 @@ export const NavItems = () => {
                           href={link.link}
                           key={link.name}
                           className={`mb-7 ml-5 ${
-                            index === 0 && "mt-6" // Adjust margin here
+                            index === 0 && "mt-6"
                           }`}
                         >
                           {link.name}

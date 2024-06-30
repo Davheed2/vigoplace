@@ -38,6 +38,10 @@
     --howcard3: 0 90% 96%;
     --social: 251 69% 34%;
     --socialbackground: 261 46% 84%;
+    --pricingbackground1: 202 90% 96%;
+    --pricingbackground2: 49 91% 95%;
+    --pricingbackground3: 0 90% 96%;
+    --pricingbackground4: 141 77%, 95%;
   }
 
   .dark {
@@ -70,6 +74,10 @@
     --howcard3: 0 90% 96%;
     --social: 251 69% 34%;
     --socialbackground: 261 46% 84%;
+    --pricingbackground1: 202 90% 96%;
+    --pricingbackground2: 49 91% 95%;
+    --pricingbackground3: 0 90% 96%;
+    --pricingbackground4: 141 77%, 95%;
   }
 
   * {

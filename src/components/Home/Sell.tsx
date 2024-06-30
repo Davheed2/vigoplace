@@ -53,7 +53,7 @@ const Sell: React.FC = () => {
         <div className="">
           <h3 className="font-bold">Buy</h3>
           <p className="">
-            Put your contents up for sell so other users can buy them..
+            Put your contents up for sell so other users can buy them.
           </p>
         </div>
       </div>
