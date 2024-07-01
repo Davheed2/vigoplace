@@ -4,9 +4,31 @@ import Logo from "../../public/img/Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { NavItems } from "./NavItems/NavItems";
-
+import { useEffect } from "react";
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollThreshold = 200;
+      const currentScrollY = window.scrollY || document.documentElement.scrollTop;
+  
+      if (currentScrollY > scrollThreshold) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -18,7 +40,7 @@ const NavBar: React.FC = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full flex justify-between bg-primary shadow-md p-4 z-10">
+      <nav style={{transition: "ease-in .7s", scrollBehavior : "smooth"}} className={`${isScrolled? "fixed shadow-md" : "absolute"}   top-0 left-0 w-full flex justify-between bg-primary p-4 z-10`}>
         <div>
           <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
         </div>
