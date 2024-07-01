@@ -207,7 +207,7 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
   };
 
   return (
-    <div className="px-4 pt-12 text-slate-900 rounded-[5px] bg-white overflow-y-auto max-h-[100%]">
+    <div className="px-4 pt-12 text-slate-900 rounded-[5px] bg-white overflow-y-auto max-h-[100vh]">
       {navs.map((nav) => (
         <ul key={nav.name} className="bg-white relative flex flex-col mb-5">
           <li
