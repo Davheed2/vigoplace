@@ -16,7 +16,11 @@ type MainNavLink = {
   nameSubLinks?: SubNavLink[];
 };
 
-export const NavItems = () => {
+interface NavItemsProps {
+  closeMenu: () => void;
+}
+
+export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
   const navs: MainNavLink[] = [
     {
       name: "Why Vigoplace",
@@ -198,6 +202,10 @@ export const NavItems = () => {
     }
   };
 
+  const handleLinkClick = () => {
+    closeMenu(); 
+  };
+
   return (
     <div className="px-4 pt-12 text-slate-900 rounded-[5px] bg-white overflow-y-auto max-h-[100%]">
       {navs.map((nav) => (
@@ -223,7 +231,7 @@ export const NavItems = () => {
                     }`}
                   >
                     {subLink.link ? (
-                      <Link href={subLink.link}>{subLink.name}</Link>
+                      <Link onClick={handleLinkClick} href={subLink.link}>{subLink.name}</Link>
                     ) : (
                       subLink.name
                     )}
@@ -247,6 +255,7 @@ export const NavItems = () => {
                         <Link
                           href={link.link}
                           key={link.name}
+                          onClick={handleLinkClick}
                           className={`mb-7 ml-5 ${
                             index === 0 && "mt-6"
                           }`}

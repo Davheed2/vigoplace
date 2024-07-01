@@ -36,7 +36,7 @@ const NavBar: React.FC = () => {
       {isMenuOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-white shadow-md z-10">
           <div className="p-4 mt-4">
-            <NavItems />
+            <NavItems closeMenu={closeMenu} />
           </div>
           <div className="absolute top-8 right-8">
             <FontAwesomeIcon
