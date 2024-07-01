@@ -18,7 +18,7 @@ const NavBar: React.FC = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full flex justify-between bg-primary shadow-md p-4">
+      <nav className="fixed top-0 left-0 w-full flex justify-between bg-primary shadow-md p-4 z-10">
         <div>
           <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
         </div>
