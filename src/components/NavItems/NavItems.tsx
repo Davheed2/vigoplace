@@ -199,7 +199,7 @@ export const NavItems = () => {
   };
 
   return (
-    <div className="px-4 pt-12 text-slate-900 rounded-[5px] bg-white overflow-y-auto max-h-[100dvh]">
+    <div className="px-4 pt-12 text-slate-900 rounded-[5px] bg-white overflow-y-auto max-h-[100%]">
       {navs.map((nav) => (
         <ul key={nav.name} className="bg-white relative flex flex-col mb-5">
           <li
