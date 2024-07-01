@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 const Activity: React.FC = () => {
   return (
-    <section className="mb-8 bg-text rounded-md pt-4 font-nunito">
+    <section className="mt-16 mb-8 bg-text rounded-md pt-4 font-nunito">
       <h2 className="mb-4 text-2xl font-bold font-ubuntu">
         Church activity management{" "}
       </h2>

@@ -12,23 +12,23 @@ const NavBar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollThreshold = 200;
-      const currentScrollY = window.scrollY || document.documentElement.scrollTop;
-  
+      const scrollThreshold = 50;
+      const currentScrollY =
+        window.scrollY || document.documentElement.scrollTop;
+
       if (currentScrollY > scrollThreshold) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
-  
-    window.addEventListener('scroll', handleScroll);
-  
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -40,7 +40,12 @@ const NavBar: React.FC = () => {
 
   return (
     <>
-      <nav style={{transition: "ease-in .7s", scrollBehavior : "smooth"}} className={`${isScrolled? "fixed shadow-md" : "absolute"}   top-0 left-0 w-full flex justify-between bg-primary p-4 z-10`}>
+      <nav
+        style={{ transition: "ease-in .7s", scrollBehavior: "smooth" }}
+        className={`${
+          isScrolled ? "fixed shadow-md" : "absolute"
+        }   top-0 left-0 w-full flex justify-between bg-primary p-4 z-10`}
+      >
         <div>
           <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
         </div>
