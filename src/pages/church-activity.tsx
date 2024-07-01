@@ -24,12 +24,15 @@ export default function ChurchActivity() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
-        <title>Vigoplace - Your Tech Solution</title>
+        <title>Vigoplace - Church Activities</title>
         <meta
           name="description"
-          content="Vigoplace offers top-notch tech solutions for your needs."
+          content="Engage in various church activities like giving, reading Bible posts, making offerings, and submitting prayer requests through Vigoplace's comprehensive platform."
         />
-        <meta name="keywords" content="Tech, Solutions, Services, Vigoplace" />
+        <meta
+          name="keywords"
+          content="church activities, giving, Bible posts, offering, prayer requests, Vigoplace, tech solutions"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

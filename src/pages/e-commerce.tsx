@@ -24,12 +24,15 @@ export default function Ecommerce() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
-        <title>Vigoplace - Your Tech Solution</title>
+        <title>Vigoplace - E-Commerce Platform</title>
         <meta
           name="description"
-          content="Vigoplace offers top-notch tech solutions for your needs."
+          content="Discover and shop for products, services, and digital goods on Vigoplace's comprehensive e-commerce platform."
         />
-        <meta name="keywords" content="Tech, Solutions, Services, Vigoplace" />
+        <meta
+          name="keywords"
+          content="e-commerce, marketplace, products, services, digital goods, shop online, Vigoplace"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

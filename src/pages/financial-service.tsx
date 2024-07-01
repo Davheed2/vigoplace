@@ -30,12 +30,15 @@ export default function FinancialServices() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
-        <title>Vigoplace - Your Tech Solution</title>
+        <title>Vigoplace - Financial Services</title>
         <meta
           name="description"
-          content="Vigoplace offers top-notch tech solutions for your needs."
+          content="Access a variety of financial services including multi-wallet management, KYC, online banking, transactions, transfers, and more with Vigoplace's tech solutions."
         />
-        <meta name="keywords" content="Tech, Solutions, Services, Vigoplace" />
+        <meta
+          name="keywords"
+          content="financial services, multi-wallet, KYC, online banking, transactions, transfers, wallet, OTP, receipts, statements, expenses, Vigoplace, tech solutions"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

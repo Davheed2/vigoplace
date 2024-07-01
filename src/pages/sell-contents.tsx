@@ -25,12 +25,15 @@ export default function SellContent() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
-        <title>Vigoplace - Your Tech Solution</title>
+        <title>Vigoplace - Digital Content Selling Solutions</title>
         <meta
           name="description"
-          content="Vigoplace offers top-notch tech solutions for your needs."
+          content="Explore digital content selling solutions with Vigoplace. Sell your content through various channels, offer pay-to-view options, sell products, rent services, and provide subscription-based content."
         />
-        <meta name="keywords" content="Tech, Solutions, Services, Vigoplace" />
+        <meta
+          name="keywords"
+          content="digital content selling, sell digital products, pay-to-view, buy digital content, rent digital services, subscription services, Vigoplace"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

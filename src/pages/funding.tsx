@@ -21,12 +21,15 @@ export default function Funding() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
-        <title>Vigoplace - Your Tech Solution</title>
+        <title>Vigoplace - Funding Solutions</title>
         <meta
           name="description"
-          content="Vigoplace offers top-notch tech solutions for your needs."
+          content="Explore funding solutions with Vigoplace's comprehensive tech platform, designed to help you secure the financial resources you need."
         />
-        <meta name="keywords" content="Tech, Solutions, Services, Vigoplace" />
+        <meta
+          name="keywords"
+          content="funding, financial solutions, tech platform, secure funding, Vigoplace"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
