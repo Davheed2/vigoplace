@@ -24,7 +24,7 @@ const BankTransfer: React.FC = () => {
         </div>
       </section>
 
-      <section id="naira-card" className="mb-8 font-nunito">
+      <section id="regular-usd" className="mb-8 font-nunito">
         <h2 className="mb-2 text-2xl font-bold font-ubuntu">Funding Wallet</h2>
         <div className="rounded-md bg-white px-3 py-4 ">
           <p className="mb-8 font-semibold">
@@ -69,7 +69,10 @@ const BankTransfer: React.FC = () => {
         </div>
       </section>
 
-      <section id="usd-card" className="mb-8 rounded-md font-nunito bg-pricingbackground1">
+      <section
+        id="expedite-usd"
+        className="mb-8 rounded-md font-nunito bg-pricingbackground1"
+      >
         <div className=" px-3 py-4">
           <p className="mb-8 font-semibold">Expedited Bank Transfer for USD</p>
           <div className="mb-4">
@@ -111,7 +114,7 @@ const BankTransfer: React.FC = () => {
         </div>
       </section>
 
-      <section id="non-usd-card" className="mb-8 font-nunito">
+      <section id="regular-ngn" className="mb-8 font-nunito">
         <h2 className="mb-2 text-2xl font-bold font-ubuntu">
           Regular or Normal Bank Transfer for NGN:
         </h2>
@@ -171,7 +174,7 @@ const BankTransfer: React.FC = () => {
         </div>
       </section>
 
-      <section id="virtual-account" className="mb-8 font-nunito">
+      <section className="mb-8 font-nunito">
         <div className="rounded-md bg-white px-3 py-4">
           <p className="mb-8 font-semibold">
             Transaction range - From 5,001 - 50,000
@@ -283,7 +286,7 @@ const BankTransfer: React.FC = () => {
         </div>
       </section>
 
-      <section className="mb-8 font-nunito">
+      <section id="expedite-ngn" className="mb-8 font-nunito">
         <h2 className="mb-2 text-2xl font-bold font-ubuntu">
           Expedited Bank Transfer for NGN:
         </h2>

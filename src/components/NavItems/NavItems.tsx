@@ -200,20 +200,20 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
           link: "/bank-transfer",
           nameSubLinks: [
             {
-              name: "Funding Naira Wallet Using a Naira Card",
-              link: "/bank-transfer#naira-card",
+              name: "Regular or Normal Bank Transfer for USD",
+              link: "/bank-transfer#regular-usd",
             },
             {
-              name: "Funding US Dollar Wallet Using a USD Card",
-              link: "/bank-transfer#usd-card",
+              name: "Expedited Bank Transfer for USD",
+              link: "/bank-transfer#expedite-usd",
             },
             {
-              name: "Funding US Dollar Wallet Using a Non-US Card",
-              link: "/bank-transfer#non-usd-card",
+              name: "Regular or Normal Bank Transfer for NGN",
+              link: "/bank-transfer#regular-ngn",
             },
             {
-              name: "Funding Via Virtual Account",
-              link: "/bank-transfer#virtual-account",
+              name: "Expedited Bank Transfer for NGN",
+              link: "/bank-transfer#expedite-ngn",
             },
           ],
         },
