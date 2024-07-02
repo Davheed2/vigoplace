@@ -2,12 +2,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
-import Activity from "@/components/Activity";
-import Channel from "@/components/SellContent/Channel";
-import PayToView from "@/components/SellContent/PayToView";
-import Buy from "@/components/SellContent/Buy";
-import Rent from "@/components/SellContent/Rent";
-import Subscription from "@/components/SellContent/Subscription";
+import SellContent from "@/components/SellContent/SellContent";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -21,7 +16,7 @@ const nunito = Nunito({
   weight: "400",
 });
 
-export default function SellContent() {
+export default function SellContents() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
@@ -38,12 +33,7 @@ export default function SellContent() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Activity />
-      <Channel />
-      <PayToView />
-      <Buy />
-      <Rent />
-      <Subscription />
+      <SellContent />
     </div>
   );
 }

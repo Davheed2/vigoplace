@@ -2,9 +2,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
-import Activity from "@/components/Activity";
-import FundraisingPosts from "@/components/Fundraising/FundraisingPosts";
-import SupportPost from "@/components/Fundraising/SupportPosts";
+import Fundraising from "@/components/Fundraising/Fundraising";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -18,7 +16,7 @@ const nunito = Nunito({
   weight: "400",
 });
 
-export default function Fundraising() {
+export default function Fundraisings() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
@@ -35,9 +33,7 @@ export default function Fundraising() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Activity />
-      <FundraisingPosts />
-      <SupportPost />
+      <Fundraising />
     </div>
   );
 }

@@ -29,33 +29,48 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
           name: "Church Activity Management",
           link: "/church-activity",
           nameSubLinks: [
-            { name: "Daily Reading Post", link: "/daily-reading-post" },
-            { name: "Bible Post", link: "/bible-post" },
-            { name: "Giving", link: "/giving" },
-            { name: "Offering Post", link: "/offering-post" },
-            { name: "Prayer Request", link: "/prayer-request" },
+            {
+              name: "Daily Reading Post",
+              link: "/church-activity#daily-reading-post",
+            },
+            { name: "Bible Post", link: "/church-activity#bible-post" },
+            { name: "Giving", link: "/church-activity#giving" },
+            { name: "Offering Post", link: "/church-activity#offering-post" },
+            { name: "Prayer Request", link: "/church-activity#prayer-request" },
           ],
         },
         {
           name: "Groups/Community Activity Management",
           link: "/group-management",
           nameSubLinks: [
-            { name: "Collection Post", link: "/collection-posts" },
-            { name: "Family Groups", link: "/family-groups" },
-            { name: "Hobby Groups", link: "/hobby-groups" },
-            { name: "Study Groups", link: "/study-groups" },
-            { name: "Support Groups", link: "/support-groups" },
-            { name: "Networking Groups", link: "/networking-groups" },
+            {
+              name: "Collection Post",
+              link: "/group-management#collection-posts",
+            },
+            { name: "Family Groups", link: "/group-management#family-groups" },
+            { name: "Hobby Groups", link: "/group-management#hobby-groups" },
+            { name: "Study Groups", link: "/group-management#study-groups" },
+            {
+              name: "Support Groups",
+              link: "/group-management#support-groups",
+            },
+            {
+              name: "Networking Groups",
+              link: "/group-management#networking-groups",
+            },
             {
               name: "Professional Association",
-              link: "/professional-association",
+              link: "/group-management#professional-association",
             },
-            { name: "Alumni Groups", link: "/alumni-groups" },
-            { name: "Volunteer Groups", link: "/volunteer-groups" },
-            { name: "Sports Team", link: "/sports-team" },
+            { name: "Alumni Groups", link: "/group-management#alumni-groups" },
+            {
+              name: "Volunteer Groups",
+              link: "/group-management#volunteer-groups",
+            },
+            { name: "Sports Team", link: "/group-management#sports-team" },
             {
               name: "Interest-Based Communities",
-              link: "/interest-based-communities",
+              link: "/group-management#interest-based-communities",
             },
           ],
         },
@@ -63,55 +78,94 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
           name: "Ecommerce",
           link: "/e-commerce",
           nameSubLinks: [
-            { name: "Marketplace", link: "/marketplace" },
-            { name: "Product Posts", link: "/product-posts" },
-            { name: "Service Posts", link: "/service-posts" },
-            { name: "Digital Goods", link: "/digital-goods" },
+            { name: "Marketplace", link: "/e-commerce#marketplace" },
+            { name: "Product Posts", link: "/e-commerce#product-posts" },
+            { name: "Service Posts", link: "/e-commerce#service-posts" },
+            { name: "Digital Goods", link: "/e-commerce#digital-goods" },
           ],
         },
         {
           name: "Financial Services",
           link: "/financial-service",
           nameSubLinks: [
-            { name: "Multi-Wallet System", link: "/multi-wallet-system" },
-            { name: "KYC (Know Your Customer)", link: "/kyc" },
-            { name: "Secure Online Banking", link: "/secure-online-banking" },
-            { name: "Cardless Transaction", link: "/cardless-transaction" },
-            { name: "Inter-Bank Transfers", link: "/inter-bank-transfers" },
-            { name: "Wallet to Wallet", link: "/wallet-to-wallet" },
-            { name: "OTP for Transfers", link: "/otp-for-transfers" },
-            { name: "Transaction Receipts", link: "/transaction-receipts" },
-            { name: "Transaction Statements", link: "/transaction-statements" },
-            { name: "Expense Tracking", link: "/expense-tracking" },
+            {
+              name: "Multi-Wallet System",
+              link: "/financial-service#multi-wallet-system",
+            },
+            {
+              name: "KYC (Know Your Customer)",
+              link: "/financial-service#kyc",
+            },
+            {
+              name: "Secure Online Banking",
+              link: "/financial-service#secure-online-banking",
+            },
+            {
+              name: "Cardless Transaction",
+              link: "/financial-service#cardless-transaction",
+            },
+            {
+              name: "Inter-Bank Transfers",
+              link: "/financial-service#inter-bank-transfers",
+            },
+            {
+              name: "Wallet to Wallet",
+              link: "/financial-service#wallet-to-wallet",
+            },
+            {
+              name: "OTP for Transfers",
+              link: "/financial-service#otp-for-transfers",
+            },
+            {
+              name: "Transaction Receipts",
+              link: "/financial-service#transaction-receipts",
+            },
+            {
+              name: "Transaction Statements",
+              link: "/financial-service#transaction-statements",
+            },
+            {
+              name: "Expense Tracking",
+              link: "/financial-service#expense-tracking",
+            },
           ],
         },
         {
           name: "Sell Digital Content",
           link: "/sell-contents",
           nameSubLinks: [
-            { name: "Channel Place", link: "/channel-place" },
-            { name: "Pay to View Post", link: "/pay-to-view-post" },
-            { name: "Buy", link: "/buy" },
-            { name: "Rent", link: "/rent" },
-            { name: "Subscription", link: "/subscription" },
+            { name: "Channel Place", link: "/sell-contents#channel-place" },
+            {
+              name: "Pay to View Post",
+              link: "/sell-contents#pay-to-view-post",
+            },
+            { name: "Buy", link: "/sell-contents#buy" },
+            { name: "Rent", link: "/sell-contents#rent" },
+            { name: "Subscription", link: "/sell-contents#subscription" },
           ],
         },
         {
           name: "Organize Online Contest",
           link: "/contest",
           nameSubLinks: [
-            { name: "Contest Place", link: "/contest-place" },
-            { name: "Contestant", link: "/contestant" },
-            { name: "Paid Contests", link: "/paid-contests" },
-            { name: "Free Contest", link: "/free-contest" },
+            { name: "Contest Place", link: "/contest#contest-place" },
+            { name: "Contestant", link: "/contest#contestant" },
+            { name: "Paid Contests", link: "/contest#paid-contests" },
+            { name: "Free Contest", link: "/contest#free-contest" },
           ],
         },
         {
           name: "Fundraising",
           link: "/fundraising",
           nameSubLinks: [
-            { name: "Fundraising Posts", link: "/fundraising-posts" },
-            { name: "Support/Donate Posts", link: "/support/donate-posts" },
+            {
+              name: "Fundraising Posts",
+              link: "/fundraising#fundraising-posts",
+            },
+            {
+              name: "Support/Donate Posts",
+              link: "/fundraising#support/donate-posts",
+            },
           ],
         },
       ],
@@ -123,31 +177,58 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
           name: "Funding",
           link: "/funding",
           nameSubLinks: [
-            { name: "Funding Naira Wallet Using a Naira Card", link: "/plan-a" },
-            { name: "Funding US Dollar Wallet Using a USD Card", link: "/plan-b" },
-            { name: "Funding US Dollar Wallet Using a Non-US Card", link: "/plan-c" },
-            { name: "Funding Via Virtual Account", link: "/plan-d" },
+            {
+              name: "Funding Naira Wallet Using a Naira Card",
+              link: "/funding#funding-naira-card",
+            },
+            {
+              name: "Funding US Dollar Wallet Using a USD Card",
+              link: "/funding#funding-usd-card",
+            },
+            {
+              name: "Funding US Dollar Wallet Using a Non-US Card",
+              link: "/funding#funding-non-us-card",
+            },
+            {
+              name: "Funding Via Virtual Account",
+              link: "/funding#funding-virtual-account",
+            },
           ],
         },
         {
           name: "Bank transfer",
           link: "/bank-transfer",
           nameSubLinks: [
-            { name: "Funding Naira Wallet Using a Naira Card", link: "/plan-e" },
-            { name: "Funding US Dollar Wallet Using a USD Card", link: "/plan-f" },
-            { name: "Funding US Dollar Wallet Using a Non-US Card", link: "/plan-g" },
-            { name: "Funding Via Virtual Account", link: "/plan-h" },
+            {
+              name: "Funding Naira Wallet Using a Naira Card",
+              link: "/bank-transfer#naira-card",
+            },
+            {
+              name: "Funding US Dollar Wallet Using a USD Card",
+              link: "//bank-transfer#usd-card",
+            },
+            {
+              name: "Funding US Dollar Wallet Using a Non-US Card",
+              link: "/bank-transfer#non-usd-card",
+            },
+            {
+              name: "Funding Via Virtual Account",
+              link: "/bank-transfer#virtual-account",
+            },
           ],
         },
         {
           name: "Charges from earnings",
           link: "/charges",
           nameSubLinks: [
-            { name: "Earnings From Products or Services", link: "/plan-i" },
-            { name: "Earnings From Gift Post", link: "/plan-j" },
-            { name: "Earnings From Voting Post", link: "/plan-k" },
-            { name: "Earnings From Subscribing, Renting and Buying", link: "/plan-l" },
-            { name: "Earnings From Fundraising Post", link: "/plan-m" },
+            { name: "Earnings From Products or Services", link: "/charges#product-earnings" },
+            { name: "Earnings From Gift Post", link: "/charges#gift-post-earnings" },
+            { name: "Earnings From Voting Post", link: "/charges#voting-post-earnings" },
+            {
+              name: "Earnings From Subscribing, Renting and Buying",
+              link: "/charges#purchase-earnings",
+            },
+            { name: "Earnings From Fundraising Post", link: "/charges#fundraising-post-earnings" },
           ],
         },
       ],
@@ -164,7 +245,7 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
             { name: "FAQs", link: "/faqs" },
           ],
         },
-        // Add 
+        // Add
       ],
     },
     {
@@ -203,7 +284,7 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
   };
 
   const handleLinkClick = () => {
-    closeMenu(); 
+    closeMenu();
   };
 
   return (
@@ -231,7 +312,9 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
                     }`}
                   >
                     {subLink.link ? (
-                      <Link onClick={handleLinkClick} href={subLink.link}>{subLink.name}</Link>
+                      <Link onClick={handleLinkClick} href={subLink.link}>
+                        {subLink.name}
+                      </Link>
                     ) : (
                       subLink.name
                     )}
@@ -256,9 +339,7 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
                           href={link.link}
                           key={link.name}
                           onClick={handleLinkClick}
-                          className={`mb-7 ml-5 ${
-                            index === 0 && "mt-6"
-                          }`}
+                          className={`mb-7 ml-5 ${index === 0 && "mt-6"}`}
                         >
                           {link.name}
                         </Link>

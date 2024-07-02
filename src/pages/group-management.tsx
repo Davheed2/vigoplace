@@ -3,17 +3,7 @@ import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
 import Activity from "@/components/Activity";
-import CollectionPost from "@/components/GroupManagement/CollectionPosts";
-import FamilyGroup from "@/components/GroupManagement/FamilyGroups";
-import HobbyGroup from "@/components/GroupManagement/HobbyGroup";
-import StudyGroup from "@/components/GroupManagement/StudyGroup";
-import SupportGroup from "@/components/GroupManagement/SupportGroup";
-import NetworkingGroup from "@/components/GroupManagement/NetworkingGroup";
-import Association from "@/components/GroupManagement/Association";
-import AlumniGroup from "@/components/GroupManagement/AlumniGroup";
-import VolunteerGroup from "@/components/GroupManagement/VolunteerGroup";
-import SportTeam from "@/components/GroupManagement/SportTeam";
-import BasedCommunities from "@/components/GroupManagement/BasedCommunities";
+import GroupManagement from "@/components/GroupManagement/GroupManagement";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -27,7 +17,7 @@ const nunito = Nunito({
   weight: "400",
 });
 
-export default function GroupManagement() {
+export default function GroupManagements() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
@@ -43,19 +33,8 @@ export default function GroupManagement() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Activity />
-      <CollectionPost />
-      <FamilyGroup />
-      <HobbyGroup />
-      <StudyGroup />
-      <SupportGroup />
-      <NetworkingGroup />
-      <Association />
-      <AlumniGroup />
-      <VolunteerGroup />
-      <SportTeam />
-      <BasedCommunities />
+      
+      <GroupManagement />
     </div>
   );
 }

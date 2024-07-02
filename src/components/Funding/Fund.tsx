@@ -2,10 +2,29 @@ import Image from "next/image";
 import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
 
-const NairaFund: React.FC = () => {
+const Fund: React.FC = () => {
   return (
     <>
-      <section className="mb-8 font-nunito">
+      <section className="mt-16 mb-8 bg-text rounded-md pt-4 font-nunito">
+        <h2 className="mb-4 text-2xl font-bold font-ubuntu">Funding</h2>
+
+        <p className="mb-4">
+          For a successful transaction, every transaction on the app incurs a
+          minor percentage-based fee.
+        </p>
+
+        <div className="mb-4 bg-theme rounded">
+          <Image
+            src={ActivityImage}
+            alt="Activity Image"
+            //   width={25}
+            //   height={25}
+            className="mx-auto"
+          />
+        </div>
+      </section>
+
+      <section id="funding-naira-card" className="mb-8 font-nunito">
         <h2 className="mb-2 text-2xl font-bold font-ubuntu">Funding Wallet</h2>
         <div className="rounded-md bg-white px-3 py-4 bg-pricingbackground1">
           <p className="mb-8 font-semibold">
@@ -78,7 +97,7 @@ const NairaFund: React.FC = () => {
         </div>
       </section>
 
-      <section className="mb-8 font-nunito">
+      <section id="funding-usd-card" className="mb-8 font-nunito">
         <div className="rounded-md bg-white px-3 py-4">
           <p className="mb-8 font-semibold">
             Funding US dollar wallet using a USD card
@@ -136,7 +155,10 @@ const NairaFund: React.FC = () => {
         </div>
       </section>
 
-      <section className="mb-8 font-nunito bg-pricingbackground1">
+      <section
+        id="funding-non-us-card"
+        className="mb-8 font-nunito bg-pricingbackground1"
+      >
         <div className="rounded-md px-3 py-4">
           <p className="mb-8 font-semibold">
             Funding US dollar wallet using a non-US card
@@ -194,7 +216,7 @@ const NairaFund: React.FC = () => {
         </div>
       </section>
 
-      <section className="mb-8 font-nunito">
+      <section id="funding-virtual-account" className="mb-8 font-nunito">
         <div className="rounded-md bg-white px-3 py-4">
           <p className="mb-8 font-semibold">Funding via virtual account</p>
           <div className="mb-8">
@@ -225,4 +247,4 @@ const NairaFund: React.FC = () => {
   );
 };
 
-export default NairaFund;
+export default Fund;

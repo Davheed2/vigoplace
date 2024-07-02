@@ -2,7 +2,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
-import Activity from "@/components/Activity";
 import Charge from "@/components/Charges/Charge";
 
 const ubuntu = Ubuntu({
@@ -34,7 +33,6 @@ export default function Charges() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Activity />
       <Charge />
     </div>
   );

@@ -2,11 +2,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
-import Activity from "@/components/Activity";
-import MarketPlace from "@/components/E-Commerce/MarketPlace";
-import ProductPost from "@/components/E-Commerce/Product";
-import ServicePost from "@/components/E-Commerce/ServicePosts";
-import DigitalGoods from "@/components/E-Commerce/DigitalGoods";
+import Ecommerce from "@/components/E-Commerce/Ecommerce";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -20,7 +16,7 @@ const nunito = Nunito({
   weight: "400",
 });
 
-export default function Ecommerce() {
+export default function Ecommerces() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
@@ -37,11 +33,7 @@ export default function Ecommerce() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Activity />
-      <MarketPlace />
-      <ProductPost />
-      <ServicePost />
-      <DigitalGoods />
+      <Ecommerce />
     </div>
   );
 }

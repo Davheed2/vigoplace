@@ -2,7 +2,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
-import Activity from "@/components/Activity";
 import BankTransfer from "@/components/BankTransfer/BankTransfer";
 
 const ubuntu = Ubuntu({
@@ -34,7 +33,6 @@ export default function BankTransfers() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Activity />
       <BankTransfer />
     </div>
   );

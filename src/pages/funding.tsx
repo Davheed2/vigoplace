@@ -2,8 +2,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
-import Activity from "@/components/Activity";
-import NairaFund from "@/components/Funding/Fund";
+import Fund from "@/components/Funding/Fund";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -34,8 +33,7 @@ export default function Funding() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Activity />
-      <NairaFund />
+      <Fund />
     </div>
   );
 }

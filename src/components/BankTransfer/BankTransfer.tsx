@@ -5,7 +5,26 @@ import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
 const BankTransfer: React.FC = () => {
   return (
     <>
-      <section className="mb-8 font-nunito">
+      <section className="mt-16 mb-8 bg-text rounded-md pt-4 font-nunito">
+        <h2 className="mb-4 text-2xl font-bold font-ubuntu">Bank Transfer</h2>
+
+        <p className="mb-4">
+          For a successful transaction, every transaction on the app incurs a
+          minor percentage-based fee
+        </p>
+
+        <div className="mb-4 bg-theme rounded">
+          <Image
+            src={ActivityImage}
+            alt="Activity Image"
+            //   width={25}
+            //   height={25}
+            className="mx-auto"
+          />
+        </div>
+      </section>
+
+      <section id="naira-card" className="mb-8 font-nunito">
         <h2 className="mb-2 text-2xl font-bold font-ubuntu">Funding Wallet</h2>
         <div className="rounded-md bg-white px-3 py-4 ">
           <p className="mb-8 font-semibold">
@@ -50,7 +69,7 @@ const BankTransfer: React.FC = () => {
         </div>
       </section>
 
-      <section className="mb-8 rounded-md font-nunito bg-pricingbackground1">
+      <section id="usd-card" className="mb-8 rounded-md font-nunito bg-pricingbackground1">
         <div className=" px-3 py-4">
           <p className="mb-8 font-semibold">Expedited Bank Transfer for USD</p>
           <div className="mb-4">
@@ -92,7 +111,7 @@ const BankTransfer: React.FC = () => {
         </div>
       </section>
 
-      <section className="mb-8 font-nunito">
+      <section id="non-usd-card" className="mb-8 font-nunito">
         <h2 className="mb-2 text-2xl font-bold font-ubuntu">
           Regular or Normal Bank Transfer for NGN:
         </h2>
@@ -152,7 +171,7 @@ const BankTransfer: React.FC = () => {
         </div>
       </section>
 
-      <section className="mb-8 font-nunito">
+      <section id="virtual-account" className="mb-8 font-nunito">
         <div className="rounded-md bg-white px-3 py-4">
           <p className="mb-8 font-semibold">
             Transaction range - From 5,001 - 50,000
