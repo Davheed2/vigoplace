@@ -221,14 +221,26 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
           name: "Charges from earnings",
           link: "/charges",
           nameSubLinks: [
-            { name: "Earnings From Products or Services", link: "/charges#product-earnings" },
-            { name: "Earnings From Gift Post", link: "/charges#gift-post-earnings" },
-            { name: "Earnings From Voting Post", link: "/charges#voting-post-earnings" },
+            {
+              name: "Earnings From Products or Services",
+              link: "/charges#product-earnings",
+            },
+            {
+              name: "Earnings From Gift Post",
+              link: "/charges#gift-post-earnings",
+            },
+            {
+              name: "Earnings From Voting Post",
+              link: "/charges#voting-post-earnings",
+            },
             {
               name: "Earnings From Subscribing, Renting and Buying",
               link: "/charges#purchase-earnings",
             },
-            { name: "Earnings From Fundraising Post", link: "/charges#fundraising-post-earnings" },
+            {
+              name: "Earnings From Fundraising Post",
+              link: "/charges#fundraising-post-earnings",
+            },
           ],
         },
       ],

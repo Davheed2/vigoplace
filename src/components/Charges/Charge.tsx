@@ -178,7 +178,7 @@ const Charge: React.FC = () => {
 
       <section className="mb-8 rounded-md font-nunito bg-pricingbackground2">
         <div className="px-3 py-4">
-          <p className="mb-8 font-semibold">Earnings from voting posts</p>
+          <p className="mb-8 font-semibold">Earnings from fundraising posts</p>
           <div className="mb-8">
             <div className="flex mb-8 items-center">
               <Image
