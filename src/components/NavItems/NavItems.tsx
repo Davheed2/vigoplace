@@ -205,7 +205,7 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
             },
             {
               name: "Funding US Dollar Wallet Using a USD Card",
-              link: "//bank-transfer#usd-card",
+              link: "/bank-transfer#usd-card",
             },
             {
               name: "Funding US Dollar Wallet Using a Non-US Card",
