@@ -2,7 +2,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
-import Activity from "@/components/Activity";
 import GroupManagement from "@/components/GroupManagement/GroupManagement";
 
 const ubuntu = Ubuntu({
