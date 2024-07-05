@@ -10,8 +10,8 @@ const GroupManagement: React.FC = () => {
         </h2>
 
         <p className="mb-4">
-          For a successful transaction, every transaction on the app incurs a
-          minor percentage-based fee.
+          Manage and engage with various groups and communities effortlessly
+          using Vigoplace’s Group Place feature.
         </p>
 
         <div className="mb-4 bg-theme rounded">
@@ -45,8 +45,7 @@ const GroupManagement: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
+              Facilitate group fund collections and manage group finances.
             </p>
           </div>
         </div>
@@ -62,10 +61,7 @@ const GroupManagement: React.FC = () => {
               Family Groups
             </h2>
 
-            <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
-            </p>
+            <p className="mb-2">Stay connected with family members.</p>
           </div>
 
           <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
@@ -100,8 +96,7 @@ const GroupManagement: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
+              Share interests and hobbies with like-minded individuals.
             </p>
           </div>
         </div>
@@ -118,8 +113,7 @@ const GroupManagement: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
+              Collaborate on academic projects and share resources.
             </p>
           </div>
 
@@ -155,8 +149,7 @@ const GroupManagement: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
+              Provide and receive support for various issues.
             </p>
           </div>
         </div>
@@ -173,8 +166,7 @@ const GroupManagement: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
+              Expand professional connections and opportunities.
             </p>
           </div>
 
@@ -210,8 +202,7 @@ const GroupManagement: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
+              Join industry-specific groups for networking and growth.
             </p>
           </div>
         </div>
@@ -228,8 +219,7 @@ const GroupManagement: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
+              Reconnect with former classmates and organize reunions.
             </p>
           </div>
 
@@ -265,8 +255,7 @@ const GroupManagement: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
+              Coordinate volunteer activities and initiatives.
             </p>
           </div>
         </div>
@@ -280,10 +269,7 @@ const GroupManagement: React.FC = () => {
           <div className="mr-2">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">Sport Teams</h2>
 
-            <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
-            </p>
+            <p className="mb-2">Manage team activities and events.</p>
           </div>
 
           <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
@@ -318,8 +304,7 @@ const GroupManagement: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
+              Create groups around specific interests or causes.
             </p>
           </div>
         </div>

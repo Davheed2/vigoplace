@@ -249,15 +249,115 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
       name: "Learn",
       nameSubLinks: [
         {
-          name: "Ecommerce",
-          link: "/learn-ecommerce",
+          name: "Basic Place",
+          link: "/basic-place",
           nameSubLinks: [
-            { name: "Introduction", link: "/intro" },
-            { name: "Advanced Topics", link: "/advanced" },
-            { name: "FAQs", link: "/faqs" },
+            { name: "Profile Management", link: "/basic-place#profile-manage" },
+            { name: "Post Creation", link: "/basic-place#post-creation" },
+            {
+              name: "Interaction Tools",
+              link: "/basic-place#interaction-tools",
+            },
+            { name: "Messaging", link: "/basic-place#messaging" },
+            { name: "Notifications", link: "/basic-place#notifications" },
           ],
         },
-        // Add
+        {
+          name: "Channel Place",
+          link: "/channel-place",
+          nameSubLinks: [
+            { name: "Pay-To-View Tools", link: "/channel-place#pay-to-view" },
+            {
+              name: "Content Management",
+              link: "/channel-place#content-management",
+            },
+            {
+              name: "Subscriber Interaction",
+              link: "/channel-place#subscribers",
+            },
+            { name: "Analytics", link: "/channel-place#analytics" },
+          ],
+        },
+        {
+          name: "Contest Place",
+          link: "/contest-place",
+          nameSubLinks: [
+            {
+              name: "Contest Creation",
+              link: "/contest-place#contest-creation",
+            },
+            {
+              name: "Entry Management",
+              link: "/contest-place#entry-management",
+            },
+            { name: "Voting system", link: "/contest-place#voting-system" },
+            {
+              name: "Price distribution",
+              link: "/contest-place#price-distribution",
+            },
+          ],
+        },
+        {
+          name: "Market Place",
+          link: "/market-place",
+          nameSubLinks: [
+            {
+              name: "Product/Service posting",
+              link: "/market-place#product-posting",
+            },
+            {
+              name: "Transaction tools",
+              link: "/market-place#transaction-tools",
+            },
+            {
+              name: "Inventory Management",
+              link: "/market-place#inventory-management",
+            },
+            {
+              name: "Customer Interaction",
+              link: "/market-place#customer-interaction",
+            },
+          ],
+        },
+        {
+          name: "Ministry Place",
+          link: "/ministry-place",
+          nameSubLinks: [
+            {
+              name: "Profile creation",
+              link: "/ministry-place#profile-creation",
+            },
+            { name: "Offering Tools", link: "/ministry-place#offering-tools" },
+            { name: "Media Sharing", link: "/ministry-place#media-sharing" },
+            {
+              name: "Communication tools",
+              link: "/ministry-place#communication-tools",
+            },
+            {
+              name: "Prayer requests",
+              link: "/ministry-place#prayer-requests",
+            },
+            {
+              name: "Analytics and Reporting",
+              link: "/ministry-place#analytics",
+            },
+          ],
+        },
+        {
+          name: "Group Place",
+          link: "/group-place",
+          nameSubLinks: [
+            { name: "Group creation", link: "/group-place#creation" },
+            { name: "Members management", link: "/group-place#management" },
+            { name: "Content Sharing", link: "/group-place#content-sharing" },
+            {
+              name: "Event Coordination",
+              link: "/group-place#event-coordination",
+            },
+            { name: "Discussion forum", link: "/group-place#discussion" },
+            { name: "Notifications", link: "/group-place#notification" },
+          ],
+        },
       ],
     },
     {

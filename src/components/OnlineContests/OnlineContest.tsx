@@ -9,10 +9,7 @@ const OnlineContest: React.FC = () => {
           Organize Online Contest
         </h2>
 
-        <p className="mb-4">
-          For a successful transaction, every transaction on the app incurs a
-          minor percentage-based fee.
-        </p>
+        <p className="mb-4">Host and manage online contests.</p>
 
         <div className="mb-4 bg-theme rounded">
           <Image
@@ -44,10 +41,7 @@ const OnlineContest: React.FC = () => {
               Contest place
             </h2>
 
-            <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
-            </p>
+            <p className="mb-2">Host and manage online contests.</p>
           </div>
         </div>
       </section>
@@ -60,10 +54,7 @@ const OnlineContest: React.FC = () => {
           <div className="mr-2">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">Contestants</h2>
 
-            <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
-            </p>
+            <p className="mb-2">Engage with participants and manage entries.</p>
           </div>
 
           <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
@@ -97,10 +88,7 @@ const OnlineContest: React.FC = () => {
               Paid contests
             </h2>
 
-            <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
-            </p>
+            <p className="mb-2">Host and participate in paid voting</p>
           </div>
         </div>
       </section>
@@ -116,8 +104,8 @@ const OnlineContest: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
+              Also Vigoplace offers you an avenue where you can also host and
+              participate free voting
             </p>
           </div>
 

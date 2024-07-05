@@ -2,6 +2,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
+import { BaseLayout } from "@/layouts/BaseLayout";
 import Hero from "@/components/Home/Hero";
 import Business from "@/components/Home/Business";
 import FinanceServices from "@/components/Home/FinanceServices";
@@ -41,18 +42,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Hero />
-      <Business />
-      <FinanceServices />
-      <GroupPlace />
-      <Church />
-      <Ecommerce />
-      <Benefit />
-      <Sell />
-      <Contest />
-      <FundRaising />
-      <Carousel />
-      <How />
+      <BaseLayout>
+        <Hero />
+        <Business />
+        <FinanceServices />
+        <GroupPlace />
+        <Church />
+        <Ecommerce />
+        <Benefit />
+        <Sell />
+        <Contest />
+        <FundRaising />
+        <Carousel />
+        <How />
+      </BaseLayout>
     </div>
   );
 }

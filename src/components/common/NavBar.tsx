@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Logo from "../../public/img/Logo.svg";
+import Logo from "../../../public/img/Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { NavItems } from "./NavItems/NavItems";
-import { useEffect } from "react";
+import { NavItems } from "../NavItems/NavItems";
+
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

@@ -9,12 +9,12 @@ const ChurchActivity: React.FC = () => {
         className="mt-16 mb-8 bg-text rounded-md pt-4 font-nunito"
       >
         <h2 className="mb-4 text-2xl font-bold font-ubuntu">
-          Church activity management{" "}
+          Church activity management
         </h2>
 
         <p className="mb-4">
-          For a successful transaction, every transaction on the app incurs a
-          minor percentage-based fee.{" "}
+          Vigoplace gives you the avenue for church activity management, making
+          it easier for congregations to connect and engage.
         </p>
 
         <div className="mb-4 bg-theme rounded">
@@ -29,16 +29,18 @@ const ChurchActivity: React.FC = () => {
       </section>
 
       <section
-        id="bible-post"
+        id="daily-reading-post"
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
           <div className="mr-2">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">Bible Posts</h2>
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+              Daily Reading Posts
+            </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
+              Share daily devotionals, scripture readings, and reflections to
+              keep your community spiritually engaged.
             </p>
           </div>
 
@@ -55,7 +57,7 @@ const ChurchActivity: React.FC = () => {
       </section>
 
       <section
-        id="giving"
+        id="bible-post"
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
@@ -69,12 +71,37 @@ const ChurchActivity: React.FC = () => {
     /> */}
           </div>
           <div className="mr-2">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu">Bible Posts</h2>
+
+            <p className="mb-2">
+              Create and share Bible study notes, sermon highlights, and
+              theological discussions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="giving"
+        className="mb-8 rounded-md py-4 font-nunito bg-white"
+      >
+        <div className="flex items-center px-4">
+          <div className="mr-2">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">Giving</h2>
 
             <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
+              Simplified donation processes that encourage generosity.
             </p>
+          </div>
+
+          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
+            {/* <Image
+            src={BiblePostImage}
+            alt="Bible Post Image"
+            //   width={25}
+            //   height={25}
+            //className="mr-3 mt-1 ml-2"
+          /> */}
           </div>
         </div>
       </section>
@@ -99,8 +126,7 @@ const ChurchActivity: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
+              Post specific offering needs and track contributions.
             </p>
           </div>
         </div>
@@ -111,21 +137,21 @@ const ChurchActivity: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2 ">
+          <div className="mr-2">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Prayer Request
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
+              Allow members to submit prayer requests and provide a platform for
+              communal prayer.
             </p>
           </div>
 
           <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
             {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
+            src={BiblePostImage}
+            alt="Bible Post Image"
             //   width={25}
             //   height={25}
             //className="mr-3 mt-1 ml-2"

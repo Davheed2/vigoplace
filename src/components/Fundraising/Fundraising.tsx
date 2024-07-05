@@ -43,8 +43,7 @@ const Fundraising: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
+              Create posts to raise funds for various causes.
             </p>
           </div>
         </div>
@@ -60,10 +59,7 @@ const Fundraising: React.FC = () => {
               Support/donate posts
             </h2>
 
-            <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
-            </p>
+            <p className="mb-2">Facilitate donations and support.</p>
           </div>
 
           <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">

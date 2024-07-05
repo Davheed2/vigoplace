@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
 import GroupManagement from "@/components/GroupManagement/GroupManagement";
+import { BaseLayout } from "@/layouts/BaseLayout";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -32,8 +33,10 @@ export default function GroupManagements() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <GroupManagement />
+
+      <BaseLayout>
+        <GroupManagement />
+      </BaseLayout>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
 import OnlineContest from "@/components/OnlineContests/OnlineContest";
+import { BaseLayout } from "@/layouts/BaseLayout";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -33,7 +34,9 @@ export default function Contest() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <OnlineContest />
+      <BaseLayout>
+        <OnlineContest />
+      </BaseLayout>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
 import Fundraising from "@/components/Fundraising/Fundraising";
+import { BaseLayout } from "@/layouts/BaseLayout";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -33,7 +34,9 @@ export default function Fundraisings() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Fundraising />
+      <BaseLayout>
+        <Fundraising />
+      </BaseLayout>
     </div>
   );
 }

@@ -8,8 +8,8 @@ const Ecommerce: React.FC = () => {
         <h2 className="mb-4 text-2xl font-bold font-ubuntu">Ecommerce </h2>
 
         <p className="mb-4">
-          For a successful transaction, every transaction on the app incurs a
-          minor percentage-based fee.{" "}
+          Vigoplace’s Marketplace is a robust platform for buying and selling
+          products and services.
         </p>
 
         <div className="mb-4 bg-theme rounded">
@@ -40,10 +40,7 @@ const Ecommerce: React.FC = () => {
           <div className="mr-2">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">Marketplace</h2>
 
-            <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
-            </p>
+            <p className="mb-2">A comprehensive platform for e-commerce.</p>
           </div>
         </div>
       </section>
@@ -59,8 +56,8 @@ const Ecommerce: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
+              Advertise and sell a wide range of products, from handmade crafts
+              to electronics.
             </p>
           </div>
 
@@ -96,8 +93,7 @@ const Ecommerce: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              For a successful transaction, every transaction on the app incurs
-              a minor percentage-based fee.{" "}
+              Offer services such as consulting, tutoring, and freelance work.
             </p>
           </div>
         </div>
@@ -114,8 +110,7 @@ const Ecommerce: React.FC = () => {
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium,
+              Sell digital products like e-books, software, and online courses.
             </p>
           </div>
 

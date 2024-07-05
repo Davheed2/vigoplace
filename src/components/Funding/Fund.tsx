@@ -26,7 +26,7 @@ const Fund: React.FC = () => {
 
       <section id="funding-naira-card" className="mb-8 font-nunito">
         <h2 className="mb-2 text-2xl font-bold font-ubuntu">Funding Wallet</h2>
-        <div className="rounded-md bg-white px-3 py-4 bg-pricingbackground1">
+        <div className="rounded-md px-3 py-4 bg-pricingbackground1">
           <p className="mb-8 font-semibold">
             Funding Naira wallet using a Naira card
           </p>
@@ -157,9 +157,9 @@ const Fund: React.FC = () => {
 
       <section
         id="funding-non-us-card"
-        className="mb-8 font-nunito bg-pricingbackground1"
+        className="mb-8 font-nunito bg-pricingbackground1 rounded-md"
       >
-        <div className="rounded-md px-3 py-4">
+        <div className="px-3 py-4">
           <p className="mb-8 font-semibold">
             Funding US dollar wallet using a non-US card
           </p>

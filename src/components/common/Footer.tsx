@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Image from "next/image";
-import Logo from "../../public/img/Logo.svg";
+import Logo from "../../../public/img/Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,

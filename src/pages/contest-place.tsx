@@ -2,7 +2,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
-import Charge from "@/components/Charges/Charge";
+import ContestPlace from "@/components/ContestPlace/ContestPlace";
 import { BaseLayout } from "@/layouts/BaseLayout";
 
 const ubuntu = Ubuntu({
@@ -17,7 +17,7 @@ const nunito = Nunito({
   weight: "400",
 });
 
-export default function Charges() {
+export default function Contest() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
@@ -35,7 +35,7 @@ export default function Charges() {
       </Head>
 
       <BaseLayout>
-        <Charge />
+        <ContestPlace />
       </BaseLayout>
     </div>
   );

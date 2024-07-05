@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
 import ChurchActivity from "@/components/ChurchActivity/ChurchActivity";
+import { BaseLayout } from "@/layouts/BaseLayout";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -33,9 +34,9 @@ export default function ChurchActivities() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-   
-      <ChurchActivity />
-
+      <BaseLayout>
+        <ChurchActivity />
+      </BaseLayout>
     </div>
   );
 }

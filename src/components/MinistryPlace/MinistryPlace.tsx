@@ -1,17 +1,15 @@
 import Image from "next/image";
 import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
 
-const SellContent: React.FC = () => {
+const MinistryPlace: React.FC = () => {
   return (
     <>
-      <section className="mt-16 mb-8 bg-text rounded-md pt-4 font-nunito">
-        <h2 className="mb-4 text-2xl font-bold font-ubuntu">
-          Sell Digital Contents
-        </h2>
+      <section className="mt-16 mb-4 bg-text rounded-md pt-4 font-nunito">
+        <h2 className="mb-4 text-2xl font-bold font-ubuntu">Learn</h2>
 
         <p className="mb-4">
-          Monetize your digital content effortlessly with Vigoplace’s Channel
-          Place.
+          Vigoplace provides a secure and user-friendly financial management
+          system.
         </p>
 
         <div className="mb-4 bg-theme rounded">
@@ -25,8 +23,12 @@ const SellContent: React.FC = () => {
         </div>
       </section>
 
+      <section className="mb-4">
+        <h2 className="mb-4 text-2xl font-bold font-ubuntu">Ministry place</h2>
+      </section>
+
       <section
-        id="channel-place"
+        id="profile-creation"
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
@@ -41,71 +43,30 @@ const SellContent: React.FC = () => {
           </div>
           <div className="mr-2">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
-              Channel place
+              Profile creation
             </h2>
 
             <p className="mb-2">
-              Create exclusive content and monetize it through various means.
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium
             </p>
           </div>
         </div>
       </section>
 
       <section
-        id="pay-to-view-post"
-        className="mb-8 rounded-md py-4 font-nunito bg-white"
+        id="offering-tools"
+        className="rounded-md mb-8 py-4 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
           <div className="mr-2">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
-              Pay to view posts
+              Offering tools
             </h2>
 
             <p className="mb-2">
-              Charge users a fee to access premium content.
-            </p>
-          </div>
-
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
-          </div>
-        </div>
-      </section>
-
-      <section id="buy" className="mb-8 rounded-md py-4 font-nunito bg-white">
-        <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
-          </div>
-          <div className="mr-2">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">Buy</h2>
-
-            <p className="mb-2">
-              Put your contents up for sell so other users can buy them.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="rent" className="mb-8 rounded-md py-4 font-nunito bg-white">
-        <div className="flex items-center px-4">
-          <div className="mr-2">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">Rent</h2>
-
-            <p className="mb-2">
-              Contents can also be rented for a period of time.
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium
             </p>
           </div>
 
@@ -122,8 +83,8 @@ const SellContent: React.FC = () => {
       </section>
 
       <section
-        id="subscription"
-        className="mb-8 rounded-md py-4 font-nunito bg-white"
+        id="media-sharing"
+        className="rounded-md py-4 mb-8 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center">
           <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
@@ -137,13 +98,96 @@ const SellContent: React.FC = () => {
           </div>
           <div className="mr-2">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
-              Subscription
+              Media Sharing
             </h2>
 
             <p className="mb-2">
-              Offer subscription-based access to your content, ensuring a steady
-              revenue stream.
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="communication-tools"
+        className="mb-8 rounded-md py-4 font-nunito bg-white"
+      >
+        <div className="flex items-center px-4">
+          <div className="mr-2">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+              Communication tools
+            </h2>
+
+            <p className="mb-2">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium
+            </p>
+          </div>
+
+          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
+            {/* <Image
+            src={BiblePostImage}
+            alt="Bible Post Image"
+            //   width={25}
+            //   height={25}
+            //className="mr-3 mt-1 ml-2"
+          /> */}
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="prayer-requests"
+        className="rounded-md py-4 mb-8 pb-8 font-nunito bg-white"
+      >
+        <div className="flex items-center">
+          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
+            {/* <Image
+            src={ActivityImage}
+            alt="Check Icon"
+            //   width={25}
+            //   height={25}
+            //className="mr-3 mt-1 ml-2"
+          /> */}
+          </div>
+          <div className="mr-2">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+              Prayer request
+            </h2>
+
+            <p className="mb-2">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="analytics"
+        className="mb-8 rounded-md py-4 font-nunito bg-white"
+      >
+        <div className="flex items-center px-4">
+          <div className="mr-2">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+              Analytics and reporting
+            </h2>
+
+            <p className="mb-2">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium
+            </p>
+          </div>
+
+          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
+            {/* <Image
+            src={BiblePostImage}
+            alt="Bible Post Image"
+            //   width={25}
+            //   height={25}
+            //className="mr-3 mt-1 ml-2"
+          /> */}
           </div>
         </div>
       </section>
@@ -151,4 +195,4 @@ const SellContent: React.FC = () => {
   );
 };
 
-export default SellContent;
+export default MinistryPlace;
