@@ -52,10 +52,9 @@ const Carousel: React.FC = () => {
                   alt={`Carousel Image ${index + 1}`}
                   layout="responsive"
                   width={279}
-                  height={600}
-                  loading="lazy"
+                  //height={600}
                   className="w-full object-cover cursor-pointer"
-                  style={{ height: "600px" }}
+                  //style={{ height: "600px" }}
                   onMouseEnter={() => swiperRef.current?.autoplay.stop()}
                   onMouseLeave={() => swiperRef.current?.autoplay.start()}
                 />
