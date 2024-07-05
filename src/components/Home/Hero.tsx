@@ -23,7 +23,8 @@ const Hero: React.FC = () => {
         <Image
           src={image}
           alt="Hero Image"
-          loading="lazy"
+          //loading="lazy"
+          priority={true}
           layout="responsive"
           className="w-[100%]"
         />
