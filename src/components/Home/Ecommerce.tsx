@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one.svg";
-import EcommerceImage from "../../../public/img/Frame 238313.svg";
+import EcommerceImages from "../../../public/img/Frame 238313.svg";
+import EcommerceImage from "../../../public/img/Group 463.svg";
 
 const Ecommerce: React.FC = () => {
   return (
@@ -64,14 +65,16 @@ const Ecommerce: React.FC = () => {
       </div>
 
       <div className="bg-businessimage pt-8 rounded-lg">
-        <Image
-          src={EcommerceImage}
-          alt="Business Image"
-          width={279}
-          height={248}
-          className="mx-auto"
-          loading="lazy"
-        />
+        <div className="w-[80%] mx-auto">
+          <Image
+            src={EcommerceImage}
+            alt="Business Image"
+            // width={279}
+            // height={248}
+            layout="responsive"
+            loading="lazy"
+          />
+        </div>
       </div>
     </section>
   );

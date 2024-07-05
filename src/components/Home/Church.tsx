@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one.svg";
-import ChurchImage from "../../../public/img/Frame 238243.svg";
+import ChurchImages from "../../../public/img/Frame 238243.svg";
+import ChurchImage from "../../../public/img/Group 462.svg";
 
 const Church: React.FC = () => {
   return (
@@ -114,13 +115,14 @@ const Church: React.FC = () => {
       </div>
 
       <div className="bg-businessimage pt-8 pb-4 rounded-lg">
-        <Image
-          src={ChurchImage}
-          alt="Business Image"
-          width={279}
-          height={248}
-          className="mx-auto"
-        />
+        <div className="w-[80%] mx-auto">
+          <Image
+            src={ChurchImage}
+            alt="Church activity Image"
+            layout="responsive"
+            loading="lazy"
+          />
+        </div>
       </div>
     </section>
   );

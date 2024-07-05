@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
-import Finance from "../../../public/img/Finance.svg";
+import Group from "../../../public/img/Group 464.svg";
 import { Button } from "../ui/button";
 
 const FinanceServices: React.FC = () => {
   return (
     <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white font-nunito">
-      <h2 className="mb-4 text-2xl w-[60%] font-bold font-ubuntu">Inbuilt financial services</h2>
+      <h2 className="mb-4 text-2xl w-[60%] font-bold font-ubuntu">
+        Inbuilt financial services
+      </h2>
 
       <p className="w-[70%] mb-5">
         Vigoplace provides a secure and user-friendly financial management
@@ -96,14 +98,14 @@ const FinanceServices: React.FC = () => {
       </div>
 
       <div className="bg-financeimage pt-8 pb-4 rounded-lg">
-        <Image
-          src={Finance}
-          alt="Business Image"
-          width={279}
-          height={248}
-          className="mx-auto"
-          //sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+        <div className="w-[80%] mx-auto">
+          <Image
+            src={Group}
+            alt="Business Image"
+            loading="lazy"
+            layout="responsive"
+          />
+        </div>
       </div>
     </section>
   );
