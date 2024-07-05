@@ -68,9 +68,7 @@ const Ecommerce: React.FC = () => {
         <div className="w-[80%] mx-auto">
           <Image
             src={EcommerceImage}
-            alt="Business Image"
-            // width={279}
-            // height={248}
+            alt="Ecommerce Image"
             layout="responsive"
             loading="lazy"
           />
