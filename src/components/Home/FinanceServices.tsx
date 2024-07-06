@@ -2,8 +2,15 @@ import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
 import Group from "../../../public/img/Group 464.svg";
 import { Button } from "../ui/button";
+import { useRouter } from "next/router";
 
 const FinanceServices: React.FC = () => {
+  const router = useRouter();
+
+  const handleSeeMoreClick = () => {
+    router.push("/financial-service");
+  };
+
   return (
     <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white font-nunito">
       <h2 className="mb-4 text-2xl w-[60%] font-bold font-ubuntu">
@@ -94,7 +101,12 @@ const FinanceServices: React.FC = () => {
       </div>
 
       <div className="mb-8">
-        <Button className="bg-theme">See more</Button>
+        <Button
+          className="bg-theme hover:bg-businessimage"
+          onClick={handleSeeMoreClick}
+        >
+          See more
+        </Button>
       </div>
 
       <div className="bg-financeimage pt-8 pb-4 rounded-lg">

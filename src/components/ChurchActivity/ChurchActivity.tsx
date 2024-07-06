@@ -1,5 +1,7 @@
 import Image from "next/image";
-import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
+import ActivityImageS from "../../../public/img/vigo-removebg-preview 1.svg";
+import BibleImage from "../../../public/img/Vector.svg";
+import ActivityImage from "../../../public/img/Frame 238355.svg"
 
 const ChurchActivity: React.FC = () => {
   return (
@@ -21,21 +23,19 @@ const ChurchActivity: React.FC = () => {
           <Image
             src={ActivityImage}
             alt="Activity Image"
-            //   width={25}
-            //   height={25}
-            className="mx-auto"
+            className="mx-auto w-[80%]"
           />
         </div>
       </section>
 
       <section
         id="daily-reading-post"
-        className="mb-8 rounded-md py-4 font-nunito bg-white"
+        className="mb-8 rounded-md py-5 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="w-[60%] mr-3">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
-              Daily Reading Posts
+              <span>Daily</span> <br /> Reading Posts
             </h2>
 
             <p className="mb-2">
@@ -44,14 +44,13 @@ const ChurchActivity: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%]">
+            <Image
+              src={BibleImage}
+              alt="Bible Post Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>

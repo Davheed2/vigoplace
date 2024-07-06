@@ -1,9 +1,16 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
-import Group from "../../../public/img/Frame 238312.svg";
+import Group from "../../../public/img/iphone-12--product-red.svg";
 import { Button } from "../ui/button";
+import { useRouter } from "next/router";
 
 const GroupPlace: React.FC = () => {
+  const router = useRouter();
+
+  const handleSeeMoreClick = () => {
+    router.push("/group-management");
+  };
+
   return (
     <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white font-nunito">
       <h2 className="mb-4 text-2xl w-[60%] font-bold font-ubuntu">
@@ -91,18 +98,23 @@ const GroupPlace: React.FC = () => {
       </div>
 
       <div className="mb-8">
-        <Button className="bg-theme">See more</Button>
+        <Button
+          className="bg-theme hover:bg-businessimage"
+          onClick={handleSeeMoreClick}
+        >
+          See more
+        </Button>
       </div>
 
       <div className="bg-financeimage pt-8 rounded-lg">
-        <Image
-          src={Group}
-          alt="Business Image"
-          width={279}
-          height={248}
-          className="mx-auto"
-          //sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+        <div className="w-[80%] mx-auto">
+          <Image
+            src={Group}
+            alt="Business Image"
+            layout="responsive"
+            className="mx-auto w-[60%]"
+          />
+        </div>
       </div>
     </section>
   );

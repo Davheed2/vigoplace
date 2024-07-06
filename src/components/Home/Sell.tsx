@@ -1,8 +1,15 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
 import { Button } from "../ui/button";
+import { useRouter } from "next/router";
 
 const Sell: React.FC = () => {
+  const router = useRouter();
+
+  const handleSeeMoreClick = () => {
+    router.push("/sell-contents");
+  };
+  
   return (
     <section className="mb-8 bg-text rounded-md px-3 py-4 bg-white font-nunito">
       <h2 className="mb-4 text-2xl font-bold font-ubuntu">
@@ -90,7 +97,7 @@ const Sell: React.FC = () => {
       </div>
 
       <div className="mb-4">
-        <Button className="bg-theme">See more</Button>
+        <Button className="bg-theme hover:bg-businessimage" onClick={handleSeeMoreClick}>See more</Button>
       </div>
     </section>
   );

@@ -17,13 +17,12 @@ const Hero: React.FC = () => {
         people and businesses together.
       </p>
       <div>
-        <Button className="bg-theme">Learn more</Button>
+        <Button className="bg-theme hover:bg-businessimage">Learn more</Button>
       </div>
       <div className="mt-6">
         <Image
           src={image}
           alt="Hero Image"
-          //loading="lazy"
           priority={true}
           layout="responsive"
           className="w-[100%]"

@@ -3,7 +3,7 @@ import Check from "../../public/img/icon-park-solid_check-one.svg";
 import EcommerceImage from "../../public/img/Frame 238313.svg";
 import Google from "../../../public/img/Group.svg";
 import Apple from "../../../public/img/Group (1).svg";
-import JoinImage from "../../../public/img/Frame 238312 (2).svg";
+import JoinImage from "../../../public/img/iphone-12--product-red.svg";
 
 const Join: React.FC = () => {
   return (
@@ -49,7 +49,7 @@ const Join: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-businessimage pt-8 rounded-lg">
+      {/* <div className=" pt-8 rounded-lg">
         <Image
           src={JoinImage}
           alt="Business Image"
@@ -58,6 +58,17 @@ const Join: React.FC = () => {
           className="mx-auto"
           loading="lazy"
         />
+      </div> */}
+
+      <div className="bg-businessimage pt-8 rounded-lg">
+        <div className="w-[80%] mx-auto">
+          <Image
+            src={JoinImage}
+            alt="Business Image"
+            layout="responsive"
+            className="mx-auto w-[60%]"
+          />
+        </div>
       </div>
     </section>
   );
