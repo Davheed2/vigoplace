@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
+import ChannelImage from "../../../public/img/Frame 238218 (11).svg";
 
 const ChannelPlace: React.FC = () => {
   return (
@@ -12,13 +12,10 @@ const ChannelPlace: React.FC = () => {
           system.
         </p>
 
-        <div className="mb-4 bg-theme rounded">
+        <div className="mb-4">
           <Image
-            src={ActivityImage}
-            alt="Activity Image"
-            //   width={25}
-            //   height={25}
-            className="mx-auto"
+            src={ChannelImage}
+            alt="Channel Place Image"
           />
         </div>
       </section>

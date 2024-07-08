@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
+import MarketImage from "../../../public/img/Frame 238218 (13).svg";
 
 const MarketPlace: React.FC = () => {
   return (
@@ -12,14 +12,8 @@ const MarketPlace: React.FC = () => {
           system.
         </p>
 
-        <div className="mb-4 bg-theme rounded">
-          <Image
-            src={ActivityImage}
-            alt="Activity Image"
-            //   width={25}
-            //   height={25}
-            className="mx-auto"
-          />
+        <div className="mb-4">
+          <Image src={MarketImage} alt="Market Place Image" />
         </div>
       </section>
 

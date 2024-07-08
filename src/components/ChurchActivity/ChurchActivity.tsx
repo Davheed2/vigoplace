@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ActivityImageS from "../../../public/img/vigo-removebg-preview 1.svg";
 import BibleImage from "../../../public/img/Vector.svg";
-import ActivityImage from "../../../public/img/Frame 238355.svg"
+import ChurchImage from "../../../public/img/Frame 238218.svg";
 
 const ChurchActivity: React.FC = () => {
   return (
@@ -19,11 +19,11 @@ const ChurchActivity: React.FC = () => {
           it easier for congregations to connect and engage.
         </p>
 
-        <div className="mb-4 bg-theme rounded">
+        <div className="mb-4">
           <Image
-            src={ActivityImage}
+            src={ChurchImage}
             alt="Activity Image"
-            className="mx-auto w-[80%]"
+            className=""
           />
         </div>
       </section>

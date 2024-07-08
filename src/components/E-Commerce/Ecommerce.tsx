@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
+import EcommerceImage from "../../../public/img/Frame 238218 (2).svg";
 
 const Ecommerce: React.FC = () => {
   return (
@@ -12,9 +12,9 @@ const Ecommerce: React.FC = () => {
           products and services.
         </p>
 
-        <div className="mb-4 bg-theme rounded">
+        <div className="mb-4">
           <Image
-            src={ActivityImage}
+            src={EcommerceImage}
             alt="Activity Image"
             //   width={25}
             //   height={25}

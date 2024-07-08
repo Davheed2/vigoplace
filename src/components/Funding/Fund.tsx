@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
+import FundingImage from "../../../public/img/Frame 238218 (7).svg";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
 
 const Fund: React.FC = () => {
@@ -13,13 +13,10 @@ const Fund: React.FC = () => {
           minor percentage-based fee.
         </p>
 
-        <div className="mb-4 bg-theme rounded">
+        <div className="mb-4">
           <Image
-            src={ActivityImage}
+            src={FundingImage}
             alt="Activity Image"
-            //   width={25}
-            //   height={25}
-            className="mx-auto"
           />
         </div>
       </section>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
+import GroupImage from "../../../public/img/Frame 238218 (15).svg";
 
 const GroupPlace: React.FC = () => {
   return (
@@ -13,13 +13,7 @@ const GroupPlace: React.FC = () => {
         </p>
 
         <div className="mb-4 bg-theme rounded">
-          <Image
-            src={ActivityImage}
-            alt="Activity Image"
-            //   width={25}
-            //   height={25}
-            className="mx-auto"
-          />
+          <Image src={GroupImage} alt="Group Place Image" />
         </div>
       </section>
 

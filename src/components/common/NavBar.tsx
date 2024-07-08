@@ -4,11 +4,12 @@ import Logo from "../../../public/img/Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { NavItems } from "../NavItems/NavItems";
+import useScrollWithOffset from "@/hooks/useScrollWithOffset";
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  useScrollWithOffset(50);
 
   useEffect(() => {
     const handleScroll = () => {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ActivityImage from "../../../public/img/vigo-removebg-preview 1.svg";
+import BankTransferImage from "../../../public/img/Frame 238218 (8).svg";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
 
 const BankTransfer: React.FC = () => {
@@ -13,13 +13,10 @@ const BankTransfer: React.FC = () => {
           minor percentage-based fee
         </p>
 
-        <div className="mb-4 bg-theme rounded">
+        <div className="mb-4">
           <Image
-            src={ActivityImage}
-            alt="Activity Image"
-            //   width={25}
-            //   height={25}
-            className="mx-auto"
+            src={BankTransferImage}
+            alt="Bank Transfer Image"
           />
         </div>
       </section>
