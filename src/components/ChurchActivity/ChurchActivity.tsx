@@ -1,15 +1,15 @@
 import Image from "next/image";
-import ActivityImageS from "../../../public/img/vigo-removebg-preview 1.svg";
-import BibleImage from "../../../public/img/Vector.svg";
 import ChurchImage from "../../../public/img/Frame 238218.svg";
+import BibleImage from "../../../public/img/Vector.svg";
+import BibleImage2 from "../../../public/img/bx_bible.svg";
+import StreamGift from "../../../public/img/streamline_give-gift.svg";
+import Donate from "../../../public/img/mdi_donation-outline.svg";
+import Prayer from "../../../public/img/hugeicons_hand-prayer.svg";
 
 const ChurchActivity: React.FC = () => {
   return (
     <>
-      <section
-        id="daily-reading-post"
-        className="mt-16 mb-8 bg-text rounded-md pt-4 font-nunito"
-      >
+      <section className="mt-16 mb-8 bg-text rounded-md pt-4 font-nunito">
         <h2 className="mb-4 text-2xl font-bold font-ubuntu">
           Church activity management
         </h2>
@@ -23,7 +23,8 @@ const ChurchActivity: React.FC = () => {
           <Image
             src={ChurchImage}
             alt="Activity Image"
-            className=""
+            priority={true}
+            fetchPriority="high"
           />
         </div>
       </section>
@@ -44,10 +45,10 @@ const ChurchActivity: React.FC = () => {
             </p>
           </div>
 
-          <div className="w-[40%]">
+          <div className="w-[40%] mx-2">
             <Image
               src={BibleImage}
-              alt="Bible Post Image"
+              alt="Daily Reading Post Image"
               layout="responsive"
               className="mx-auto w-[100%]"
             />
@@ -60,16 +61,16 @@ const ChurchActivity: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-      src={ActivityImage}
-      alt="Check Icon"
-      //   width={25}
-      //   height={25}
-      //className="mr-3 mt-1 ml-2"
-    /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={BibleImage2}
+              alt="Bible Post Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">Bible Posts</h2>
 
             <p className="mb-2">
@@ -85,7 +86,7 @@ const ChurchActivity: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">Giving</h2>
 
             <p className="mb-2">
@@ -93,14 +94,13 @@ const ChurchActivity: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={StreamGift}
+              alt="Gift Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -110,16 +110,16 @@ const ChurchActivity: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Donate}
+              alt="Donate Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Offering Posts
             </h2>
@@ -136,7 +136,7 @@ const ChurchActivity: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Prayer Request
             </h2>
@@ -147,14 +147,13 @@ const ChurchActivity: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Prayer}
+              alt="Prayer Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>

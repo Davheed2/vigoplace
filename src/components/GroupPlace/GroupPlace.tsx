@@ -12,7 +12,7 @@ const GroupPlace: React.FC = () => {
           system.
         </p>
 
-        <div className="mb-4 bg-theme rounded">
+        <div className="mb-4">
           <Image src={GroupImage} alt="Group Place Image" />
         </div>
       </section>
