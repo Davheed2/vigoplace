@@ -1,5 +1,9 @@
 import Image from "next/image";
 import ContestImage from "../../../public/img/Frame 238218 (5).svg";
+import Contest from "../../../public/img/lucide_vote.svg";
+import Contestants from "../../../public/img/arcticons_voter-helpline.svg";
+import Paid from "../../../public/img/mdi_vote-outline.svg";
+import Free from "../../../public/img/material-symbols_how-to-vote-outline.svg";
 
 const OnlineContest: React.FC = () => {
   return (
@@ -12,7 +16,12 @@ const OnlineContest: React.FC = () => {
         <p className="mb-4">Host and manage online contests.</p>
 
         <div className="mb-4">
-          <Image src={ContestImage} alt="Activity Image" />
+          <Image
+            src={ContestImage}
+            alt="Contest Image"
+            priority={true}
+            fetchPriority="high"
+          />
         </div>
       </section>
 
@@ -21,16 +30,16 @@ const OnlineContest: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-      src={ActivityImage}
-      alt="Check Icon"
-      //   width={25}
-      //   height={25}
-      //className="mr-3 mt-1 ml-2"
-    /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Contest}
+              alt="Contest Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Contest place
             </h2>
@@ -45,20 +54,19 @@ const OnlineContest: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">Contestants</h2>
 
             <p className="mb-2">Engage with participants and manage entries.</p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Contestants}
+              alt="Contestants Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -68,16 +76,16 @@ const OnlineContest: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Paid}
+              alt="Paid contest Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Paid contests
             </h2>
@@ -92,7 +100,7 @@ const OnlineContest: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Free contests
             </h2>
@@ -103,14 +111,13 @@ const OnlineContest: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Free}
+              alt="Free Contest Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>

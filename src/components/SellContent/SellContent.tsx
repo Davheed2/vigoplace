@@ -1,5 +1,10 @@
 import Image from "next/image";
 import SellContentImage from "../../../public/img/Frame 238218 (4).svg";
+import Channel from "../../../public/img/uil_channel-add.svg";
+import View from "../../../public/img/material-symbols_view-day-outline.svg";
+import Buy from "../../../public/img/icons8_buy.svg";
+import Rent from "../../../public/img/icon-park_afferent.svg";
+import Subscription from "../../../public/img/eos-icons_product-subscriptions-outlined.svg";
 
 const SellContent: React.FC = () => {
   return (
@@ -17,7 +22,9 @@ const SellContent: React.FC = () => {
         <div className="mb-4">
           <Image
             src={SellContentImage}
-            alt="Activity Image"
+            alt="Sell Content Image"
+            priority={true}
+            fetchPriority="high"
           />
         </div>
       </section>
@@ -27,16 +34,16 @@ const SellContent: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-      src={ActivityImage}
-      alt="Check Icon"
-      //   width={25}
-      //   height={25}
-      //className="mr-3 mt-1 ml-2"
-    /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Channel}
+              alt="Channel Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Channel place
             </h2>
@@ -53,7 +60,7 @@ const SellContent: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Pay to view posts
             </h2>
@@ -63,30 +70,29 @@ const SellContent: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={View}
+              alt="View Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
 
       <section id="buy" className="mb-8 rounded-md py-4 font-nunito bg-white">
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Buy}
+              alt="Buy Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">Buy</h2>
 
             <p className="mb-2">
@@ -98,7 +104,7 @@ const SellContent: React.FC = () => {
 
       <section id="rent" className="mb-8 rounded-md py-4 font-nunito bg-white">
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">Rent</h2>
 
             <p className="mb-2">
@@ -106,14 +112,13 @@ const SellContent: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Rent}
+              alt="Rent Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -123,16 +128,16 @@ const SellContent: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Subscription}
+              alt="Subscription Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Subscription
             </h2>

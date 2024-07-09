@@ -1,5 +1,9 @@
 import Image from "next/image";
 import EcommerceImage from "../../../public/img/Frame 238218 (2).svg";
+import Market from "../../../public/img/Market.svg";
+import Product from "../../../public/img/Product.svg";
+import Service from "../../../public/img/Service.svg";
+import Digital from "../../../public/img/Digital.svg";
 
 const Ecommerce: React.FC = () => {
   return (
@@ -15,10 +19,9 @@ const Ecommerce: React.FC = () => {
         <div className="mb-4">
           <Image
             src={EcommerceImage}
-            alt="Activity Image"
-            //   width={25}
-            //   height={25}
-            className="mx-auto"
+            alt="Ecommerce Image"
+            priority={true}
+            fetchPriority="high"
           />
         </div>
       </section>
@@ -28,16 +31,16 @@ const Ecommerce: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-      src={ActivityImage}
-      alt="Check Icon"
-      //   width={25}
-      //   height={25}
-      //className="mr-3 mt-1 ml-2"
-    /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Market}
+              alt="Market Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">Marketplace</h2>
 
             <p className="mb-2">A comprehensive platform for e-commerce.</p>
@@ -50,7 +53,7 @@ const Ecommerce: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Product Posts
             </h2>
@@ -61,14 +64,13 @@ const Ecommerce: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Product}
+              alt="Product Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -78,16 +80,16 @@ const Ecommerce: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Service}
+              alt="Service Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Service posts
             </h2>
@@ -104,7 +106,7 @@ const Ecommerce: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Digital Goods
             </h2>
@@ -114,14 +116,13 @@ const Ecommerce: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Digital}
+              alt="Digital Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>

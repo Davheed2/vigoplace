@@ -1,5 +1,15 @@
 import Image from "next/image";
 import FinanceImage from "../../../public/img/Frame 238218 (3).svg";
+import Wallet from "../../../public/img/Wallet.svg";
+import Kyc from "../../../public/img/icon-park_customer.svg";
+import Bank from "../../../public/img/arcticons_raiffeisen-e-banking.svg";
+import Card from "../../../public/img/Card.svg";
+import Transfer from "../../../public/img/Transfer.svg";
+import SolarCard from "../../../public/img/solar_card-transfer-broken.svg";
+import OTP from "../../../public/img/arcticons_authenticate.svg";
+import Transaction from "../../../public/img/carbon_receipt.svg";
+import Statement from "../../../public/img/lucide_receipt.svg";
+import ExpenseTrack from "../../../public/img/hugeicons_text-tracking.svg";
 
 const FinancialService: React.FC = () => {
   return (
@@ -17,8 +27,9 @@ const FinancialService: React.FC = () => {
         <div className="mb-4">
           <Image
             src={FinanceImage}
-            alt="Activity Image"
-
+            alt="Finance Image"
+            priority={true}
+            fetchPriority="high"
           />
         </div>
       </section>
@@ -28,16 +39,16 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-      src={ActivityImage}
-      alt="Check Icon"
-      //   width={25}
-      //   height={25}
-      //className="mr-3 mt-1 ml-2"
-    /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Wallet}
+              alt="Wallet Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Multi-wallet system
             </h2>
@@ -52,7 +63,7 @@ const FinancialService: React.FC = () => {
 
       <section id="kyc" className="rounded-t-md pt-4 pb-8 font-nunito bg-white">
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               KYC (Know Your Customer)
             </h2>
@@ -62,14 +73,13 @@ const FinancialService: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Kyc}
+              alt="KYC Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -79,16 +89,16 @@ const FinancialService: React.FC = () => {
         className="pt-4 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Bank}
+              alt="Bank Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Secured online banking
             </h2>
@@ -105,7 +115,7 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-b-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Cardless transaction
             </h2>
@@ -116,14 +126,13 @@ const FinancialService: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Card}
+              alt="Card Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -133,16 +142,16 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Transfer}
+              alt="Transfer Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Inter-bank transfer
             </h2>
@@ -159,7 +168,7 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Wallet to wallet
             </h2>
@@ -169,14 +178,13 @@ const FinancialService: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={SolarCard}
+              alt="Solar Card Wallet Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -186,16 +194,16 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={OTP}
+              alt="OTP Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               OTP For transfer
             </h2>
@@ -213,7 +221,7 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Transaction receipts
             </h2>
@@ -223,14 +231,13 @@ const FinancialService: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Transaction}
+              alt="Transaction Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -240,16 +247,16 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Statement}
+              alt="Statement Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Transaction statements
             </h2>
@@ -267,7 +274,7 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Expense tracking
             </h2>
@@ -277,14 +284,13 @@ const FinancialService: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={ExpenseTrack}
+              alt="Expense Track Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
