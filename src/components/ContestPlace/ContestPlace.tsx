@@ -1,5 +1,9 @@
 import Image from "next/image";
 import ContestImage from "../../../public/img/Frame 238218 (12).svg";
+import Contest from "../../../public/img/Contest.svg";
+import Entry from "../../../public/img/octicon_no-entry-16.svg";
+import Voting from "../../../public/img/material-symbols-light_how-to-vote-outline.svg";
+import Price from "../../../public/img/solar_tag-price-outline.svg";
 
 const ContestPlace: React.FC = () => {
   return (
@@ -16,6 +20,8 @@ const ContestPlace: React.FC = () => {
           <Image
             src={ContestImage}
             alt="Contest Place Image"
+            priority={true}
+            fetchPriority="high"
           />
         </div>
       </section>
@@ -29,23 +35,24 @@ const ContestPlace: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-      src={ActivityImage}
-      alt="Check Icon"
-      //   width={25}
-      //   height={25}
-      //className="mr-3 mt-1 ml-2"
-    /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Contest}
+              alt="Contest Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Contest creation
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Set up contests with specific rules, entry requirements, and
+              deadlines. This feature allows you to create engaging competitions
+              that attract participation and excitement.
             </p>
           </div>
         </div>
@@ -56,25 +63,24 @@ const ContestPlace: React.FC = () => {
         className="rounded-md mb-8 py-4 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Entry Management
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Review and manage contest entries efficiently. This tool helps in
+              organizing the entries and ensuring a smooth contest experience.
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Entry}
+              alt="Entry Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -84,23 +90,24 @@ const ContestPlace: React.FC = () => {
         className="rounded-md py-4 mb-8 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Voting}
+              alt="Voting Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Voting System
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Enable paid or free voting for contest entries. This feature adds
+              an interactive element to the contest, allowing participants to
+              engage more.
             </p>
           </div>
         </div>
@@ -111,25 +118,25 @@ const ContestPlace: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Price Distribution
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Manage and distribute prizes to winners seamlessly. This ensures
+              that winners are rewarded promptly, maintaining the integrity and
+              excitement of the contest.
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Price}
+              alt="Price Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>

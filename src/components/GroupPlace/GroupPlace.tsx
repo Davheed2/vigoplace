@@ -1,5 +1,11 @@
 import Image from "next/image";
 import GroupImage from "../../../public/img/Frame 238218 (15).svg";
+import Group from "../../../public/img/lucide_group.svg";
+import Members from "../../../public/img/lets-icons_group.svg";
+import Share from "../../../public/img/ph_share.svg";
+import Event from "../../../public/img/material-symbols-light_event-outline.svg";
+import Discussion from "../../../public/img/Discussion.svg";
+import Notification from "../../../public/img/hugeicons_notification-03.svg";
 
 const GroupPlace: React.FC = () => {
   return (
@@ -13,7 +19,12 @@ const GroupPlace: React.FC = () => {
         </p>
 
         <div className="mb-4">
-          <Image src={GroupImage} alt="Group Place Image" />
+          <Image
+            src={GroupImage}
+            alt="Group Place Image"
+            priority={true}
+            fetchPriority="high"
+          />
         </div>
       </section>
 
@@ -26,23 +37,24 @@ const GroupPlace: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-      src={ActivityImage}
-      alt="Check Icon"
-      //   width={25}
-      //   height={25}
-      //className="mr-3 mt-1 ml-2"
-    /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Group}
+              alt="Group Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Group creation
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Create groups based on common interests or goals. This feature
+              helps in forming communities with shared interests, fostering a
+              sense of belonging.
             </p>
           </div>
         </div>
@@ -53,25 +65,25 @@ const GroupPlace: React.FC = () => {
         className="rounded-md mb-8 py-4 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Members Management
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Invite and manage group members to maintain an active and engaged
+              group. This tool is essential for growing and sustaining your
+              community.
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Members}
+              alt="Members Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -81,23 +93,24 @@ const GroupPlace: React.FC = () => {
         className="rounded-md py-4 mb-8 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Share}
+              alt="Share Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Content sharing
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Share posts, media, and updates within the group to keep members
+              informed and engaged. This feature ensures continuous interaction
+              and participation.
             </p>
           </div>
         </div>
@@ -108,25 +121,25 @@ const GroupPlace: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Event Coordination
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Organize group events and track attendance to facilitate community
+              activities. This tool helps in planning and executing group
+              gatherings effectively.
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Event}
+              alt="Event Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -136,23 +149,24 @@ const GroupPlace: React.FC = () => {
         className="rounded-md py-4 mb-8 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Discussion}
+              alt="Discussion Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Discussion forum
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Facilitate group discussions on various topics. This feature
+              encourages members to share ideas and engage in meaningful
+              conversations.
             </p>
           </div>
         </div>
@@ -163,25 +177,25 @@ const GroupPlace: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Notification
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Keep members informed about group activities and updates through
+              real-time notifications. This ensures that everyone stays
+              up-to-date with the latest happenings.
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Notification}
+              alt="Notification Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>

@@ -1,5 +1,11 @@
 import Image from "next/image";
 import MinistryImage from "../../../public/img/Frame 238218 (14).svg";
+import Profile from "../../../public/img/iconamoon_profile.svg";
+import Offer from "../../../public/img/mdi_offer.svg";
+import Media from "../../../public/img/material-symbols_perm-media-outline.svg";
+import Communication from "../../../public/img/fluent_communication-24-regular.svg";
+import Prayer from "../../../public/img/Prayer.svg";
+import Analytics from "../../../public/img/material-symbols_analytics-outline.svg";
 
 const MinistryPlace: React.FC = () => {
   return (
@@ -13,7 +19,12 @@ const MinistryPlace: React.FC = () => {
         </p>
 
         <div className="mb-4">
-          <Image src={MinistryImage} alt="Ministry Place Image" />
+          <Image
+            src={MinistryImage}
+            alt="Ministry Place Image"
+            priority={true}
+            fetchPriority="high"
+          />
         </div>
       </section>
 
@@ -26,23 +37,24 @@ const MinistryPlace: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-      src={ActivityImage}
-      alt="Check Icon"
-      //   width={25}
-      //   height={25}
-      //className="mr-3 mt-1 ml-2"
-    /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Profile}
+              alt="Profile Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Profile creation
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Create detailed profiles with the ministry name, contact
+              information, and mission statement. This helps in establishing a
+              clear and professional presence.
             </p>
           </div>
         </div>
@@ -53,25 +65,25 @@ const MinistryPlace: React.FC = () => {
         className="rounded-md mb-8 py-4 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Offering tools
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Easily set up offering pages to collect donations during services
+              or events. This tool streamlines the process of gathering
+              financial support from your community.
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Offer}
+              alt="Offer Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -81,23 +93,24 @@ const MinistryPlace: React.FC = () => {
         className="rounded-md py-4 mb-8 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Media}
+              alt="Media Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Media Sharing
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Upload and share photos, videos, and audio recordings to engage
+              your community. This feature helps in sharing messages, sermons,
+              and other important content.
             </p>
           </div>
         </div>
@@ -108,25 +121,25 @@ const MinistryPlace: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Communication tools
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Use direct messaging, group chats, and discussion forums to foster
+              communication within your community. These tools are vital for
+              building strong relationships and a sense of belonging.
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Communication}
+              alt="Communication Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
@@ -136,23 +149,23 @@ const MinistryPlace: React.FC = () => {
         className="rounded-md py-4 mb-8 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="bg-theme pt-5 rounded ml-2 mr-12 h-32 w-96">
-            {/* <Image
-            src={ActivityImage}
-            alt="Check Icon"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Prayer}
+              alt="Prayer Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
-          <div className="mr-2">
+
+          <div className="mx-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Prayer request
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Collect and manage prayer requests from your community. This
+              feature helps in addressing the spiritual needs of your members.
             </p>
           </div>
         </div>
@@ -163,25 +176,25 @@ const MinistryPlace: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center px-4">
-          <div className="mr-2">
+          <div className="mr-2 w-[60%]">
             <h2 className="mb-4 text-2xl font-bold font-ubuntu">
               Analytics and reporting
             </h2>
 
             <p className="mb-2">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
+              Track engagement, donations, and event attendance to gauge the
+              impact of your activities. This data is crucial for planning
+              future events and initiatives.
             </p>
           </div>
 
-          <div className="bg-theme pt-5 rounded ml-2 h-32 w-96">
-            {/* <Image
-            src={BiblePostImage}
-            alt="Bible Post Image"
-            //   width={25}
-            //   height={25}
-            //className="mr-3 mt-1 ml-2"
-          /> */}
+          <div className="w-[40%] mx-2">
+            <Image
+              src={Analytics}
+              alt="Analytics Image"
+              layout="responsive"
+              className="mx-auto w-[100%]"
+            />
           </div>
         </div>
       </section>
