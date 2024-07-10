@@ -21,14 +21,14 @@ export default function Group() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
-        <title>Vigoplace - Manage Charges</title>
+        <title>Vigoplace - Group Place</title>
         <meta
           name="description"
-          content="View and manage charges effortlessly with Vigoplace's comprehensive tech solutions."
+          content="View and create channel place profiles with loved ones effortlessly with Vigoplace's comprehensive tech solutions."
         />
         <meta
           name="keywords"
-          content="charges, manage charges, tech solutions, Vigoplace"
+          content="group, create group place profiles, tech solutions, Vigoplace"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

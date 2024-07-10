@@ -21,14 +21,14 @@ export default function Market() {
   return (
     <div className={`${ubuntu.variable} ${nunito.variable}`}>
       <Head>
-        <title>Vigoplace - Manage Charges</title>
+        <title>Vigoplace - Market Place</title>
         <meta
           name="description"
-          content="View and manage charges effortlessly with Vigoplace's comprehensive tech solutions."
+          content="View and create market place profiles effortlessly with Vigoplace's comprehensive tech solutions."
         />
         <meta
           name="keywords"
-          content="charges, manage charges, tech solutions, Vigoplace"
+          content="market, create market place profiles, tech solutions, Vigoplace"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
