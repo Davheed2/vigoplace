@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ChurchImage from "../../../public/img/Frame 238218.svg";
+import ChurchImage from "../../../public/img/Church activities 1.svg";
 import BibleImage from "../../../public/img/Vector.svg";
 import BibleImage2 from "../../../public/img/bx_bible.svg";
 import StreamGift from "../../../public/img/streamline_give-gift.svg";

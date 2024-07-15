@@ -17,6 +17,22 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        benefit: "800px",
+        benefit2: "806px",
+        benefit3: "866px",
+        benefit4: "900px",
+        benefit5: "1030px",
+        benefit6: "1265px",
+        benefit7: "1365px",
+        benefit8: "1508px",
+        custom: "900px",
+      },
+      backgroundImage: {
+        "hero-pattern":
+          // "url('/img/noise-pattern-with-subtle-cross-lines.png')",
+          "url('/img/BG.png')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -26,6 +42,7 @@ module.exports = {
         theme: "hsl(var(--theme))",
         white: "hsl(var(--white))",
         black: "hsl(var(--black))",
+        heading: "hsl(var(--heading))",
         businessimage: "hsl(var(--businessimage))",
         financeimage: "hsl(var(--financeimage))",
         howcard1: "hsl(var(--howcard1))",

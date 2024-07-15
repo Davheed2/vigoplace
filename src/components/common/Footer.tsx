@@ -87,109 +87,217 @@ const Footer: React.FC = () => {
   }, []);
 
   return (
-    <section className="mb-8 bg-white rounded-md px-3 py-4 font-nunito">
-      <div className="flex mb-8">
-        <Image
-          src={Logo}
-          alt="Vigoplace Logo"
-          // width={150}
-          // height={30}
-          className="h-14 w-auto"
-          //sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+    <>
+      <footer className="mb-8 bg-white rounded-md px-3 py-4 font-nunito custom:hidden">
+        <div className="flex mb-8">
+          <Image
+            src={Logo}
+            alt="Vigoplace Logo"
+            // width={150}
+            // height={30}
+            className="h-14 w-auto"
+            //sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
 
-        <div className="my-auto ml-3">
-          <p style={{ fontSize: "0.35rem" }}>TM</p>
-        </div>
-      </div>
-
-      <div className="mb-8">
-        <h3 className="mb-2 font-semibold text-theme">COMPANY</h3>
-        <p>Donec dignism</p>
-        <p>Donec dignism</p>
-        <p>Donec dignism</p>
-        <p>Donec dignism</p>
-      </div>
-
-      <div className="mb-8">
-        <h3 className="mb-2 font-semibold text-theme">SERVICES</h3>
-        <p>Donec dignism</p>
-        <p>Donec dignism</p>
-        <p>Donec dignism</p>
-        <p>Donec dignism</p>
-      </div>
-
-      <div className="mb-8">
-        <h3 className="mb-2 font-semibold text-theme">RESOURCES</h3>
-        <p>Donec dignism</p>
-        <p>Donec dignism</p>
-        <p>Donec dignism</p>
-      </div>
-
-      <div className="mb-8 flex space-x-4">
-        <div className="bg-socialbackground rounded-full p-2">
-          <div>
-            <a target="__blank" href="https://facebook.com/vigoplace">
-              <FontAwesomeIcon
-                icon={faFacebookF}
-                className="text-social w-4 h-4"
-              />
-            </a>
+          <div className="my-auto ml-3">
+            <p style={{ fontSize: "0.35rem" }}>TM</p>
           </div>
         </div>
 
-        <div className="bg-socialbackground rounded-full p-2">
-          <div>
-            <a
-              target="__blank"
-              href="https://www.linkedin.com/company/vigoplace/"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className="text-social w-4 h-4"
-              />
-            </a>
+        <div className="mb-8">
+          <h3 className="mb-2 font-semibold text-theme">COMPANY</h3>
+          <p>Donec dignism</p>
+          <p>Donec dignism</p>
+          <p>Donec dignism</p>
+          <p>Donec dignism</p>
+        </div>
+
+        <div className="mb-8">
+          <h3 className="mb-2 font-semibold text-theme">SERVICES</h3>
+          <p>Donec dignism</p>
+          <p>Donec dignism</p>
+          <p>Donec dignism</p>
+          <p>Donec dignism</p>
+        </div>
+
+        <div className="mb-8">
+          <h3 className="mb-2 font-semibold text-theme">RESOURCES</h3>
+          <p>Donec dignism</p>
+          <p>Donec dignism</p>
+          <p>Donec dignism</p>
+        </div>
+
+        <div className="mb-8 flex space-x-4">
+          <div className="bg-socialbackground rounded-full p-2">
+            <div>
+              <a target="__blank" href="https://facebook.com/vigoplace">
+                <FontAwesomeIcon
+                  icon={faFacebookF}
+                  className="text-social w-4 h-4"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-socialbackground rounded-full p-2">
+            <div>
+              <a
+                target="__blank"
+                href="https://www.linkedin.com/company/vigoplace/"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="text-social w-4 h-4"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-socialbackground rounded-full p-2">
+            <div>
+              <a target="__blank" href="https://x.com/vvigoplace?s=11">
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  className="text-social w-4 h-4"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="bg-socialbackground rounded-full p-2">
+            <div>
+              <a
+                target="__blank"
+                href="https://www.instagram.com/thevigoplace?igsh=NW1pOGFsNml4NTVk"
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="text-social w-4 h-4"
+                />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="bg-socialbackground rounded-full p-2">
-          <div>
-            <a target="__blank" href="https://x.com/vvigoplace?s=11">
-              <FontAwesomeIcon
-                icon={faTwitter}
-                className="text-social w-4 h-4"
-              />
-            </a>
+        <div className="mb-8 w-[80%]">
+          <p>
+            Nam posuere accumsan porta. Integer id orci sed ante tincidunt
+            tincidunt sit amet sed libero.
+          </p>
+        </div>
+
+        <div className="mb-8 font-bold">
+          <p> © Vigobrand Inc. {currentYear}</p>
+        </div>
+
+        <div id="google_translate_element" className="my-4"></div>
+      </footer>
+
+      <footer className="hidden mb-8 bg-white rounded-md px-3 py-4 font-nunito custom:grid custom:grid-cols-7 custom:gap-8 relative">
+        <div className="mb-8 custom:mb-0 custom:flex custom:flex-col custom:justify-between custom:col-span-2">
+          <div className="flex mb-4 custom:mb-0">
+            <Image src={Logo} alt="Vigoplace Logo" className="h-14 w-auto" />
+            <div className="my-auto ml-3">
+              <p style={{ fontSize: "0.35rem" }}>TM</p>
+            </div>
+          </div>
+
+          <div className="mb-8 w-[80%] custom:w-full custom:my-6">
+            <p className="text-[0.83rem]">
+              Nam posuere accumsan porta. Integer id orci sed ante tincidunt
+              tincidunt sit amet sed libero.
+            </p>
+          </div>
+
+          <div className="font-bold text-[0.83rem]">
+            <p> © Vigobrand Inc. {currentYear}</p>
+          </div>
+          <div
+            id="google_translate_element"
+            className="my-4 custom:order-last"
+          ></div>
+        </div>
+
+        <div className="mb-8 custom:mb-0 custom:col-span-1">
+          <h3 className="mb-2 font-semibold text-theme text-[0.83rem]">
+            COMPANY
+          </h3>
+          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+        </div>
+
+        <div className="mb-8 custom:mb-0 custom:col-span-1">
+          <h3 className="mb-2 font-semibold text-theme text-[0.83rem]">
+            SERVICES
+          </h3>
+          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+        </div>
+
+        <div className="mb-8 custom:mb-0 custom:col-span-1">
+          <h3 className="mb-2 font-semibold text-theme text-[0.83rem]">
+            RESOURCES
+          </h3>
+          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+        </div>
+
+        <div className="mb-8 flex space-x-4 custom:col-span-2 custom:items-center custom:justify-center custom:mb-auto z-20">
+          <div className="bg-socialbackground rounded-full p-2">
+            <div>
+              <a target="__blank" href="https://facebook.com/vigoplace">
+                <FontAwesomeIcon
+                  icon={faFacebookF}
+                  className="text-social w-4 h-4"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-socialbackground rounded-full p-2">
+            <div>
+              <a
+                target="__blank"
+                href="https://www.linkedin.com/company/vigoplace/"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="text-social w-4 h-4"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-socialbackground rounded-full p-2">
+            <div>
+              <a target="__blank" href="https://x.com/vvigoplace?s=11">
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  className="text-social w-4 h-4"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="bg-socialbackground rounded-full p-2">
+            <div>
+              <a
+                target="__blank"
+                href="https://www.instagram.com/thevigoplace?igsh=NW1pOGFsNml4NTVk"
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="text-social w-4 h-4"
+                />
+              </a>
+            </div>
           </div>
         </div>
-        <div className="bg-socialbackground rounded-full p-2">
-          <div>
-            <a
-              target="__blank"
-              href="https://www.instagram.com/thevigoplace?igsh=NW1pOGFsNml4NTVk"
-            >
-              <FontAwesomeIcon
-                icon={faInstagram}
-                className="text-social w-4 h-4"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="mb-8 w-[80%]">
-        <p>
-          Nam posuere accumsan porta. Integer id orci sed ante tincidunt
-          tincidunt sit amet sed libero.
-        </p>
-      </div>
-
-      <div className="mb-8 font-bold">
-        <p> © Vigobrand Inc. {currentYear}</p>
-      </div>
-
-      <div id="google_translate_element" className="my-4"></div>
-    </section>
+      </footer>
+    </>
   );
 };
 

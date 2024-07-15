@@ -45,7 +45,7 @@ const NavBar: React.FC = () => {
         style={{ transition: "ease-in .7s", scrollBehavior: "smooth" }}
         className={`${
           isScrolled ? "fixed shadow-md" : "absolute"
-        }   top-0 left-0 w-full flex justify-between bg-primary p-4 z-10`}
+        }   top-0 left-0 w-full flex justify-between bg-primary p-4 z-30 px-8`}
       >
         <div>
           <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
@@ -62,7 +62,7 @@ const NavBar: React.FC = () => {
       </nav>
 
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-white shadow-md z-10">
+        <div className="fixed top-0 left-0 w-full h-full bg-white shadow-md z-30">
           <div className="p-4 mt-4">
             <NavItems closeMenu={closeMenu} />
           </div>

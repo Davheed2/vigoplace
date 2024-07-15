@@ -61,6 +61,7 @@
     --accent-foreground: 210 20% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 20% 98%;
+    --heading: 0 0% 0%;
     --border: 215 27.9% 16.9%;
     --input: 215 27.9% 16.9%;
     --ring: 263.4 70% 50.4%;
@@ -94,7 +95,7 @@
   body {
     @apply bg-primary text-primary;
     margin: 0;
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   h1 {
@@ -114,4 +115,16 @@
 
 nav {
   @apply mb-8;
+}
+
+@media (min-width: 640px) {
+  body {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 2.5rem;
+  }
 }
