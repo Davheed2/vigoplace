@@ -16,11 +16,11 @@ const GroupManagement: React.FC = () => {
   return (
     <>
       <section className="mt-16 mb-8 bg-text rounded-md pt-4 font-nunito">
-        <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+        <h2 className="mb-4 text-2xl font-bold font-ubuntu sm:text-center md:text-4xl lg:text-4xl xl:text-5xl">
           Groups/Community activity management
         </h2>
 
-        <p className="mb-4">
+        <p className="mb-4 sm:text-center sm:w-[70%] sm:mx-auto sm:mb-9 md:w-[60%] md:text-base lg:text-lg">
           Manage and engage with various groups and communities effortlessly
           using Vigoplace’s Group Place feature.
         </p>
@@ -31,6 +31,7 @@ const GroupManagement: React.FC = () => {
             alt="Activity Image"
             priority={true}
             fetchPriority="high"
+            className="w-[100%]"
           />
         </div>
       </section>
@@ -40,7 +41,7 @@ const GroupManagement: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Group}
               alt="Group Image"
@@ -49,12 +50,12 @@ const GroupManagement: React.FC = () => {
             />
           </div>
 
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Collection posts
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Facilitate group fund collections and manage group finances.
             </p>
           </div>
@@ -67,14 +68,16 @@ const GroupManagement: React.FC = () => {
       >
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Family Groups
             </h2>
 
-            <p className="mb-2">Stay connected with family members.</p>
+            <p className="mb-2 md:text-base lg:text-lg">
+              Stay connected with family members.
+            </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={Family}
               alt="Family Image"
@@ -90,7 +93,7 @@ const GroupManagement: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Hobby}
               alt="Hobby Image"
@@ -99,12 +102,12 @@ const GroupManagement: React.FC = () => {
             />
           </div>
 
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Hobby Groups
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Share interests and hobbies with like-minded individuals.
             </p>
           </div>
@@ -117,16 +120,16 @@ const GroupManagement: React.FC = () => {
       >
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Study Groups
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Collaborate on academic projects and share resources.
             </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={Study}
               alt="Study Image"
@@ -142,7 +145,7 @@ const GroupManagement: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Support}
               alt="Support Image"
@@ -150,12 +153,13 @@ const GroupManagement: React.FC = () => {
               className="mx-auto w-[100%]"
             />
           </div>
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Support Groups
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Provide and receive support for various issues.
             </p>
           </div>
@@ -168,16 +172,16 @@ const GroupManagement: React.FC = () => {
       >
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Networking Groups
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Expand professional connections and opportunities.
             </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={Networking}
               alt="Networking Image"
@@ -193,7 +197,7 @@ const GroupManagement: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Professional}
               alt="Professional Image"
@@ -201,12 +205,12 @@ const GroupManagement: React.FC = () => {
               className="mx-auto w-[100%]"
             />
           </div>
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Professional Association
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Join industry-specific groups for networking and growth.
             </p>
           </div>
@@ -219,16 +223,16 @@ const GroupManagement: React.FC = () => {
       >
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Alumni Groups
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Reconnect with former classmates and organize reunions.
             </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={Alumni}
               alt="Alumni Image"
@@ -244,7 +248,7 @@ const GroupManagement: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Volunteer}
               alt="Volunteer Image"
@@ -253,12 +257,12 @@ const GroupManagement: React.FC = () => {
             />
           </div>
 
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Volunteer Groups
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Coordinate volunteer activities and initiatives.
             </p>
           </div>
@@ -271,12 +275,16 @@ const GroupManagement: React.FC = () => {
       >
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">Sport Teams</h2>
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
+              Sport Teams
+            </h2>
 
-            <p className="mb-2">Manage team activities and events.</p>
+            <p className="mb-2 md:text-base lg:text-lg">
+              Manage team activities and events.
+            </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={Sport}
               alt="Sport Image"
@@ -292,7 +300,7 @@ const GroupManagement: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Community}
               alt="Community Image"
@@ -300,12 +308,13 @@ const GroupManagement: React.FC = () => {
               className="mx-auto w-[100%]"
             />
           </div>
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Interest based communities
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Create groups around specific interests or causes.
             </p>
           </div>

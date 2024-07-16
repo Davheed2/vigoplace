@@ -15,11 +15,11 @@ const FinancialService: React.FC = () => {
   return (
     <>
       <section className="mt-16 mb-8 bg-text rounded-md pt-4 font-nunito">
-        <h2 className="mb-4 text-2xl font-bold font-ubuntu">
-          Financial Service{" "}
+        <h2 className="mb-4 text-2xl font-bold font-ubuntu sm:text-center md:text-4xl lg:text-4xl xl:text-5xl">
+          Financial Service
         </h2>
 
-        <p className="mb-4">
+        <p className="mb-4 sm:text-center sm:w-[70%] sm:mx-auto sm:mb-9 md:w-[60%] md:text-base lg:text-lg">
           Vigoplace provides a secure and user-friendly financial management
           system.
         </p>
@@ -30,6 +30,7 @@ const FinancialService: React.FC = () => {
             alt="Finance Image"
             priority={true}
             fetchPriority="high"
+            className="w-[100%]"
           />
         </div>
       </section>
@@ -39,7 +40,7 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Wallet}
               alt="Wallet Image"
@@ -48,12 +49,12 @@ const FinancialService: React.FC = () => {
             />
           </div>
 
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Multi-wallet system
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Manage multiple currency wallets within the app, supporting
               international transactions
             </p>
@@ -64,16 +65,16 @@ const FinancialService: React.FC = () => {
       <section id="kyc" className="rounded-t-md pt-4 pb-8 font-nunito bg-white">
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               KYC (Know Your Customer)
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Ensure secure user verification to protect against fraud.
             </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={Kyc}
               alt="KYC Image"
@@ -89,7 +90,7 @@ const FinancialService: React.FC = () => {
         className="pt-4 pb-8 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Bank}
               alt="Bank Image"
@@ -98,12 +99,12 @@ const FinancialService: React.FC = () => {
             />
           </div>
 
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Secured online banking
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Safe and secure online banking features for peace of mind.
             </p>
           </div>
@@ -116,17 +117,17 @@ const FinancialService: React.FC = () => {
       >
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Cardless transaction
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Use virtual wallets for seamless and secure transactions without
               needing physical cards.
             </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={Card}
               alt="Card Image"
@@ -142,7 +143,7 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Transfer}
               alt="Transfer Image"
@@ -151,12 +152,12 @@ const FinancialService: React.FC = () => {
             />
           </div>
 
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Inter-bank transfer
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Easily transfer funds between different banks.
             </p>
           </div>
@@ -169,16 +170,16 @@ const FinancialService: React.FC = () => {
       >
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Wallet to wallet
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Transfer money between Vigoplace wallets quickly and securely.
             </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={SolarCard}
               alt="Solar Card Wallet Image"
@@ -194,7 +195,7 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={OTP}
               alt="OTP Image"
@@ -203,12 +204,12 @@ const FinancialService: React.FC = () => {
             />
           </div>
 
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               OTP For transfer
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Enhanced security with One-Time Password requirements for all
               transfers.
             </p>
@@ -222,16 +223,16 @@ const FinancialService: React.FC = () => {
       >
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Transaction receipts
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Transaction Receipts: Keep detailed records of all transactions.
             </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={Transaction}
               alt="Transaction Image"
@@ -247,7 +248,7 @@ const FinancialService: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Statement}
               alt="Statement Image"
@@ -256,12 +257,12 @@ const FinancialService: React.FC = () => {
             />
           </div>
 
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Transaction statements
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Access comprehensive financial statements for better financial
               planning.
             </p>
@@ -275,16 +276,16 @@ const FinancialService: React.FC = () => {
       >
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Expense tracking
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Monitor and manage your spending within the app.
             </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={ExpenseTrack}
               alt="Expense Track Image"
