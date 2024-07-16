@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="md:w-[50%] custom:w-[40%] md:relative md:my-auto lg:w-[35%] 2xl:w-[28%]">
-          <div className="mt-6 z-20 md:absolute md:bottom-4 md:top-7 custom:top-9 lg:!right-1 xl:!right-8 2xl:top-7">
+          <div className="mt-6 z-20 md:absolute md:bottom-4 md:top-7 custom:top-9 lg:!right-0 xl:!right-5 hero:!right-8 hero:!top-16 2xl:!top-7 2xl:!right-4 hero2:!right-10 hero2:!top-[65px]">
             <Image
               src={image}
               alt="Hero Image"

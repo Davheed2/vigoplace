@@ -10,9 +10,11 @@ const BasicPlace: React.FC = () => {
   return (
     <>
       <section className="mt-16 mb-4 bg-text rounded-md pt-4 font-nunito">
-        <h2 className="mb-4 text-2xl font-bold font-ubuntu">Learn</h2>
+        <h2 className="mb-4 text-2xl font-bold font-ubuntu sm:text-center md:text-4xl lg:text-4xl xl:text-5xl">
+          Learn
+        </h2>
 
-        <p className="mb-4">
+        <p className="mb-4 sm:text-center sm:w-[70%] sm:mx-auto sm:mb-9 md:w-[60%] md:text-base lg:text-lg">
           Vigoplace provides a secure and user-friendly financial management
           system.
         </p>
@@ -23,12 +25,15 @@ const BasicPlace: React.FC = () => {
             alt="Basic Place Image"
             priority={true}
             fetchPriority="high"
+            className="w-[100%]"
           />
         </div>
       </section>
 
       <section className="mb-4">
-        <h2 className="mb-4 text-2xl font-bold font-ubuntu">Basic place</h2>
+        <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-4xl lg:text-4xl xl:text-5xl">
+          Basic place
+        </h2>
       </section>
 
       <section
@@ -36,7 +41,7 @@ const BasicPlace: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Profile}
               alt="Profile Image"
@@ -45,12 +50,12 @@ const BasicPlace: React.FC = () => {
             />
           </div>
 
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Profile management
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Update personal information, profile picture, and cover photo to
               maintain a fresh and appealing profile. This helps others identify
               and connect with you more easily.
@@ -65,18 +70,18 @@ const BasicPlace: React.FC = () => {
       >
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Posts creation
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Share a variety of content such as photos, videos, and links. This
               feature is perfect for keeping your friends and followers updated
               on your activities and interests.
             </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={Post}
               alt="Post Image"
@@ -92,7 +97,7 @@ const BasicPlace: React.FC = () => {
         className="rounded-md py-4 pb-8 mb-8 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Interaction}
               alt="Interaction Image"
@@ -101,12 +106,12 @@ const BasicPlace: React.FC = () => {
             />
           </div>
 
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Interaction tools
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Engage with other users by liking, commenting, and sharing their
               posts. This fosters a sense of community and encourages
               interaction on the platform.
@@ -121,16 +126,18 @@ const BasicPlace: React.FC = () => {
       >
         <div className="flex items-center px-4">
           <div className="mr-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">Messaging</h2>
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
+              Messaging
+            </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Use direct messaging to have private conversations with friends
               and other users. This tool is essential for building and
               maintaining personal connections.
             </p>
           </div>
 
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
             <Image
               src={Message}
               alt="Message Image"
@@ -146,7 +153,7 @@ const BasicPlace: React.FC = () => {
         className="mb-8 rounded-md py-4 font-nunito bg-white"
       >
         <div className="flex items-center">
-          <div className="w-[40%] mx-2">
+          <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[3%]">
             <Image
               src={Notication}
               alt="Notication Image"
@@ -155,12 +162,12 @@ const BasicPlace: React.FC = () => {
             />
           </div>
 
-          <div className="mx-2 w-[60%]">
-            <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+          <div className="mx-2 w-[60%] sm:mr-2 sm:ml-auto">
+            <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-3xl">
               Notifications
             </h2>
 
-            <p className="mb-2">
+            <p className="mb-2 md:text-base lg:text-lg">
               Stay informed about interactions, updates, and important events
               through real-time notifications. This ensures you never miss any
               important activity on your profile.

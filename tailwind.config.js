@@ -27,6 +27,8 @@ module.exports = {
         benefit7: "1365px",
         benefit8: "1508px",
         custom: "900px",
+        hero: "1450px",
+        hero2: "1740px",
       },
       backgroundImage: {
         "hero-pattern":
