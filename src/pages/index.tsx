@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 import { Nunito } from "next/font/google";
 import { Ubuntu } from "next/font/google";
@@ -15,6 +16,8 @@ import Contest from "@/components/Home/Contest";
 import FundRaising from "@/components/Home/FundRaising";
 import Carousel from "@/components/Home/Carousel";
 import How from "@/components/Home/How";
+import Ellipse from "../../public/img/Ellipse 44.svg";
+import Ellipse2 from "../../public/img/Ellipse 45.svg";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -43,8 +46,21 @@ export default function Home() {
       </Head>
 
       <BaseLayout>
-        <Hero />
-        <Business />
+        <div className="relative">
+          <Hero />
+          <Business />
+
+          <div className="hidden md:block absolute bottom-0 right-[-20%] z-10">
+            <Image
+              src={Ellipse}
+              alt="Circle image"
+              width={700}
+              height={900}
+              className="md:w-[75%]"
+            />
+          </div>
+        </div>
+
         <FinanceServices />
         <GroupPlace />
         <Church />

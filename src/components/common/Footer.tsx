@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="mb-8 bg-white rounded-md px-3 py-4 font-nunito custom:hidden">
+      <footer className="mb-8 bg-white rounded-md px-3 py-4 font-nunito md:hidden">
         <div className="flex mb-8">
           <Image
             src={Logo}
@@ -190,6 +190,118 @@ const Footer: React.FC = () => {
         </div>
 
         <div id="google_translate_element" className="my-4"></div>
+      </footer>
+
+      <footer className="hidden md:flex md:flex-col md:mb-8 md:bg-white md:rounded-md md:px-10 md:py-4 font-nunito ">
+        <div className="mb-8">
+          <div className="flex mb-4 md:mb-0">
+            <Image src={Logo} alt="Vigoplace Logo" className="h-14 w-auto" />
+            <div className="my-auto ml-3">
+              <p style={{ fontSize: "0.35rem" }}>TM</p>
+            </div>
+          </div>
+
+          <div className="mb-8 w-[80%] md:w-full md:my-6">
+            <p className="text-[0.83rem]">
+              Nam posuere accumsan porta. Integer id orci sed ante tincidunt
+              tincidunt sit amet sed libero.
+            </p>
+          </div>
+        </div>
+
+        <div className="md:flex md:w-[70%] justify-between">
+          <div className="mb-8 ">
+            <h3 className="mb-2 font-semibold text-theme text-[0.83rem]">
+              COMPANY
+            </h3>
+            <p className="text-[0.83rem] md:mb-4">Donec dignism</p>
+            <p className="text-[0.83rem] md:mb-4">Donec dignism</p>
+            <p className="text-[0.83rem] md:mb-4">Donec dignism</p>
+            <p className="text-[0.83rem] md:mb-4">Donec dignism</p>
+          </div>
+
+          <div className="mb-8 ">
+            <h3 className="mb-2 font-semibold text-theme text-[0.83rem]">
+              SERVICES
+            </h3>
+            <p className="text-[0.83rem] md:mb-4">Donec dignism</p>
+            <p className="text-[0.83rem] md:mb-4">Donec dignism</p>
+            <p className="text-[0.83rem] md:mb-4">Donec dignism</p>
+            <p className="text-[0.83rem] md:mb-4">Donec dignism</p>
+          </div>
+
+          <div className="mb-8 ">
+            <h3 className="mb-2 font-semibold text-theme text-[0.83rem]">
+              RESOURCES
+            </h3>
+            <p className="text-[0.83rem] md:mb-4">Donec dignism</p>
+            <p className="text-[0.83rem] md:mb-4">Donec dignism</p>
+            <p className="text-[0.83rem] md:mb-4">Donec dignism</p>
+          </div>
+        </div>
+
+        <div className="flex justify-between">
+          <div>
+            <div>
+              <div className="text-[0.83rem]">
+                <p> © Vigobrand Inc. {currentYear}</p>
+              </div>
+              <div id="google_translate_element" className="my-4"></div>
+            </div>
+          </div>
+
+          <div className="mb-4 flex">
+            <div className="bg-socialbackground rounded-full p-2 mr-4 mt-auto">
+              <div>
+                <a target="__blank" href="https://facebook.com/vigoplace">
+                  <FontAwesomeIcon
+                    icon={faFacebookF}
+                    className="text-social w-4 h-4"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-socialbackground rounded-full p-2 mr-4 mt-auto">
+              <div>
+                <a
+                  target="__blank"
+                  href="https://www.linkedin.com/company/vigoplace/"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="text-social w-4 h-4"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-socialbackground rounded-full p-2 mr-4 mt-auto">
+              <div>
+                <a target="__blank" href="https://x.com/vvigoplace?s=11">
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    className="text-social w-4 h-4"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-socialbackground rounded-full p-2 mr-4 mt-auto">
+              <div>
+                <a
+                  target="__blank"
+                  href="https://www.instagram.com/thevigoplace?igsh=NW1pOGFsNml4NTVk"
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="text-social w-4 h-4"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
 
       <footer className="hidden mb-8 bg-white rounded-md px-3 py-4 font-nunito custom:grid custom:grid-cols-7 custom:gap-8 relative">

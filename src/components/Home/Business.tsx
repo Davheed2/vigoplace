@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one.svg";
-import BusinessIcon from "../../../public/img/Business.svg";
 import BusinessImage from "../../../public/img/BusinessM.svg";
+import Ellipse from "../../../public/img/Ellipse 44.svg";
+import Ellipse2 from "../../../public/img/Ellipse 45.svg";
 
 const Business: React.FC = () => {
   return (
@@ -66,6 +67,16 @@ const Business: React.FC = () => {
                 layout="responsive"
               />
             </div>
+
+            {/* <div className="hidden md:block z-10 absolute bottom-36 left-10">
+              <Image
+                src={Ellipse}
+                alt="Circle Image"
+                priority={true}
+                layout="responsive"
+                className="w-[100%] xl:!w-[100%] 2xl:!w-[80%]"
+              />
+            </div> */}
           </div>
         </div>
       </div>

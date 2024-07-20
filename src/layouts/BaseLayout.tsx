@@ -19,7 +19,7 @@ export const BaseLayout = ({ children }: BaseLayoutProps) => {
           <Footer />
           <Margin />
         </div>
-        <div className="hidden custom:block absolute bottom-0 right-[2%] z-10">
+        <div className="hidden md:block absolute bottom-0 right-[2%] z-10">
           <Image src={Ellipse} alt="Circle image" width={700} height={900} className="lg:w-[750px]"/>
         </div>
       </div>

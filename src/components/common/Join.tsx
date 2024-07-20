@@ -8,7 +8,7 @@ import Ellipse from "../../../public/img/Ellipse 43.svg";
 
 const Join: React.FC = () => {
   return (
-    <section className="mb-8 bg-theme rounded-md px-3 py-4 font-nunito">
+    <section className="mb-8 bg-theme rounded-md px-3 py-4 font-nunito md:px-4">
       <div className="md:flex md:mx-8">
         <div className="md:w-[50%] relative">
           <h2 className="mb-6 text-2xl w-[60%] text-white font-bold font-ubuntu md:w-[100%]">

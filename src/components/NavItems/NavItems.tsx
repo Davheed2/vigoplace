@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
+import Logo from "../../../public/img/Logo.svg";
+import Image from "next/image";
 
 type NavLink = {
   name: string;
@@ -13,6 +15,7 @@ type SubNavLink = NavLink & {
 
 type MainNavLink = {
   name: string;
+  link?: string;
   nameSubLinks?: SubNavLink[];
 };
 
@@ -22,6 +25,7 @@ interface NavItemsProps {
 
 export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
   const navs: MainNavLink[] = [
+    //{ name: "Home", link: "/", nameSubLinks: [] },
     {
       name: "Why Vigoplace",
       nameSubLinks: [
@@ -400,70 +404,99 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
   };
 
   return (
-    <div className="px-4 pt-12 text-slate-900 rounded-[5px] bg-white overflow-y-auto max-h-[100vh]">
-      {navs.map((nav) => (
-        <ul key={nav.name} className="bg-white relative flex flex-col mb-5">
-          <li
-            className="flex items-center justify-between cursor-pointer gap-0 w-full mb-7"
-            onClick={() => handleMainNavClick(nav.name)}
-          >
-            <span>{nav.name}</span>
-            {activeNav === nav.name ? (
-              <RiArrowDropUpLine className="text-[20px] h-full" />
-            ) : (
-              <RiArrowDropDownLine className="text-[20px] h-full" />
-            )}
-          </li>
-          {activeNav === nav.name && (
-            <ul className="bg-slate-200 block mb-7 p-[10px] rounded-[5px]">
-              {nav.nameSubLinks?.map((subLink, index) => (
-                <ul key={subLink.name} className="flex flex-col mb-5">
-                  <li
-                    className={`flex cursor-pointer items-center justify-between gap-0 w-full mb-3 ml-1 ${
-                      index === 0 && "mt-6"
-                    }`}
-                  >
-                    {subLink.link ? (
-                      <Link onClick={handleLinkClick} href={subLink.link}>
-                        {subLink.name}
-                      </Link>
-                    ) : (
-                      subLink.name
-                    )}
-                    {subLink.nameSubLinks ? (
-                      activeSubNav === subLink.name ? (
-                        <RiArrowDropUpLine
-                          onClick={() => setActiveSubNav(null)}
-                          className="text-[20px] h-full"
-                        />
-                      ) : (
-                        <RiArrowDropDownLine
-                          onClick={() => setActiveSubNav(subLink.name)}
-                          className="text-[20px] h-full"
-                        />
-                      )
-                    ) : null}
-                  </li>
-                  {activeSubNav === subLink.name && subLink.nameSubLinks && (
-                    <ul className="flex flex-col bg-white p-[10px] rounded-[5px] mb-7">
-                      {subLink.nameSubLinks.map((link, index) => (
-                        <Link
-                          href={link.link}
-                          key={link.name}
-                          onClick={handleLinkClick}
-                          className={`mb-7 ml-5 ${index === 0 && "mt-6"}`}
-                        >
-                          {link.name}
+    <>
+      <div className="px-4 pt-12 text-slate-900 rounded-[5px] bg-white overflow-y-auto max-h-[100vh] md:hidden">
+        {navs.map((nav) => (
+          <ul key={nav.name} className="bg-white relative flex flex-col mb-5">
+            <li
+              className="flex items-center justify-between cursor-pointer gap-0 w-full mb-7"
+              onClick={() => handleMainNavClick(nav.name)}
+            >
+              
+              <span>{nav.name}</span>
+              {activeNav === nav.name ? (
+                <RiArrowDropUpLine className="text-[20px] h-full" />
+              ) : (
+                <RiArrowDropDownLine className="text-[20px] h-full" />
+              )}
+            </li>
+            {activeNav === nav.name && (
+              <ul className="bg-slate-200 block mb-7 p-[10px] rounded-[5px]">
+                {nav.nameSubLinks?.map((subLink, index) => (
+                  <ul key={subLink.name} className="flex flex-col mb-5">
+                    <li
+                      className={`flex cursor-pointer items-center justify-between gap-0 w-full mb-3 ml-1 ${
+                        index === 0 && "mt-6"
+                      }`}
+                    >
+                      {subLink.link ? (
+                        <Link onClick={handleLinkClick} href={subLink.link}>
+                          {subLink.name}
                         </Link>
-                      ))}
-                    </ul>
-                  )}
-                </ul>
-              ))}
-            </ul>
-          )}
-        </ul>
-      ))}
-    </div>
+                      ) : (
+                        subLink.name
+                      )}
+                      {subLink.nameSubLinks ? (
+                        activeSubNav === subLink.name ? (
+                          <RiArrowDropUpLine
+                            onClick={() => setActiveSubNav(null)}
+                            className="text-[20px] h-full"
+                          />
+                        ) : (
+                          <RiArrowDropDownLine
+                            onClick={() => setActiveSubNav(subLink.name)}
+                            className="text-[20px] h-full"
+                          />
+                        )
+                      ) : null}
+                    </li>
+                    {activeSubNav === subLink.name && subLink.nameSubLinks && (
+                      <ul className="flex flex-col bg-white p-[10px] rounded-[5px] mb-7">
+                        {subLink.nameSubLinks.map((link, index) => (
+                          <Link
+                            href={link.link}
+                            key={link.name}
+                            onClick={handleLinkClick}
+                            className={`mb-7 ml-5 ${index === 0 && "mt-6"}`}
+                          >
+                            {link.name}
+                          </Link>
+                        ))}
+                      </ul>
+                    )}
+                  </ul>
+                ))}
+              </ul>
+            )}
+          </ul>
+        ))}
+      </div>
+
+      <div className="hidden text-heading md:flex bg-white ">
+        <div className="flex-shrink-0">
+          <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
+        </div>
+
+        <div className="flex-grow text-center">
+          <ul className="flex justify-center space-x-8">
+            {navs.slice(0, 4).map((nav) => (
+              <li key={nav.name} className="flex items-center cursor-pointer">
+                <span>{nav.name}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="flex-shrink-0">
+          <ul className="flex space-x-8">
+            {navs.slice(4).map((nav) => (
+              <li key={nav.name} className="flex items-center cursor-pointer">
+                <span>{nav.name}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </>
   );
 };

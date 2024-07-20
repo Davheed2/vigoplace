@@ -4,12 +4,10 @@ import Logo from "../../../public/img/Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { NavItems } from "../NavItems/NavItems";
-import useScrollWithOffset from "@/hooks/useScrollWithOffset";
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  useScrollWithOffset(50);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,12 +43,13 @@ const NavBar: React.FC = () => {
         style={{ transition: "ease-in .7s", scrollBehavior: "smooth" }}
         className={`${
           isScrolled ? "fixed shadow-md" : "absolute"
-        }   top-0 left-0 w-full flex justify-between bg-primary p-4 z-30 px-8`}
+        }   top-0 left-0 w-full flex justify-between bg-primary p-4 z-30 px-8 md:hidden`}
       >
         <div>
           <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
         </div>
-        <div className="flex items-center">
+
+        <div className="flex items-center md:hidden">
           <div className="p-2">
             <FontAwesomeIcon
               icon={isMenuOpen ? faTimes : faBars}
@@ -58,6 +57,22 @@ const NavBar: React.FC = () => {
               onClick={toggleMenu}
             />
           </div>
+        </div>
+      </nav>
+
+      <nav className="hidden md:flex bg-white py-6 px-6 rounded-md justify-between items-center">
+        {/* <div>
+          <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
+        </div> */}
+
+        {/* <div className="text-theme">
+          <ul>
+            <li>Home</li>
+          </ul>
+        </div> */}
+
+        <div className="hidden md:flex ">
+          <NavItems closeMenu={closeMenu} />
         </div>
       </nav>
 
