@@ -3,8 +3,7 @@ import Image from "next/image";
 import Logo from "../../../public/img/Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { NavItems } from "../NavItems/NavItems";
-
+import { MobileNav } from "../NavItems/mobileNav";
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -43,7 +42,7 @@ const NavBar: React.FC = () => {
         style={{ transition: "ease-in .7s", scrollBehavior: "smooth" }}
         className={`${
           isScrolled ? "fixed shadow-md" : "absolute"
-        }   top-0 left-0 w-full flex justify-between bg-primary p-4 z-30 px-8 md:hidden`}
+        }   top-0 left-0 w-full flex justify-between  p-4 z-30 px-8 md:hidden`}
       >
         <div>
           <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
@@ -72,14 +71,14 @@ const NavBar: React.FC = () => {
         </div> */}
 
         <div className="hidden md:flex ">
-          <NavItems closeMenu={closeMenu} />
+          <MobileNav closeMenu={closeMenu} />
         </div>
       </nav>
 
       {isMenuOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-white shadow-md z-30">
           <div className="p-4 mt-4">
-            <NavItems closeMenu={closeMenu} />
+            <MobileNav closeMenu={closeMenu} />
           </div>
           <div className="absolute top-8 right-8">
             <FontAwesomeIcon

@@ -1,8 +1,37 @@
+
 import Link from "next/link";
 import { useState } from "react";
-import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
+import { RiArrowDropDownLine, RiArrowDropUpLine, RiDropdownList } from "react-icons/ri";
 import Logo from "../../../public/img/Logo.svg";
+
+import createAccount from "../../../public/icons/Join/CreateAccountIconDesktop.svg";
+import downloadAndroid from "../../../public/icons/Join/DownloadAndroidIconDesktop.svg";
+import downloadIos from "../../../public/icons/Join/DownloadIosIconDesktop.svg";
+import logIn from "../../../public/icons/Join/LoginIconDesktop.svg";
+
+import basicPlace from "../../../public/icons/Learn/BasicPlaceIconDesktop.svg";
+import channelPlace from "../../../public/icons/Learn/ChannelPlaceIconDesktop.svg";
+import contestPlace from "../../../public/icons/Learn/ContestPlaceIconDesktop.svg";
+import groupPlace from "../../../public/icons/Learn/GroupPlaceIconDesktop.svg";
+import marketPlace from "../../../public/icons/Learn/MarketPlaceIconDesktop.svg";
+import ministryPlace from "../../../public/icons/Learn/MinistryPlaceIconDesktop.svg";
+
+
+
+import bankTransfer from "../../../public/icons/Pricing/BankTransferIconDesktop.svg";
+import earningsCharge from "../../../public/icons/Pricing/EarningsChargeIconDesktop.svg";
+import fundWallet from "../../../public/icons/Pricing/FundWalletIconDesktop.svg";
+
+
+import church from "../../../public/icons/Why/ChurchIconDesktop.svg";
+import digitalContent from "../../../public/icons/Why/DigitalContentIconDesktop.svg";
+import ecommerce from "../../../public/icons/Why/EcommerceIconDesktop.svg";
+import finance from "../../../public/icons/Why/FinanceIconDesktop.svg";
+import fundRaising from "../../../public/icons/Why/FundraisingIconDesktop.svg";
+import group from "../../../public/icons/Why/GroupIconDesktop.svg";
+import onlineContest from "../../../public/icons/Why/OnlineContestIconDesktop.svg";
 import Image from "next/image";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
 type NavLink = {
   name: string;
@@ -10,28 +39,25 @@ type NavLink = {
 };
 
 type SubNavLink = NavLink & {
-  nameSubLinks?: NavLink[];
+    nameSubLinks?: NavLink[];
+    icon: any
 };
 
 type MainNavLink = {
   name: string;
   link?: string;
-  nameSubLinks?: SubNavLink[];
+    nameSubLinks?: SubNavLink[];
 };
 
-interface NavItemsProps {
-  closeMenu: () => void;
-}
-
-export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
+export const DesktopNav = () => {
   const navs: MainNavLink[] = [
-    //{ name: "Home", link: "/", nameSubLinks: [] },
     {
       name: "Why Vigoplace",
       nameSubLinks: [
         {
           name: "Church Activity Management",
-          link: "/church-activity",
+              link: "/church-activity",
+              icon: church,
           nameSubLinks: [
             {
               name: "Daily Reading Post",
@@ -45,7 +71,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Groups/Community Activity Management",
-          link: "/group-management",
+            link: "/group-management",
+            icon: group,
           nameSubLinks: [
             {
               name: "Collection Post",
@@ -80,7 +107,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Ecommerce",
-          link: "/e-commerce",
+            link: "/e-commerce",
+            icon: ecommerce,
           nameSubLinks: [
             { name: "Marketplace", link: "/e-commerce#marketplace" },
             { name: "Product Posts", link: "/e-commerce#product-posts" },
@@ -90,7 +118,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Financial Services",
-          link: "/financial-service",
+            link: "/financial-service",
+            icon: finance,
           nameSubLinks: [
             {
               name: "Multi-Wallet System",
@@ -136,7 +165,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Sell Digital Content",
-          link: "/sell-contents",
+            link: "/sell-contents",
+            icon: digitalContent,
           nameSubLinks: [
             { name: "Channel Place", link: "/sell-contents#channel-place" },
             {
@@ -150,7 +180,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Organize Online Contest",
-          link: "/contest",
+            link: "/contest",
+            icon: onlineContest,
           nameSubLinks: [
             { name: "Contest Place", link: "/contest#contest-place" },
             { name: "Contestant", link: "/contest#contestant" },
@@ -160,7 +191,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Fundraising",
-          link: "/fundraising",
+            link: "/fundraising",
+            icon: fundRaising,
           nameSubLinks: [
             {
               name: "Fundraising Posts",
@@ -179,7 +211,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
       nameSubLinks: [
         {
           name: "Funding",
-          link: "/funding",
+              link: "/funding",
+              icon: fundWallet,
           nameSubLinks: [
             {
               name: "Funding Naira Wallet Using a Naira Card",
@@ -201,7 +234,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Bank transfer",
-          link: "/bank-transfer",
+            link: "/bank-transfer",
+            icon: bankTransfer,
           nameSubLinks: [
             {
               name: "Regular or Normal Bank Transfer for USD",
@@ -223,7 +257,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Charges from earnings",
-          link: "/charges",
+            link: "/charges",
+            icon: earningsCharge,
           nameSubLinks: [
             {
               name: "Earnings From Products or Services",
@@ -254,7 +289,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
       nameSubLinks: [
         {
           name: "Basic Place",
-          link: "/basic-place",
+              link: "/basic-place",
+              icon : basicPlace,
           nameSubLinks: [
             { name: "Profile Management", link: "/basic-place#profile-manage" },
             { name: "Post Creation", link: "/basic-place#post-creation" },
@@ -268,7 +304,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Channel Place",
-          link: "/channel-place",
+            link: "/channel-place",
+            icon: channelPlace,
           nameSubLinks: [
             { name: "Pay-To-View Tools", link: "/channel-place#pay-to-view" },
             {
@@ -284,7 +321,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Contest Place",
-          link: "/contest-place",
+            link: "/contest-place",
+            icon: contestPlace,
           nameSubLinks: [
             {
               name: "Contest Creation",
@@ -303,7 +341,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Market Place",
-          link: "/market-place",
+            link: "/market-place",
+            icon: marketPlace,
           nameSubLinks: [
             {
               name: "Product/Service posting",
@@ -325,7 +364,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Ministry Place",
-          link: "/ministry-place",
+            link: "/ministry-place",
+            icon: ministryPlace,
           nameSubLinks: [
             {
               name: "Profile creation",
@@ -349,7 +389,8 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
         {
           name: "Group Place",
-          link: "/group-place",
+            link: "/group-place",
+            icon: groupPlace,
           nameSubLinks: [
             { name: "Group creation", link: "/group-place#creation" },
             { name: "Members management", link: "/group-place#management" },
@@ -364,139 +405,125 @@ export const NavItems: React.FC<NavItemsProps> = ({ closeMenu }) => {
         },
       ],
     },
-    {
-      name: "Join Community",
-      nameSubLinks: [
-        {
-          name: "Login",
-          link: "https://web.vigoplace.com/signin",
-        },
-        {
-          name: "Create Free Account",
-          link: "https://web.vigoplace.com/signup",
-        },
-        {
-          name: "Download IOS App",
-          link: "https://apps.apple.com/ng/app/vigoplace/id1622191142",
-        },
-        {
-          name: "Download Android App",
-          link: "https://play.google.com/store/apps/details?id=com.vigoplace.vigoplace",
-        },
-      ],
-    },
-  ];
+    ];
+    
+    const joinVigoPlace =  {
+        name: "Join Community",
+        nameSubLinks: [
+          {
+            name: "Login",
+                link: "https://web.vigoplace.com/signin",
+            icon: logIn
+          },
+          {
+            name: "Create Free Account",
+              link: "https://web.vigoplace.com/signup",
+            icon: createAccount
+          },
+          {
+            name: "Download IOS App",
+              link: "https://apps.apple.com/ng/app/vigoplace/id1622191142",
+            icon : downloadIos
+          },
+          {
+            name: "Download Android App",
+              link: "https://play.google.com/store/apps/details?id=com.vigoplace.vigoplace",
+              icon : downloadAndroid
+          },
+        ],
+      }
 
-  const [activeNav, setActiveNav] = useState<string | null>(null);
-  const [activeSubNav, setActiveSubNav] = useState<string | null>(null);
-
+      const [activeNav, setActiveNav] = useState<string | null>(null);
+      const [activeSubNav, setActiveSubNav] = useState<string | null>(null);
+    
   const handleMainNavClick = (name: string) => {
-    if (activeNav === name) {
-      setActiveNav(null);
-      setActiveSubNav(null);
-    } else {
-      setActiveNav(name);
-    }
-  };
+        setJoinCommunityDisplay(false)
+        if (activeNav === name) {
+          setActiveNav(null);
+          
+          setActiveSubNav(null);
+        } else {
+          setActiveNav(name);
+        }
+      };
 
-  const handleLinkClick = () => {
-    closeMenu();
-  };
+  const [subsubLink, setSubSubLink] = useState(true)
+  const [subLinkIndex, setSubLinkIndex] = useState(0)
 
+  const [joinCommunityDisplay, setJoinCommunityDisplay] = useState<boolean>(false)
   return (
     <>
-      <div className="px-4 pt-12 text-slate-900 rounded-[5px] bg-white overflow-y-auto max-h-[100vh] md:hidden">
-        {navs.map((nav) => (
-          <ul key={nav.name} className="bg-white relative flex flex-col mb-5">
-            <li
-              className="flex items-center justify-between cursor-pointer gap-0 w-full mb-7"
-              onClick={() => handleMainNavClick(nav.name)}
-            >
-              
-              <span>{nav.name}</span>
-              {activeNav === nav.name ? (
-                <RiArrowDropUpLine className="text-[20px] h-full" />
+          <div className="md:flex hidden py-[20px]  items-center px-[20px] gap-[167px] fixed left-[20px] right-[20px]  z-[100] top-[10px] rounded-[10px] bg-[#FFF] justify-between p-" >
+             <Link href='/'>
+                 <Image src={Logo} className="w-[150px] " alt="vigoplace image" /> 
+                 </Link>
+
+              <div className="flex gap-[20px] ">
+                  {
+                      navs.map((name, index) => {
+                          return <ul key={index} className="">
+                              <li   onClick={() => handleMainNavClick(name.name)} className="text-[#181616] cursor-pointer flex items-center gap-0 text-[18px] font-[600] "><span> {name.name}</span> <span className="">  {activeNav === name.name ? (
+                <RiArrowDropUpLine className="text-[40px] h-full" />
               ) : (
-                <RiArrowDropDownLine className="text-[20px] h-full" />
-              )}
-            </li>
-            {activeNav === nav.name && (
-              <ul className="bg-slate-200 block mb-7 p-[10px] rounded-[5px]">
-                {nav.nameSubLinks?.map((subLink, index) => (
-                  <ul key={subLink.name} className="flex flex-col mb-5">
-                    <li
-                      className={`flex cursor-pointer items-center justify-between gap-0 w-full mb-3 ml-1 ${
-                        index === 0 && "mt-6"
-                      }`}
-                    >
-                      {subLink.link ? (
-                        <Link onClick={handleLinkClick} href={subLink.link}>
-                          {subLink.name}
-                        </Link>
-                      ) : (
-                        subLink.name
-                      )}
-                      {subLink.nameSubLinks ? (
-                        activeSubNav === subLink.name ? (
-                          <RiArrowDropUpLine
-                            onClick={() => setActiveSubNav(null)}
-                            className="text-[20px] h-full"
-                          />
-                        ) : (
-                          <RiArrowDropDownLine
-                            onClick={() => setActiveSubNav(subLink.name)}
-                            className="text-[20px] h-full"
-                          />
-                        )
-                      ) : null}
-                    </li>
-                    {activeSubNav === subLink.name && subLink.nameSubLinks && (
-                      <ul className="flex flex-col bg-white p-[10px] rounded-[5px] mb-7">
-                        {subLink.nameSubLinks.map((link, index) => (
-                          <Link
-                            href={link.link}
-                            key={link.name}
-                            onClick={handleLinkClick}
-                            className={`mb-7 ml-5 ${index === 0 && "mt-6"}`}
-                          >
-                            {link.name}
-                          </Link>
-                        ))}
-                      </ul>
-                    )}
-                  </ul>
-                ))}
-              </ul>
-            )}
-          </ul>
-        ))}
-      </div>
+                <RiArrowDropDownLine className="text-[40px] h-full" />
+                              )} </span></li>
+                              {activeNav === name.name && (
+                                  <ul className="absolute md:left-[10%] lg:left-[25%] lg:right-[10%] md:top-[80px] lg:top-[70px] shadow md:right-[30%] h-[85vh] w-[700px] py-[20px] rounded-[10px] flex flex-col gap-[20px] bg-[#FFFFFF] px-[20px]">
+                                      {
+                                          name.nameSubLinks?.map((name, index) => {
+                                              return <div key={index} className=" flex relative gap-[16px]">
+                                                <li onClick={() => {
+                                                  (subsubLink && subLinkIndex === index) ? setSubSubLink(false) : setSubSubLink(true)
+                                                  setSubLinkIndex(index)
+                                                }} className={`flex gap-[16px] ${ subsubLink && subLinkIndex === index && "bg-[#FAFAFA]"} cursor-pointer w-[300px] items-center `}> <Image className="w-[50px]" src={name.icon} alt={name.name} /> <span className="text-[#181616] font-[600]"> {name.name}</span></li>
+                                             
+                                                { subLinkIndex === index && subsubLink && <div className="bg-[#FAFAFA] w-[350px] absolute !top-0 right-0 p-[8px] flex flex-col gap-[5px] ">
+                                                      {
+                                                          name.nameSubLinks?.map((name, index) => {
+                                                              return <Link className="text-[#282424]" key={index} href={name.link}>{name.name}</Link>
+                                                          })
+                                                      }
+                                                  </div>}
+                                            
+                                              </div>
+                                          })
+                                      }
+                                  </ul>
+                              )}
+                             </ul>
+                          
+                         
+                      })
+                  }
+              </div>
 
-      <div className="hidden text-heading md:flex bg-white ">
-        <div className="flex-shrink-0">
-          <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
-        </div>
-
-        <div className="flex-grow text-center">
-          <ul className="flex justify-center space-x-8">
-            {navs.slice(0, 4).map((nav) => (
-              <li key={nav.name} className="flex items-center cursor-pointer">
-                <span>{nav.name}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="flex-shrink-0">
-          <ul className="flex space-x-8">
-            {navs.slice(4).map((nav) => (
-              <li key={nav.name} className="flex items-center cursor-pointer">
-                <span>{nav.name}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+              <div className=" rounded-[10px] cursor-pointer py-[16px] px-[24px] rounded-[10px] shadow">
+                  <ul className="relative">
+            <li onClick={() => {
+              joinCommunityDisplay ? setJoinCommunityDisplay(false) : setJoinCommunityDisplay(true)
+              setActiveNav(null)
+                      }} className="text-[#8135F9] flex items-center">
+                      {
+                      joinVigoPlace.name
+              }
+               {joinCommunityDisplay?<RiArrowDropUpLine className="text-[40px] h-full" />
+             :
+                <RiArrowDropDownLine className="text-[40px] h-full" />}
+                      </li>
+                      {joinCommunityDisplay && <ul className="absolute top-[50px] shadow rounded bg-[#FFF] right-[-50px] py-[30px] px-[20px] w-[600px] grid grid-cols-2 gap-5">
+                          {
+                joinVigoPlace.nameSubLinks.map((name, index) => {
+                  return <Link href={name.link} className="flex gap-[10px] items-start" key={index}>
+                    <Image src={name.icon} alt={name.name} />
+                    <h3 className="text-[#000000] text-[20px] font-[600] leading-[26px]">{name.name}</h3>
+                                </Link>
+                              })
+                          }
+                      </ul>}
+                        </ul>
+              </div>
+     </div>
+     
     </>
   );
 };
