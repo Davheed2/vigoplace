@@ -6,11 +6,11 @@ const Charge: React.FC = () => {
   return (
     <>
       <section className="mt-16 mb-8 bg-text rounded-md pt-4 font-nunito">
-        <h2 className="mb-4 text-2xl font-bold font-ubuntu">
+        <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-center">
           Charges from earnings
         </h2>
 
-        <p className="mb-4">
+        <p className="mb-4 md:text-center">
           For a successful transaction, every transaction on the app incurs a
           minor percentage-based fee.{" "}
         </p>

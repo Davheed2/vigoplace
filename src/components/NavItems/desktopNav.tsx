@@ -340,29 +340,7 @@ export const DesktopNav = () => {
             },
           ],
         },
-        {
-          name: "Market Place",
-          link: "/market-place",
-          icon: marketPlace,
-          nameSubLinks: [
-            {
-              name: "Product/Service posting",
-              link: "/market-place#product-posting",
-            },
-            {
-              name: "Transaction tools",
-              link: "/market-place#transaction-tools",
-            },
-            {
-              name: "Inventory Management",
-              link: "/market-place#inventory-management",
-            },
-            {
-              name: "Customer Interaction",
-              link: "/market-place#customer-interaction",
-            },
-          ],
-        },
+
         {
           name: "Ministry Place",
           link: "/ministry-place",
@@ -402,6 +380,29 @@ export const DesktopNav = () => {
             },
             { name: "Discussion forum", link: "/group-place#discussion" },
             { name: "Notifications", link: "/group-place#notification" },
+          ],
+        },
+        {
+          name: "Market Place",
+          link: "/market-place",
+          icon: marketPlace,
+          nameSubLinks: [
+            {
+              name: "Product/Service posting",
+              link: "/market-place#product-posting",
+            },
+            {
+              name: "Transaction tools",
+              link: "/market-place#transaction-tools",
+            },
+            {
+              name: "Inventory Management",
+              link: "/market-place#inventory-management",
+            },
+            {
+              name: "Customer Interaction",
+              link: "/market-place#customer-interaction",
+            },
           ],
         },
       ],
@@ -495,7 +496,9 @@ export const DesktopNav = () => {
                   </span>
                 </li>
                 {activeNav === name.name && (
-                  <ul className="absolute md:left-[8%] lg:left-[10%] lg:right-[10%] md:top-[100px] lg:top-[100px] md:right-[30%] h-[80vh] w-[740px] py-[20px] rounded-[10px] flex flex-col gap-[15px] bg-[#FFFFFF] px-[20px] before:content-[''] before:absolute before:top-[-8px] before:right-[30%] before:w-[15px] before:h-[15px] before:bg-[#FFF] before:rotate-45 before:z-0">
+                  <ul
+                    className={`absolute md:left-[8%] lg:left-[10%] lg:right-[10%] md:top-[100px] lg:top-[100px] md:right-[30%] w-[740px] py-[20px] rounded-[10px] flex flex-col gap-[15px] bg-[#FFFFFF] px-[20px] before:content-[''] before:absolute before:top-[-8px] before:w-[15px] before:h-[15px] before:bg-[#FFF] before:rotate-45 before:z-0 ${index === 1 ? "h-[55vh]" : "h-[80vh]"} ${index === 0 && "before:right-[50%]"} ${index === 1 && "before:right-[30%]"} ${index === 2 && "before:right-[15%]"}`}
+                  >
                     {name.nameSubLinks?.map((name, index) => {
                       return (
                         <div key={index} className=" flex relative gap-[16px]">
