@@ -492,9 +492,9 @@ export const DesktopNav = () => {
                   <ul
                     className={`absolute md:left-[0%] benefit3:left-[5%] lg:left-[10%] lg:right-[10%] md:top-[100px] lg:top-[100px] md:right-[30%] md:w-[100%] benefit3:w-[90%] lg:w-[80%] py-[20px] rounded-[10px] flex flex-col gap-[15px] bg-[#FFFFFF] px-[20px] before:content-[''] before:absolute before:top-[-8px] before:w-[15px] before:h-[15px] before:bg-[#FFF] before:rotate-45 before:z-0 ${
                       index === 1 ? "h-[55vh]" : "h-[80vh]"
-                    } ${index === 0 && "before:right-[50%]"} ${
-                      index === 1 && "before:right-[30%]"
-                    } ${index === 2 && "before:right-[15%]"}`}
+                    } ${index === 0 && "md:before:right-[65%] lg:before:right-[60%]"} ${
+                      index === 1 && "md:before:right-[47%]"
+                    } ${index === 2 && "md:before:right-[35%]"}`}
                   >
                     {name.nameSubLinks?.map((name, index) => {
                       return (
