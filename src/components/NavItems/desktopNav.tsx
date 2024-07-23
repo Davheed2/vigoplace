@@ -107,17 +107,6 @@ export const DesktopNav = () => {
           ],
         },
         {
-          name: "Ecommerce",
-          link: "/e-commerce",
-          icon: ecommerce,
-          nameSubLinks: [
-            { name: "Marketplace", link: "/e-commerce#marketplace" },
-            { name: "Product Posts", link: "/e-commerce#product-posts" },
-            { name: "Service Posts", link: "/e-commerce#service-posts" },
-            { name: "Digital Goods", link: "/e-commerce#digital-goods" },
-          ],
-        },
-        {
           name: "Financial Services",
           link: "/financial-service",
           icon: finance,
@@ -164,6 +153,18 @@ export const DesktopNav = () => {
             },
           ],
         },
+        {
+          name: "Ecommerce",
+          link: "/e-commerce",
+          icon: ecommerce,
+          nameSubLinks: [
+            { name: "Marketplace", link: "/e-commerce#marketplace" },
+            { name: "Product Posts", link: "/e-commerce#product-posts" },
+            { name: "Service Posts", link: "/e-commerce#service-posts" },
+            { name: "Digital Goods", link: "/e-commerce#digital-goods" },
+          ],
+        },
+
         {
           name: "Sell Digital Content",
           link: "/sell-contents",
@@ -454,17 +455,9 @@ export const DesktopNav = () => {
     }
   };
 
-  const handleMouseEnter = (name: string) => {
-    setActiveNav(name);
-  };
-
-  const handleMouseLeave = () => {
-    setActiveNav(null);
-  };
-
   return (
     <>
-      <div className="hidden md:flex py-4 items-center z-[100] rounded-md bg-white justify-between fixed left-[40px] right-[40px] top-[10px] md:px-6 benefit2:px-8 custom:px-10">
+      <div className="hidden md:flex py-4 items-center z-[100] rounded-md bg-white justify-between fixed left-[40px] right-[40px] top-[10px] md:px-6 benefit2:px-7 custom:px-10">
         <div className="">
           <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
         </div>
@@ -497,7 +490,11 @@ export const DesktopNav = () => {
                 </li>
                 {activeNav === name.name && (
                   <ul
-                    className={`absolute md:left-[8%] lg:left-[10%] lg:right-[10%] md:top-[100px] lg:top-[100px] md:right-[30%] w-[740px] py-[20px] rounded-[10px] flex flex-col gap-[15px] bg-[#FFFFFF] px-[20px] before:content-[''] before:absolute before:top-[-8px] before:w-[15px] before:h-[15px] before:bg-[#FFF] before:rotate-45 before:z-0 ${index === 1 ? "h-[55vh]" : "h-[80vh]"} ${index === 0 && "before:right-[50%]"} ${index === 1 && "before:right-[30%]"} ${index === 2 && "before:right-[15%]"}`}
+                    className={`absolute md:left-[0%] benefit3:left-[5%] lg:left-[10%] lg:right-[10%] md:top-[100px] lg:top-[100px] md:right-[30%] md:w-[100%] benefit3:w-[90%] lg:w-[80%] py-[20px] rounded-[10px] flex flex-col gap-[15px] bg-[#FFFFFF] px-[20px] before:content-[''] before:absolute before:top-[-8px] before:w-[15px] before:h-[15px] before:bg-[#FFF] before:rotate-45 before:z-0 ${
+                      index === 1 ? "h-[55vh]" : "h-[80vh]"
+                    } ${index === 0 && "before:right-[50%]"} ${
+                      index === 1 && "before:right-[30%]"
+                    } ${index === 2 && "before:right-[15%]"}`}
                   >
                     {name.nameSubLinks?.map((name, index) => {
                       return (
