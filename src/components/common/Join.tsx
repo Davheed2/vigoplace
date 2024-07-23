@@ -4,7 +4,6 @@ import EcommerceImage from "../../public/img/Frame 238313.svg";
 import Google from "../../../public/img/Group.svg";
 import Apple from "../../../public/img/Group (1).svg";
 import JoinImage from "../../../public/img/iphone-12--product-red.svg";
-import Ellipse from "../../../public/img/Ellipse 43.svg";
 
 const Join: React.FC = () => {
   return (

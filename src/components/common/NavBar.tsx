@@ -4,8 +4,11 @@ import Logo from "../../../public/img/Logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { MobileNav } from "../NavItems/mobileNav";
+import { DesktopNav } from "../NavItems/desktopNav";
+
 const NavBar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isDesktopMenuOpen, setDesktopIsMenuOpen] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
@@ -36,6 +39,10 @@ const NavBar: React.FC = () => {
     setIsMenuOpen(false);
   };
 
+  const closeDesktopMenu = () => {
+    setDesktopIsMenuOpen(false);
+  };
+
   return (
     <>
       <nav
@@ -59,19 +66,10 @@ const NavBar: React.FC = () => {
         </div>
       </nav>
 
-      <nav className="hidden md:flex bg-white py-6 px-6 rounded-md justify-between items-center">
-        {/* <div>
-          <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
-        </div> */}
-
-        {/* <div className="text-theme">
-          <ul>
-            <li>Home</li>
-          </ul>
-        </div> */}
-
-        <div className="hidden md:flex ">
-          <MobileNav closeMenu={closeMenu} />
+      <nav className="hidden md:flex rounded-md justify-between items-center">
+        <div className="w-[100%]">
+          {/* <DesktopNav closeDesktopMenu={closeDesktopMenu} /> */}
+          <DesktopNav />
         </div>
       </nav>
 

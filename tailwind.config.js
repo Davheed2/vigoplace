@@ -16,6 +16,10 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    flex: {
+      1: "1 1 0%",
+      2: "2 2 0%",
+    },
     extend: {
       screens: {
         benefit: "800px",
@@ -32,7 +36,6 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern":
-          // "url('/img/noise-pattern-with-subtle-cross-lines.png')",
           "url('/img/BG.png')",
       },
       colors: {

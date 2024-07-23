@@ -6,12 +6,10 @@ import Footer from "@/components/common/Footer";
 import Margin from "@/components/common/Margin";
 import type { BaseLayoutProps } from "@/Interface";
 import Ellipse from "../../public/img/Ellipse 43.svg";
-import { DesktopNav } from "@/components/NavItems/desktopNav";
 
 export const BaseLayout = ({ children }: BaseLayoutProps) => {
   return (
     <> 
-      <DesktopNav/>
      <NavBar/>
       <div className="relative">
         <div className="relative">

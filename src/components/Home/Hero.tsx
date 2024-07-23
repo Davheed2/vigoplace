@@ -6,7 +6,7 @@ import Ellipse from "../../../public/img/Ellipse 44.svg";
 
 const Hero: React.FC = () => {
   return (
-    <section className="mt-16 mb-8 font-nunito py-6 md:px-10 md:bg-white md:rounded-md md:bg-hero-pattern md:mt-3">
+    <section className="mt-16 mb-8 font-nunito py-6 md:px-10 md:bg-white md:rounded-md md:bg-hero-pattern md:mt-20">
       <div className="md:flex">
         <div className="md:w-[50%] custom:w-[60%]">
           <h1 className="mb-3 text-4xl w-[80%] font-bold font-ubuntu md:text-5xl md:w-[90%] md:mb-6 md:font-nunito">
@@ -20,8 +20,9 @@ const Hero: React.FC = () => {
           </div>
 
           <p className="mb-4 w-[80%] md:mb-6">
-            Vigoplace is a FinTech and business social media platform that
-            brings people and businesses together.
+            Vigoplace is a FinTech and business social media platform that bring
+            people and businesses together and provide digital banking services
+            such as fund collections for SMEs and un-officially groups. .
           </p>
 
           <div className="md:hidden">

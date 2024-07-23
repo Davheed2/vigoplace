@@ -14,7 +14,6 @@ import Benefit from "@/components/Home/Benefit";
 import Sell from "@/components/Home/Sell";
 import Contest from "@/components/Home/Contest";
 import FundRaising from "@/components/Home/FundRaising";
-import Carousel from "@/components/Home/Carousel";
 import How from "@/components/Home/How";
 import Ellipse from "../../public/img/Ellipse 44.svg";
 import Ellipse2 from "../../public/img/Ellipse 45.svg";
@@ -50,7 +49,7 @@ export default function Home() {
           <Hero />
           <Business />
 
-          <div className="hidden md:block absolute bottom-0 right-[-20%] z-10">
+          {/* <div className="hidden md:block absolute bottom-0 right-[-20%] z-10">
             <Image
               src={Ellipse}
               alt="Circle image"
@@ -58,7 +57,7 @@ export default function Home() {
               height={900}
               className="md:w-[75%]"
             />
-          </div>
+          </div> */}
         </div>
 
         <FinanceServices />
@@ -69,7 +68,6 @@ export default function Home() {
         <Sell />
         <Contest />
         <FundRaising />
-        <Carousel />
         <How />
       </BaseLayout>
     </div>

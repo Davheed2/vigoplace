@@ -1,7 +1,10 @@
-
 import Link from "next/link";
 import { useState } from "react";
-import { RiArrowDropDownLine, RiArrowDropUpLine, RiDropdownList } from "react-icons/ri";
+import {
+  RiArrowDropDownLine,
+  RiArrowDropUpLine,
+  RiDropdownList,
+} from "react-icons/ri";
 import Logo from "../../../public/img/Logo.svg";
 
 import createAccount from "../../../public/icons/Join/CreateAccountIconDesktop.svg";
@@ -16,12 +19,9 @@ import groupPlace from "../../../public/icons/Learn/GroupPlaceIconDesktop.svg";
 import marketPlace from "../../../public/icons/Learn/MarketPlaceIconDesktop.svg";
 import ministryPlace from "../../../public/icons/Learn/MinistryPlaceIconDesktop.svg";
 
-
-
 import bankTransfer from "../../../public/icons/Pricing/BankTransferIconDesktop.svg";
 import earningsCharge from "../../../public/icons/Pricing/EarningsChargeIconDesktop.svg";
 import fundWallet from "../../../public/icons/Pricing/FundWalletIconDesktop.svg";
-
 
 import church from "../../../public/icons/Why/ChurchIconDesktop.svg";
 import digitalContent from "../../../public/icons/Why/DigitalContentIconDesktop.svg";
@@ -32,6 +32,7 @@ import group from "../../../public/icons/Why/GroupIconDesktop.svg";
 import onlineContest from "../../../public/icons/Why/OnlineContestIconDesktop.svg";
 import Image from "next/image";
 import { icon } from "@fortawesome/fontawesome-svg-core";
+import { Button } from "../ui/button";
 
 type NavLink = {
   name: string;
@@ -39,25 +40,25 @@ type NavLink = {
 };
 
 type SubNavLink = NavLink & {
-    nameSubLinks?: NavLink[];
-    icon: any
+  nameSubLinks?: NavLink[];
+  icon: any;
 };
 
 type MainNavLink = {
   name: string;
   link?: string;
-    nameSubLinks?: SubNavLink[];
+  nameSubLinks?: SubNavLink[];
 };
 
 export const DesktopNav = () => {
   const navs: MainNavLink[] = [
     {
-      name: "Why Vigoplace",
+      name: "Why Vigoplace?",
       nameSubLinks: [
         {
           name: "Church Activity Management",
-              link: "/church-activity",
-              icon: church,
+          link: "/church-activity",
+          icon: church,
           nameSubLinks: [
             {
               name: "Daily Reading Post",
@@ -71,8 +72,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Groups/Community Activity Management",
-            link: "/group-management",
-            icon: group,
+          link: "/group-management",
+          icon: group,
           nameSubLinks: [
             {
               name: "Collection Post",
@@ -107,8 +108,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Ecommerce",
-            link: "/e-commerce",
-            icon: ecommerce,
+          link: "/e-commerce",
+          icon: ecommerce,
           nameSubLinks: [
             { name: "Marketplace", link: "/e-commerce#marketplace" },
             { name: "Product Posts", link: "/e-commerce#product-posts" },
@@ -118,8 +119,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Financial Services",
-            link: "/financial-service",
-            icon: finance,
+          link: "/financial-service",
+          icon: finance,
           nameSubLinks: [
             {
               name: "Multi-Wallet System",
@@ -165,8 +166,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Sell Digital Content",
-            link: "/sell-contents",
-            icon: digitalContent,
+          link: "/sell-contents",
+          icon: digitalContent,
           nameSubLinks: [
             { name: "Channel Place", link: "/sell-contents#channel-place" },
             {
@@ -180,8 +181,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Organize Online Contest",
-            link: "/contest",
-            icon: onlineContest,
+          link: "/contest",
+          icon: onlineContest,
           nameSubLinks: [
             { name: "Contest Place", link: "/contest#contest-place" },
             { name: "Contestant", link: "/contest#contestant" },
@@ -191,8 +192,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Fundraising",
-            link: "/fundraising",
-            icon: fundRaising,
+          link: "/fundraising",
+          icon: fundRaising,
           nameSubLinks: [
             {
               name: "Fundraising Posts",
@@ -211,8 +212,8 @@ export const DesktopNav = () => {
       nameSubLinks: [
         {
           name: "Funding",
-              link: "/funding",
-              icon: fundWallet,
+          link: "/funding",
+          icon: fundWallet,
           nameSubLinks: [
             {
               name: "Funding Naira Wallet Using a Naira Card",
@@ -234,8 +235,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Bank transfer",
-            link: "/bank-transfer",
-            icon: bankTransfer,
+          link: "/bank-transfer",
+          icon: bankTransfer,
           nameSubLinks: [
             {
               name: "Regular or Normal Bank Transfer for USD",
@@ -257,8 +258,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Charges from earnings",
-            link: "/charges",
-            icon: earningsCharge,
+          link: "/charges",
+          icon: earningsCharge,
           nameSubLinks: [
             {
               name: "Earnings From Products or Services",
@@ -289,8 +290,8 @@ export const DesktopNav = () => {
       nameSubLinks: [
         {
           name: "Basic Place",
-              link: "/basic-place",
-              icon : basicPlace,
+          link: "/basic-place",
+          icon: basicPlace,
           nameSubLinks: [
             { name: "Profile Management", link: "/basic-place#profile-manage" },
             { name: "Post Creation", link: "/basic-place#post-creation" },
@@ -304,8 +305,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Channel Place",
-            link: "/channel-place",
-            icon: channelPlace,
+          link: "/channel-place",
+          icon: channelPlace,
           nameSubLinks: [
             { name: "Pay-To-View Tools", link: "/channel-place#pay-to-view" },
             {
@@ -321,8 +322,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Contest Place",
-            link: "/contest-place",
-            icon: contestPlace,
+          link: "/contest-place",
+          icon: contestPlace,
           nameSubLinks: [
             {
               name: "Contest Creation",
@@ -341,8 +342,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Market Place",
-            link: "/market-place",
-            icon: marketPlace,
+          link: "/market-place",
+          icon: marketPlace,
           nameSubLinks: [
             {
               name: "Product/Service posting",
@@ -364,8 +365,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Ministry Place",
-            link: "/ministry-place",
-            icon: ministryPlace,
+          link: "/ministry-place",
+          icon: ministryPlace,
           nameSubLinks: [
             {
               name: "Profile creation",
@@ -389,8 +390,8 @@ export const DesktopNav = () => {
         },
         {
           name: "Group Place",
-            link: "/group-place",
-            icon: groupPlace,
+          link: "/group-place",
+          icon: groupPlace,
           nameSubLinks: [
             { name: "Group creation", link: "/group-place#creation" },
             { name: "Members management", link: "/group-place#management" },
@@ -405,125 +406,178 @@ export const DesktopNav = () => {
         },
       ],
     },
-    ];
-    
-    const joinVigoPlace =  {
-        name: "Join Community",
-        nameSubLinks: [
-          {
-            name: "Login",
-                link: "https://web.vigoplace.com/signin",
-            icon: logIn
-          },
-          {
-            name: "Create Free Account",
-              link: "https://web.vigoplace.com/signup",
-            icon: createAccount
-          },
-          {
-            name: "Download IOS App",
-              link: "https://apps.apple.com/ng/app/vigoplace/id1622191142",
-            icon : downloadIos
-          },
-          {
-            name: "Download Android App",
-              link: "https://play.google.com/store/apps/details?id=com.vigoplace.vigoplace",
-              icon : downloadAndroid
-          },
-        ],
-      }
+  ];
 
-      const [activeNav, setActiveNav] = useState<string | null>(null);
-      const [activeSubNav, setActiveSubNav] = useState<string | null>(null);
-    
+  const joinVigoPlace = {
+    name: "Join Our Community",
+    nameSubLinks: [
+      {
+        name: "Login",
+        link: "https://web.vigoplace.com/signin",
+        icon: logIn,
+      },
+      {
+        name: "Create Free Account",
+        link: "https://web.vigoplace.com/signup",
+        icon: createAccount,
+      },
+      {
+        name: "Download IOS App",
+        link: "https://apps.apple.com/ng/app/vigoplace/id1622191142",
+        icon: downloadIos,
+      },
+      {
+        name: "Download Android App",
+        link: "https://play.google.com/store/apps/details?id=com.vigoplace.vigoplace",
+        icon: downloadAndroid,
+      },
+    ],
+  };
+
+  const [activeNav, setActiveNav] = useState<string | null>(null);
+  const [activeSubNav, setActiveSubNav] = useState<string | null>(null);
+  const [subsubLink, setSubSubLink] = useState(true);
+  const [subLinkIndex, setSubLinkIndex] = useState(0);
+
+  const [joinCommunityDisplay, setJoinCommunityDisplay] =
+    useState<boolean>(false);
+
   const handleMainNavClick = (name: string) => {
-        setJoinCommunityDisplay(false)
-        if (activeNav === name) {
-          setActiveNav(null);
-          
-          setActiveSubNav(null);
-        } else {
-          setActiveNav(name);
-        }
-      };
+    setJoinCommunityDisplay(false);
+    if (activeNav === name) {
+      setActiveNav(null);
 
-  const [subsubLink, setSubSubLink] = useState(true)
-  const [subLinkIndex, setSubLinkIndex] = useState(0)
+      setActiveSubNav(null);
+    } else {
+      setActiveNav(name);
+    }
+  };
 
-  const [joinCommunityDisplay, setJoinCommunityDisplay] = useState<boolean>(false)
   return (
     <>
-          <div className="md:flex hidden py-[20px]  items-center px-[20px] gap-[167px] fixed left-[20px] right-[20px]  z-[100] top-[10px] rounded-[10px] bg-[#FFF] justify-between p-" >
-             <Link href='/'>
-                 <Image src={Logo} className="w-[150px] " alt="vigoplace image" /> 
-                 </Link>
+      <div className="hidden md:flex py-4 items-center z-[100] rounded-md bg-white justify-between fixed left-[40px] right-[40px] top-[10px] md:px-6 benefit2:px-8 custom:px-10">
+        <div className="">
+          <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
+        </div>
 
-              <div className="flex gap-[20px] ">
-                  {
-                      navs.map((name, index) => {
-                          return <ul key={index} className="">
-                              <li   onClick={() => handleMainNavClick(name.name)} className="text-[#181616] cursor-pointer flex items-center gap-0 text-[18px] font-[600] "><span> {name.name}</span> <span className="">  {activeNav === name.name ? (
-                <RiArrowDropUpLine className="text-[40px] h-full" />
-              ) : (
-                <RiArrowDropDownLine className="text-[40px] h-full" />
-                              )} </span></li>
-                              {activeNav === name.name && (
-                                  <ul className="absolute md:left-[10%] lg:left-[25%] lg:right-[10%] md:top-[80px] lg:top-[70px] shadow md:right-[30%] h-[85vh] w-[700px] py-[20px] rounded-[10px] flex flex-col gap-[20px] bg-[#FFFFFF] px-[20px]">
-                                      {
-                                          name.nameSubLinks?.map((name, index) => {
-                                              return <div key={index} className=" flex relative gap-[16px]">
-                                                <li onClick={() => {
-                                                  (subsubLink && subLinkIndex === index) ? setSubSubLink(false) : setSubSubLink(true)
-                                                  setSubLinkIndex(index)
-                                                }} className={`flex gap-[16px] ${ subsubLink && subLinkIndex === index && "bg-[#FAFAFA]"} cursor-pointer w-[300px] items-center `}> <Image className="w-[50px]" src={name.icon} alt={name.name} /> <span className="text-[#181616] font-[600]"> {name.name}</span></li>
-                                             
-                                                { subLinkIndex === index && subsubLink && <div className="bg-[#FAFAFA] w-[350px] absolute !top-0 right-0 p-[8px] flex flex-col gap-[5px] ">
-                                                      {
-                                                          name.nameSubLinks?.map((name, index) => {
-                                                              return <Link className="text-[#282424]" key={index} href={name.link}>{name.name}</Link>
-                                                          })
-                                                      }
-                                                  </div>}
-                                            
-                                              </div>
-                                          })
-                                      }
-                                  </ul>
-                              )}
-                             </ul>
-                          
-                         
-                      })
-                  }
-              </div>
+        <div className="flex flex-2 justify-around benefit2:mx-4 custom:mx-8 lg:mx-16 xl:mx-40">
+          <div className="text-theme cursor-pointer my-auto">
+            <Link href="/">
+              <ul>
+                <li className="font-[600]">Home</li>
+              </ul>
+            </Link>
+          </div>
+          {navs.map((name, index) => {
+            return (
+              <ul key={index} className="">
+                <li
+                  onClick={() => handleMainNavClick(name.name)}
+                  className="text-heading cursor-pointer flex items-center"
+                >
+                  <span> {name.name}</span>
+                  <span className="">
+                    {activeNav === name.name ? (
+                      <RiArrowDropUpLine className="text-[25px] h-full mt-[5px]" />
+                    ) : (
+                      <RiArrowDropDownLine className="text-[25px] h-full mt-[5px]" />
+                    )}{" "}
+                  </span>
+                </li>
+                {activeNav === name.name && (
+                  <ul className="absolute md:left-[8%] lg:left-[25%] lg:right-[10%] md:top-[100px] lg:top-[70px] shadow md:right-[30%] h-[80vh] w-[740px] py-[20px] rounded-[10px] flex flex-col gap-[15px] bg-[#FFFFFF] px-[20px]">
+                    {name.nameSubLinks?.map((name, index) => {
+                      return (
+                        <div key={index} className=" flex relative gap-[16px]">
+                          <li
+                            onClick={() => {
+                              subsubLink && subLinkIndex === index
+                                ? setSubSubLink(false)
+                                : setSubSubLink(true);
+                              setSubLinkIndex(index);
+                            }}
+                            className={`flex gap-[16px] ${
+                              subsubLink &&
+                              subLinkIndex === index &&
+                              "bg-[#FAFAFA]"
+                            } cursor-pointer w-[300px] items-center `}
+                          >
+                            {" "}
+                            <Image
+                              className="w-[50px]"
+                              src={name.icon}
+                              alt={name.name}
+                            />{" "}
+                            <span className="text-[#181616] font-[600]">
+                              {" "}
+                              {name.name}
+                            </span>
+                          </li>
 
-              <div className=" rounded-[10px] cursor-pointer py-[16px] px-[24px] rounded-[10px] shadow">
-                  <ul className="relative">
-            <li onClick={() => {
-              joinCommunityDisplay ? setJoinCommunityDisplay(false) : setJoinCommunityDisplay(true)
-              setActiveNav(null)
-                      }} className="text-[#8135F9] flex items-center">
-                      {
-                      joinVigoPlace.name
-              }
-               {joinCommunityDisplay?<RiArrowDropUpLine className="text-[40px] h-full" />
-             :
-                <RiArrowDropDownLine className="text-[40px] h-full" />}
-                      </li>
-                      {joinCommunityDisplay && <ul className="absolute top-[50px] shadow rounded bg-[#FFF] right-[-50px] py-[30px] px-[20px] w-[600px] grid grid-cols-2 gap-5">
-                          {
-                joinVigoPlace.nameSubLinks.map((name, index) => {
-                  return <Link href={name.link} className="flex gap-[10px] items-start" key={index}>
-                    <Image src={name.icon} alt={name.name} />
-                    <h3 className="text-[#000000] text-[20px] font-[600] leading-[26px]">{name.name}</h3>
-                                </Link>
-                              })
-                          }
-                      </ul>}
-                        </ul>
-              </div>
-     </div>
-     
+                          {subLinkIndex === index && subsubLink && (
+                            <div className="bg-[#FAFAFA] w-[350px] absolute !top-0 right-0 p-[8px] flex flex-col gap-[5px] ">
+                              {name.nameSubLinks?.map((name, index) => {
+                                return (
+                                  <Link
+                                    className="text-[#282424]"
+                                    key={index}
+                                    href={name.link}
+                                  >
+                                    {name.name}
+                                  </Link>
+                                );
+                              })}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </ul>
+                )}
+              </ul>
+            );
+          })}
+        </div>
+
+        <div className="rounded-md cursor-pointer">
+          <Button variant="outline" className="py-6">
+            <ul className="relative">
+              <li
+                onClick={() => {
+                  joinCommunityDisplay
+                    ? setJoinCommunityDisplay(false)
+                    : setJoinCommunityDisplay(true);
+                  setActiveNav(null);
+                }}
+                className="text-theme flex items-center"
+              >
+                {joinVigoPlace.name}
+                {joinCommunityDisplay ? (
+                  <RiArrowDropUpLine className="text-[25px] h-full" />
+                ) : (
+                  <RiArrowDropDownLine className="text-[25px] h-full" />
+                )}
+              </li>
+              {joinCommunityDisplay && (
+                <ul className="absolute top-[70px] shadow rounded bg-[#FFF] right-[-55px] py-[30px] px-[20px] w-[600px] grid grid-cols-2 gap-5">
+                  {joinVigoPlace.nameSubLinks.map((name, index) => {
+                    return (
+                      <Link
+                        href={name.link}
+                        className="flex gap-[10px] items-start"
+                        key={index}
+                      >
+                        <Image src={name.icon} alt={name.name} />
+                        <h3 className="text-[#000000]">{name.name}</h3>
+                      </Link>
+                    );
+                  })}
+                </ul>
+              )}
+            </ul>
+          </Button>
+        </div>
+      </div>
     </>
   );
 };

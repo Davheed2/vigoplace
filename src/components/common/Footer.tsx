@@ -192,7 +192,7 @@ const Footer: React.FC = () => {
         <div id="google_translate_element" className="my-4"></div>
       </footer>
 
-      <footer className="hidden md:flex md:flex-col md:mb-8 md:bg-white md:rounded-md md:px-10 md:py-4 font-nunito ">
+      <footer className="hidden lg:hidden md:flex md:flex-col md:mb-8 md:bg-white md:rounded-md md:px-10 md:py-4 font-nunito ">
         <div className="mb-8">
           <div className="flex mb-4 md:mb-0">
             <Image src={Logo} alt="Vigoplace Logo" className="h-14 w-auto" />
@@ -304,16 +304,16 @@ const Footer: React.FC = () => {
         </div>
       </footer>
 
-      <footer className="hidden mb-8 bg-white rounded-md px-3 py-4 font-nunito custom:grid custom:grid-cols-7 custom:gap-8 relative">
-        <div className="mb-8 custom:mb-0 custom:flex custom:flex-col custom:justify-between custom:col-span-2">
-          <div className="flex mb-4 custom:mb-0">
+      <footer className="hidden mb-8 bg-white rounded-md px-10 py-4 font-nunito lg:grid lg:grid-cols-7 lg:gap-8 relative">
+        <div className="mb-8 lg:mb-0 lg:flex lg:flex-col lg:justify-between lg:col-span-2">
+          <div className="flex mb-4 lg:mb-0">
             <Image src={Logo} alt="Vigoplace Logo" className="h-14 w-auto" />
             <div className="my-auto ml-3">
               <p style={{ fontSize: "0.35rem" }}>TM</p>
             </div>
           </div>
 
-          <div className="mb-8 w-[80%] custom:w-full custom:my-6">
+          <div className="mb-8 w-[80%] lg:w-full lg:my-6">
             <p className="text-[0.83rem]">
               Nam posuere accumsan porta. Integer id orci sed ante tincidunt
               tincidunt sit amet sed libero.
@@ -325,40 +325,40 @@ const Footer: React.FC = () => {
           </div>
           <div
             id="google_translate_element"
-            className="my-4 custom:order-last"
+            className="my-4 lg:order-last"
           ></div>
         </div>
 
-        <div className="mb-8 custom:mb-0 custom:col-span-1">
+        <div className="mb-8 lg:mb-0 lg:col-span-1">
           <h3 className="mb-2 font-semibold text-theme text-[0.83rem]">
             COMPANY
           </h3>
-          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
-          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
-          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
-          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] lg:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] lg:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] lg:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] lg:mb-4">Donec dignism</p>
         </div>
 
-        <div className="mb-8 custom:mb-0 custom:col-span-1">
+        <div className="mb-8 lg:mb-0 lg:col-span-1">
           <h3 className="mb-2 font-semibold text-theme text-[0.83rem]">
             SERVICES
           </h3>
-          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
-          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
-          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
-          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] lg:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] lg:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] lg:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] lg:mb-4">Donec dignism</p>
         </div>
 
-        <div className="mb-8 custom:mb-0 custom:col-span-1">
+        <div className="mb-8 lg:mb-0 lg:col-span-1">
           <h3 className="mb-2 font-semibold text-theme text-[0.83rem]">
             RESOURCES
           </h3>
-          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
-          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
-          <p className="text-[0.83rem] custom:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] lg:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] lg:mb-4">Donec dignism</p>
+          <p className="text-[0.83rem] lg:mb-4">Donec dignism</p>
         </div>
 
-        <div className="mb-8 flex space-x-4 custom:col-span-2 custom:items-center custom:justify-center custom:mb-auto z-20">
+        <div className="mb-8 flex space-x-4 lg:col-span-2 lg:items-center lg:justify-center lg:mb-auto z-20">
           <div className="bg-socialbackground rounded-full p-2">
             <div>
               <a target="__blank" href="https://facebook.com/vigoplace">
