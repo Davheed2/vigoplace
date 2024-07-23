@@ -453,6 +453,14 @@ export const DesktopNav = () => {
     }
   };
 
+  const handleMouseEnter = (name: string) => {
+    setActiveNav(name);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveNav(null);
+  };
+
   return (
     <>
       <div className="hidden md:flex py-4 items-center z-[100] rounded-md bg-white justify-between fixed left-[40px] right-[40px] top-[10px] md:px-6 benefit2:px-8 custom:px-10">
@@ -473,6 +481,8 @@ export const DesktopNav = () => {
               <ul key={index} className="">
                 <li
                   onClick={() => handleMainNavClick(name.name)}
+                  // onMouseEnter={() => handleMouseEnter(name.name)}
+                  // onMouseLeave={handleMouseLeave}
                   className="text-heading cursor-pointer flex items-center"
                 >
                   <span> {name.name}</span>
@@ -485,12 +495,18 @@ export const DesktopNav = () => {
                   </span>
                 </li>
                 {activeNav === name.name && (
-                  <ul className="absolute md:left-[8%] lg:left-[25%] lg:right-[10%] md:top-[100px] lg:top-[70px] shadow md:right-[30%] h-[80vh] w-[740px] py-[20px] rounded-[10px] flex flex-col gap-[15px] bg-[#FFFFFF] px-[20px]">
+                  <ul className="absolute md:left-[8%] lg:left-[10%] lg:right-[10%] md:top-[100px] lg:top-[100px] md:right-[30%] h-[80vh] w-[740px] py-[20px] rounded-[10px] flex flex-col gap-[15px] bg-[#FFFFFF] px-[20px] before:content-[''] before:absolute before:top-[-8px] before:right-[30%] before:w-[15px] before:h-[15px] before:bg-[#FFF] before:rotate-45 before:z-0">
                     {name.nameSubLinks?.map((name, index) => {
                       return (
                         <div key={index} className=" flex relative gap-[16px]">
                           <li
                             onClick={() => {
+                              subsubLink && subLinkIndex === index
+                                ? setSubSubLink(false)
+                                : setSubSubLink(true);
+                              setSubLinkIndex(index);
+                            }}
+                            onMouseEnter={() => {
                               subsubLink && subLinkIndex === index
                                 ? setSubSubLink(false)
                                 : setSubSubLink(true);
@@ -502,16 +518,20 @@ export const DesktopNav = () => {
                               "bg-[#FAFAFA]"
                             } cursor-pointer w-[300px] items-center `}
                           >
-                            {" "}
-                            <Image
-                              className="w-[50px]"
-                              src={name.icon}
-                              alt={name.name}
-                            />{" "}
-                            <span className="text-[#181616] font-[600]">
-                              {" "}
-                              {name.name}
-                            </span>
+                            <Link
+                              href={name.link}
+                              className="flex gap-5 items-center"
+                            >
+                              <Image
+                                className="w-[50px]"
+                                src={name.icon}
+                                alt={name.name}
+                              />{" "}
+                              <span className="text-[#181616] font-[600]">
+                                {" "}
+                                {name.name}
+                              </span>
+                            </Link>
                           </li>
 
                           {subLinkIndex === index && subsubLink && (
@@ -559,12 +579,12 @@ export const DesktopNav = () => {
                 )}
               </li>
               {joinCommunityDisplay && (
-                <ul className="absolute top-[70px] shadow rounded bg-[#FFF] right-[-55px] py-[30px] px-[20px] w-[600px] grid grid-cols-2 gap-5">
+                <ul className="absolute top-[70px] shadow rounded bg-[#FFF] right-[-55px] py-[30px] px-[20px] w-[600px] grid grid-cols-2 gap-5 before:content-[''] before:absolute before:top-[-8px] before:right-[80px] before:w-[15px] before:h-[15px] before:bg-[#FFF] before:rotate-45 before:z-0">
                   {joinVigoPlace.nameSubLinks.map((name, index) => {
                     return (
                       <Link
                         href={name.link}
-                        className="flex gap-[10px] items-start"
+                        className="flex gap-5 items-center"
                         key={index}
                       >
                         <Image src={name.icon} alt={name.name} />
