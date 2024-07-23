@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
-import Frame1207 from "../../../public/img/Frame 1207.svg";
 import image from "../../../public/img/Image.svg";
 import Ellipse from "../../../public/img/Ellipse 44.svg";
 

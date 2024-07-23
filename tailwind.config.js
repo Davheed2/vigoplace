@@ -35,8 +35,7 @@ module.exports = {
         hero2: "1740px",
       },
       backgroundImage: {
-        "hero-pattern":
-          "url('/img/BG.png')",
+        "hero-pattern": "url('/img/BG.png')",
       },
       colors: {
         border: "hsl(var(--border))",

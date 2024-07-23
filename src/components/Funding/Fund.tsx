@@ -6,11 +6,11 @@ const Fund: React.FC = () => {
   return (
     <>
       <section className="mt-16 mb-8 bg-text rounded-md pt-4 font-nunito">
-        <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-center">
+        <h2 className="mb-4 text-2xl font-bold font-ubuntu md:text-center md:text-4xl lg:text-4xl xl:text-5xl">
           Pricing
         </h2>
 
-        <p className="mb-4 md:text-center">
+        <p className="mb-4 md:text-center md:text-base lg:text-lg">
           For a successful transaction, every transaction on the app incurs a
           minor percentage-based fee.
         </p>

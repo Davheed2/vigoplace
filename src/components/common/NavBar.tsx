@@ -68,7 +68,6 @@ const NavBar: React.FC = () => {
 
       <nav className="hidden md:flex rounded-md justify-between items-center">
         <div className="w-[100%]">
-          {/* <DesktopNav closeDesktopMenu={closeDesktopMenu} /> */}
           <DesktopNav />
         </div>
       </nav>
