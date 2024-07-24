@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
-import FundraisingImage from "../../../public/img/iphone-12--product-red.svg";
+import FundraisingImage from "../../../public/img/Fund 2.svg";
 
 const FundRaising: React.FC = () => {
   return (
@@ -46,7 +46,7 @@ const FundRaising: React.FC = () => {
 
         <div className="md:w-1/2">
           <div className="bg-financeimage pt-8 rounded-lg md:h-[fit-content] md:w-[80%] md:mx-auto md:bg-theme md:rounded-3xl">
-            <div className="w-[80%] mx-auto md:w-[40%]">
+            <div className="w-[80%] mx-auto md:w-[70%]">
               <Image
                 src={FundraisingImage}
                 alt="Business Image"

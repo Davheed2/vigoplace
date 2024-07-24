@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Google from "../../../public/img/Group.svg";
 import Apple from "../../../public/img/Group (1).svg";
-import JoinImage from "../../../public/img/iphone-12--product-red.svg";
+import JoinImage from "../../../public/img/Join 2.svg";
 
 const Join: React.FC = () => {
   return (
@@ -50,16 +50,14 @@ const Join: React.FC = () => {
         </div>
 
         <div className="md:w-[50%] relative overflow-hidden md:ml-16">
-          <div className="bg-businessimage pt-8 rounded-lg relative md:bg-heading md:h-[100%] md:pt-6">
+          <div className="bg-businessimage pb-8 rounded-lg relative md:bg-heading md:h-[100%] md:pb-6">
             <div className="w-[80%] mx-auto relative">
-              <div className="md:absolute md:top-[-50%] md:left-0 md:h-full md:w-full">
-                <Image
-                  src={JoinImage}
-                  alt="Business Image"
-                  layout="responsive"
-                  className="mx-auto"
-                />
-              </div>
+              <Image
+                src={JoinImage}
+                alt="Join Image"
+                layout="responsive"
+                className="mx-auto"
+              />
             </div>
           </div>
         </div>
