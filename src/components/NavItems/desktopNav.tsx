@@ -50,7 +50,11 @@ type MainNavLink = {
   nameSubLinks?: SubNavLink[];
 };
 
-export const DesktopNav = () => {
+interface NavItemsProps {
+  closeDesktopMenu: () => void;
+}
+
+export const DesktopNav: React.FC<NavItemsProps> = ({ closeDesktopMenu }) => {
   const navs: MainNavLink[] = [
     {
       name: "Why Vigoplace?",
@@ -455,6 +459,11 @@ export const DesktopNav = () => {
     }
   };
 
+  const handleLinkClick = () => {
+    closeDesktopMenu();
+    setActiveNav(null)
+  };
+
   return (
     <>
       <div className="hidden md:flex py-4 items-center z-[100] rounded-md bg-white justify-between fixed left-[40px] right-[40px] top-[10px] md:px-6 benefit2:px-7 custom:px-10">
@@ -492,9 +501,12 @@ export const DesktopNav = () => {
                   <ul
                     className={`absolute md:left-[0%] benefit3:left-[5%] lg:left-[10%] lg:right-[10%] md:top-[100px] lg:top-[100px] md:right-[30%] md:w-[100%] benefit3:w-[90%] lg:w-[80%] py-[20px] rounded-[10px] flex flex-col gap-[15px] bg-[#FFFFFF] px-[20px] before:content-[''] before:absolute before:top-[-8px] before:w-[15px] before:h-[15px] before:bg-[#FFF] before:rotate-45 before:z-0 ${
                       index === 1 ? "h-[55vh]" : "h-[80vh]"
-                    } ${index === 0 && "md:before:right-[65%] lg:before:right-[60%]"} ${
-                      index === 1 && "md:before:right-[47%]"
-                    } ${index === 2 && "md:before:right-[35%]"}`}
+                    } ${
+                      index === 0 &&
+                      "md:before:right-[65%] lg:before:right-[60%]"
+                    } ${index === 1 && "md:before:right-[47%]"} ${
+                      index === 2 && "md:before:right-[35%]"
+                    }`}
                   >
                     {name.nameSubLinks?.map((name, index) => {
                       return (
@@ -505,7 +517,9 @@ export const DesktopNav = () => {
                                 ? setSubSubLink(false)
                                 : setSubSubLink(true);
                               setSubLinkIndex(index);
-                            }}
+                              handleLinkClick();
+                            }
+                          }
                             onMouseEnter={() => {
                               subsubLink && subLinkIndex === index
                                 ? setSubSubLink(false)
@@ -541,6 +555,7 @@ export const DesktopNav = () => {
                                   <Link
                                     className="text-[#282424]"
                                     key={index}
+                                    onClick={handleLinkClick}
                                     href={name.link}
                                   >
                                     {name.name}

@@ -5,6 +5,7 @@ import Post from "../../../public/img/material-symbols_post-add.svg";
 import Interaction from "../../../public/img/Interaction.svg";
 import Message from "../../../public/img/tabler_message.svg";
 import Notication from "../../../public/img/mingcute_notification-line.svg";
+import { Button } from "../ui/button";
 
 const BasicPlace: React.FC = () => {
   return (
@@ -60,6 +61,12 @@ const BasicPlace: React.FC = () => {
               maintain a fresh and appealing profile. This helps others identify
               and connect with you more easily.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -79,6 +86,12 @@ const BasicPlace: React.FC = () => {
               feature is perfect for keeping your friends and followers updated
               on your activities and interests.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
@@ -116,6 +129,12 @@ const BasicPlace: React.FC = () => {
               posts. This fosters a sense of community and encourages
               interaction on the platform.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -135,6 +154,12 @@ const BasicPlace: React.FC = () => {
               and other users. This tool is essential for building and
               maintaining personal connections.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
@@ -172,6 +197,12 @@ const BasicPlace: React.FC = () => {
               through real-time notifications. This ensures you never miss any
               important activity on your profile.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>

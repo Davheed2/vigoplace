@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
-import Group from "../../../public/img/iphone-12--product-red.svg";
+import Group from "../../../public/img/iphone-12--product-re.svg";
 import { Button } from "../ui/button";
 import { useRouter } from "next/router";
 

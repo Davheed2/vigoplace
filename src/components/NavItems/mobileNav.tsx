@@ -411,7 +411,7 @@ export const MobileNav: React.FC<NavItemsProps> = ({ closeMenu }) => {
 
   return (
     <>
-      <div className="px-4 pt-12 text-slate-900 rounded-[5px] bg-white md:bg-transparent max-h-[100vh] md:hidden">
+      <div className="px-4 pt-12 text-slate-900 rounded-[5px] bg-white max-h-[100vh] md:hidden">
         {navs.map((nav) => (
           <ul key={nav.name} className="bg-white relative flex flex-col mb-5">
             <li

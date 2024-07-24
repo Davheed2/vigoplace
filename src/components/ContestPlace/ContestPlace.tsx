@@ -59,6 +59,12 @@ const ContestPlace: React.FC = () => {
               deadlines. This feature allows you to create engaging competitions
               that attract participation and excitement.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -77,6 +83,12 @@ const ContestPlace: React.FC = () => {
               Review and manage contest entries efficiently. This tool helps in
               organizing the entries and ensuring a smooth contest experience.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
@@ -114,6 +126,12 @@ const ContestPlace: React.FC = () => {
               an interactive element to the contest, allowing participants to
               engage more.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -133,6 +151,12 @@ const ContestPlace: React.FC = () => {
               that winners are rewarded promptly, maintaining the integrity and
               excitement of the contest.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">

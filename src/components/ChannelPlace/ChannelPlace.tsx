@@ -59,6 +59,12 @@ const ChannelPlace: React.FC = () => {
               audience. This feature is ideal for influencers, educators, and
               content creators looking to reach a wide audience in real-time.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -77,6 +83,12 @@ const ChannelPlace: React.FC = () => {
               Change the settings and manage your content. This allows for
               better planning and consistency in your content delivery.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
@@ -114,6 +126,12 @@ const ChannelPlace: React.FC = () => {
               interaction helps build a loyal following and encourages more
               active participation from your audience.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -133,6 +151,12 @@ const ChannelPlace: React.FC = () => {
               understand how your content is performing. This data helps in
               refining your content strategy and improving overall engagement.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">

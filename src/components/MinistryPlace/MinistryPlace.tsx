@@ -61,6 +61,12 @@ const MinistryPlace: React.FC = () => {
               information, and mission statement. This helps in establishing a
               clear and professional presence.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -80,6 +86,12 @@ const MinistryPlace: React.FC = () => {
               or events. This tool streamlines the process of gathering
               financial support from your community.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
@@ -117,6 +129,12 @@ const MinistryPlace: React.FC = () => {
               your community. This feature helps in sharing messages, sermons,
               and other important content.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -136,6 +154,12 @@ const MinistryPlace: React.FC = () => {
               communication within your community. These tools are vital for
               building strong relationships and a sense of belonging.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
@@ -172,6 +196,12 @@ const MinistryPlace: React.FC = () => {
               Collect and manage prayer requests from your community. This
               feature helps in addressing the spiritual needs of your members.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -191,6 +221,12 @@ const MinistryPlace: React.FC = () => {
               impact of your activities. This data is crucial for planning
               future events and initiatives.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">

@@ -49,7 +49,7 @@ const NavBar: React.FC = () => {
         style={{ transition: "ease-in .7s", scrollBehavior: "smooth" }}
         className={`${
           isScrolled ? "fixed shadow-md" : "absolute"
-        }   top-0 left-0 w-full flex justify-between  p-4 z-30 px-8 md:hidden`}
+        }   top-0 left-0 w-full flex justify-between p-4 z-30 px-8 md:hidden bg-primary`}
       >
         <div>
           <Image src={Logo} alt="Vigoplace Logo" className="h-10 w-auto" />
@@ -68,7 +68,7 @@ const NavBar: React.FC = () => {
 
       <nav className="hidden md:flex rounded-md justify-between items-center">
         <div className="w-[100%]">
-          <DesktopNav />
+          <DesktopNav closeDesktopMenu={closeDesktopMenu}/>
         </div>
       </nav>
 

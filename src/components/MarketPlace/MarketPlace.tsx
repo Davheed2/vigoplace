@@ -59,6 +59,12 @@ const MarketPlace: React.FC = () => {
               sell. This feature allows you to showcase your offerings to a wide
               audience.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -78,6 +84,12 @@ const MarketPlace: React.FC = () => {
               and smooth transactions. This builds trust with your customers and
               simplifies the buying process.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
@@ -115,6 +127,12 @@ const MarketPlace: React.FC = () => {
               product. This tool helps in maintaining a consistent supply for
               your customers.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -134,6 +152,12 @@ const MarketPlace: React.FC = () => {
               interaction is crucial for addressing customer queries and
               building a loyal customer base.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">

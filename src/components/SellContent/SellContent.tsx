@@ -149,7 +149,9 @@ const SellContent: React.FC = () => {
 
             <p className="mb-2 md:text-base lg:text-lg">
               Offer subscription-based access to your content, ensuring a steady
-              revenue stream.
+              revenue stream. Create different subscription plans with varying
+              amounts and currencies to cater to a diverse audience and maximize
+              your revenue potential.
             </p>
           </div>
         </div>

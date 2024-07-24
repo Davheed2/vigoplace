@@ -61,6 +61,12 @@ const GroupPlace: React.FC = () => {
               helps in forming communities with shared interests, fostering a
               sense of belonging.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -80,6 +86,12 @@ const GroupPlace: React.FC = () => {
               group. This tool is essential for growing and sustaining your
               community.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
@@ -117,6 +129,12 @@ const GroupPlace: React.FC = () => {
               informed and engaged. This feature ensures continuous interaction
               and participation.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -136,6 +154,12 @@ const GroupPlace: React.FC = () => {
               activities. This tool helps in planning and executing group
               gatherings effectively.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
@@ -173,6 +197,12 @@ const GroupPlace: React.FC = () => {
               encourages members to share ideas and engage in meaningful
               conversations.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -192,6 +222,12 @@ const GroupPlace: React.FC = () => {
               real-time notifications. This ensures that everyone stays
               up-to-date with the latest happenings.
             </p>
+
+            <div className="mt-4 mb-2">
+              <a className="text-theme hover:text-businessimage hover:cursor-pointer font-[600]">
+                Learn more
+              </a>
+            </div>
           </div>
 
           <div className="w-[40%] mx-2 sm:!w-[30%] md:!w-[15%] md:ml-[15%]">
