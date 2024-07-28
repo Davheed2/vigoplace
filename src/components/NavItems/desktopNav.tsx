@@ -461,7 +461,7 @@ export const DesktopNav: React.FC<NavItemsProps> = ({ closeDesktopMenu }) => {
 
   const handleLinkClick = () => {
     closeDesktopMenu();
-    setActiveNav(null)
+    setActiveNav(null);
   };
 
   return (
@@ -518,8 +518,7 @@ export const DesktopNav: React.FC<NavItemsProps> = ({ closeDesktopMenu }) => {
                                 : setSubSubLink(true);
                               setSubLinkIndex(index);
                               handleLinkClick();
-                            }
-                          }
+                            }}
                             onMouseEnter={() => {
                               subsubLink && subLinkIndex === index
                                 ? setSubSubLink(false)

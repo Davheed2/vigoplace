@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
-import Group from "../../../public/img/Group 464.svg";
+import Group from "../../../public/img/Home/Group 464.webp";
 import { Button } from "../ui/button";
 import { useRouter } from "next/router";
 
@@ -122,9 +122,11 @@ const FinanceServices: React.FC = () => {
             <div className="w-[80%] mx-auto">
               <Image
                 src={Group}
-                alt="Business Image"
-                loading="lazy"
-                layout="responsive"
+                alt="Finance Image"
+                height={200}
+                width={400}
+                priority={true}
+                className="mx-auto"
               />
             </div>
           </div>

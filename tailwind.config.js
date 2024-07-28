@@ -32,6 +32,7 @@ module.exports = {
         benefit8: "1508px",
         custom: "900px",
         hero: "1450px",
+        hero1: "1280px",
         hero2: "1740px",
       },
       backgroundImage: {

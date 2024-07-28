@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Google from "../../../public/img/Group.svg";
 import Apple from "../../../public/img/Group (1).svg";
-import JoinImage from "../../../public/img/Join 2.svg";
+// import JoinImage from "../../../public/img/Join 2.svg";
+import JoinImage from "../../../public/img/Home/Join 2.webp";
 
 const Join: React.FC = () => {
   return (
@@ -55,7 +56,9 @@ const Join: React.FC = () => {
               <Image
                 src={JoinImage}
                 alt="Join Image"
-                layout="responsive"
+                height={200}
+                width={400}
+                priority={true}
                 className="mx-auto"
               />
             </div>

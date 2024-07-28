@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
-import Group from "../../../public/img/iphone-12--product-re.svg";
+import Group from "../../../public/img/Home/iphone-12--product-re.webp";
 import { Button } from "../ui/button";
 import { useRouter } from "next/router";
 
@@ -123,9 +123,11 @@ const GroupPlace: React.FC = () => {
             <div className="w-[80%] mx-auto ">
               <Image
                 src={Group}
-                alt="Business Image"
-                layout="responsive"
-                className="mx-auto w-[60%]"
+                alt="Group Community Image"
+                height={200}
+                width={400}
+                priority={true}
+                className="mx-auto w-[80%]"
               />
             </div>
           </div>

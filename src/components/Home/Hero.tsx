@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
-import image from "../../../public/img/Image.svg";
+import image from "../../../public/img/Home/Image.webp";
 import Ellipse from "../../../public/img/Ellipse 44.svg";
 
 const Hero: React.FC = () => {
@@ -37,14 +37,14 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <div className="md:w-[50%] custom:w-[40%] md:relative md:my-auto lg:w-[35%] 2xl:w-[28%]">
-          <div className="mt-6 z-20 md:absolute md:bottom-4 md:top-7 custom:top-9 lg:!right-0 xl:!right-5 hero:!right-8 hero:!top-16 2xl:!top-7 2xl:!right-4 hero2:!right-10 hero2:!top-[65px]">
+        <div className="md:w-[50%] custom:w-[40%] md:relative md:my-auto lg:w-[35%] 2xl:w-[30%]">
+          <div className="mt-6 z-20 md:absolute md:top-8 hero1:!right-10 hero2:top-10 hero2:!right-12">
             <Image
               src={image}
               alt="Hero Image"
               priority={true}
-              layout="responsive"
-              className="!w-[80%] my-auto md:!w-[100%] xl:!w-[90%] 2xl:!w-[80%]"
+              height={200}
+              width={400}
             />
           </div>
 
@@ -53,8 +53,8 @@ const Hero: React.FC = () => {
               src={Ellipse}
               alt="Circle Image"
               priority={true}
-              layout="responsive"
-              className="w-[100%] xl:!w-[90%] 2xl:!w-[80%]"
+              height={200}
+              width={400}
             />
           </div>
         </div>

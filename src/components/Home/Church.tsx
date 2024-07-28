@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one.svg";
-import ChurchImage from "../../../public/img/Group 462.svg";
+import ChurchImage from "../../../public/img/Home/Group 462.webp";
 import Ellipse from "../../../public/img/Ellipse 44.svg"
 
 const Church: React.FC = () => {
@@ -124,13 +124,14 @@ const Church: React.FC = () => {
 
         <div className="md:w-1/2 md:my-auto">
           <div className="bg-businessimage pt-8 pb-4 rounded-lg md:bg-theme">
-            <div className="w-[80%] mx-auto">
+            <div className="w-[90%] mx-auto">
               <Image
                 src={ChurchImage}
                 alt="Church activity Image"
-                layout="responsive"
-                loading="lazy"
-                className="md:w-[80%] mx-auto"
+                height={200}
+                width={400}
+                priority={true}
+                className="mx-auto"
               />
             </div>
           </div>

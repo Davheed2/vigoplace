@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one.svg";
-import BusinessImage from "../../../public/img/BusinessM.svg";
+import BusinessImage from "../../../public/img/Home/BusinessM.webp";
 import Ellipse from "../../../public/img/Ellipse 44.svg";
 import Ellipse2 from "../../../public/img/Ellipse 45.svg";
 
@@ -61,10 +61,10 @@ const Business: React.FC = () => {
               <Image
                 src={BusinessImage}
                 alt="Business Image"
-                // width={279}
-                // height={248}
-                loading="lazy"
-                layout="responsive"
+                height={200}
+                width={400}
+                priority={true}
+                className="mx-auto"
               />
             </div>
 

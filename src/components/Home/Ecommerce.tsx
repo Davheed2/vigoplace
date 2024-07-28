@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one.svg";
-import EcommerceImages from "../../../public/img/Frame 238313.svg";
-import EcommerceImage from "../../../public/img/Group 463.svg";
+//import EcommerceImage from "../../../public/img/Group 463.svg";
+import EcommerceImage from "../../../public/img/Home/Group 463.webp";
 
 const Ecommerce: React.FC = () => {
   return (
@@ -85,8 +85,9 @@ const Ecommerce: React.FC = () => {
               <Image
                 src={EcommerceImage}
                 alt="Ecommerce Image"
-                layout="responsive"
-                loading="lazy"
+                height={200}
+                width={400}
+                priority={true}
               />
             </div>
           </div>

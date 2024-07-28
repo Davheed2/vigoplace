@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Check from "../../../public/img/icon-park-solid_check-one purple.svg";
-import FundraisingImage from "../../../public/img/Fund 2.svg";
+//import FundraisingImage from "../../../public/img/Fund 2.svg";
+import FundraisingImage from "../../../public/img/Home/Fund 2.webp";
 
 const FundRaising: React.FC = () => {
   return (
@@ -49,9 +50,11 @@ const FundRaising: React.FC = () => {
             <div className="w-[80%] mx-auto md:w-[70%]">
               <Image
                 src={FundraisingImage}
-                alt="Business Image"
-                layout="responsive"
-                className="mx-auto w-[60%]"
+                alt="Fund Raising Image"
+                height={200}
+                width={400}
+                priority={true}
+                className="mx-auto w-[80%]"
               />
             </div>
           </div>
