@@ -1,6 +1,5 @@
 import Image from "next/image";
-// import ChurchImage from "../../../public/img/Church activities 1.svg";
-import ChurchImage from "../../../public/img/Churchtest.svg";
+import ChurchImage from "../../../public/img/Why/Frame 238218.webp";
 import BibleImage from "../../../public/img/Vector.svg";
 import BibleImage2 from "../../../public/img/bx_bible.svg";
 import StreamGift from "../../../public/img/streamline_give-gift.svg";
@@ -43,7 +42,9 @@ const ChurchActivity: React.FC = () => {
             alt="Activity Image"
             priority={true}
             fetchPriority="high"
-            className="w-[100%]"
+            height={400}
+            width={400}
+            layout="responsive"
           />
         </div>
       </section>

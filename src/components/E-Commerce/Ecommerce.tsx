@@ -1,5 +1,5 @@
 import Image from "next/image";
-import EcommerceImage from "../../../public/img/Frame 238218 (2).svg";
+import EcommerceImage from "../../../public/img/Why/Frame 238218 (2).webp";
 import Market from "../../../public/img/Market.svg";
 import Product from "../../../public/img/Product.svg";
 import Service from "../../../public/img/Service.svg";
@@ -24,7 +24,9 @@ const Ecommerce: React.FC = () => {
             alt="Ecommerce Image"
             priority={true}
             fetchPriority="high"
-            className="w-[100%]"
+            height={400}
+            width={400}
+            layout="responsive"
           />
         </div>
       </section>

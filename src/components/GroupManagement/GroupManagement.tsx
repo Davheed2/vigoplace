@@ -1,5 +1,5 @@
 import Image from "next/image";
-import GroupImage from "../../../public/img/Frame 238218 (1).svg";
+import GroupImage from "../../../public/img/Why/Frame 238218 (1).webp";
 import Group from "../../../public/img/Group (2).svg";
 import Family from "../../../public/img/Family.svg";
 import Hobby from "../../../public/img/Hobby.svg";
@@ -28,10 +28,12 @@ const GroupManagement: React.FC = () => {
         <div className="mb-4">
           <Image
             src={GroupImage}
-            alt="Activity Image"
+            alt="Group Image"
             priority={true}
             fetchPriority="high"
-            className="w-[100%]"
+            height={400}
+            width={400}
+            layout="responsive"
           />
         </div>
       </section>

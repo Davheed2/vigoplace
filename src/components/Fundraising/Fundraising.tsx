@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FundRaisingImage from "../../../public/img/Frame 238218 (6).svg";
+import FundRaisingImage from "../../../public/img/Why/Frame 238218 (6).webp";
 import Fund from "../../../public/img/FundPost.svg";
 import Support from "../../../public/img/streamline_blood-drop-donation.svg";
 
@@ -22,7 +22,9 @@ const Fundraising: React.FC = () => {
             alt="Fundraising Image"
             priority={true}
             fetchPriority="high"
-            className="w-[100%]"
+            height={400}
+            width={400}
+            layout="responsive"
           />
         </div>
       </section>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ContestImage from "../../../public/img/Frame 238218 (5).svg";
+import ContestImage from "../../../public/img/Why/Frame 238218 (5).webp";
 import Contest from "../../../public/img/lucide_vote.svg";
 import Contestants from "../../../public/img/arcticons_voter-helpline.svg";
 import Paid from "../../../public/img/mdi_vote-outline.svg";
@@ -23,7 +23,9 @@ const OnlineContest: React.FC = () => {
             alt="Contest Image"
             priority={true}
             fetchPriority="high"
-            className="w-[100%]"
+            height={400}
+            width={400}
+            layout="responsive"
           />
         </div>
       </section>

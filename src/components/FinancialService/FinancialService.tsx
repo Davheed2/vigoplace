@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FinanceImage from "../../../public/img/Frame 238218 (3).svg";
+import FinanceImage from "../../../public/img//Why/Frame 238218 (3).webp";
 import Wallet from "../../../public/img/Wallet.svg";
 import Kyc from "../../../public/img/icon-park_customer.svg";
 import Bank from "../../../public/img/arcticons_raiffeisen-e-banking.svg";
@@ -30,7 +30,9 @@ const FinancialService: React.FC = () => {
             alt="Finance Image"
             priority={true}
             fetchPriority="high"
-            className="w-[100%]"
+            height={400}
+            width={400}
+            layout="responsive"
           />
         </div>
       </section>

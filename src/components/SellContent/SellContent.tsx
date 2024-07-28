@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SellContentImage from "../../../public/img/Sell content.svg";
+import SellContentImage from "../../../public/img/Why/Frame 238218 (4).webp";
 import Channel from "../../../public/img/uil_channel-add.svg";
 import View from "../../../public/img/material-symbols_view-day-outline.svg";
 import Buy from "../../../public/img/icons8_buy.svg";
@@ -25,7 +25,9 @@ const SellContent: React.FC = () => {
             alt="Sell Content Image"
             priority={true}
             fetchPriority="high"
-            className="w-[100%]"
+            height={400}
+            width={400}
+            layout="responsive"
           />
         </div>
       </section>
